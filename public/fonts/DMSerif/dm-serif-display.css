@@ -1,0 +1,17 @@
+/* dm-serif-display-italic */
+@font-face {
+	font-family: "DM Serif Display";
+	font-style: italic;
+	font-weight: 400;
+	font-stretch: 100%;
+	src: local("DM Serif Display Italic"), local("DMSerifDisplay-Italic"), url(public/DMSerif/dm-serif-display-italic.woff2) format("woff2");
+}
+/* dm-serif-display */
+@font-face {
+	font-family: "DM Serif Display";
+	font-style: normal;
+	font-weight: 400;
+	font-stretch: 100%;
+	src: local("DM Serif Display Regular"), local("DMSerifDisplay-Regular"), url(dm-serif-display.woff2) format("woff2");
+}
+

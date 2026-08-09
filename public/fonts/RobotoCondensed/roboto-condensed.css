@@ -1,0 +1,17 @@
+/* roboto-condensed-italic 
+@font-face {
+	font-family: "Roboto Condensed";
+	font-style: italic;
+	font-weight: 100 900;
+	font-stretch: 100%;
+	src: local("Roboto Condensed Italic"), local("RobotoCondensed-Italic"), url(roboto-condensed-italic.woff2) format("woff2");
+}
+/* roboto-condensed */
+@font-face {
+	font-family: "Roboto Condensed";
+	font-style: normal;
+	font-weight: 100 900;
+	font-stretch: 100%;
+	src: url("roboto-condensed.woff2") format("woff2");
+}
+
