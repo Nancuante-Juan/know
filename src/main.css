@@ -13,21 +13,21 @@ html {
 	font-style: normal;
 	font-weight: 100 900;
 	font-stretch: 100%;
-	src: url("public/fonts/roboto-condensed.woff2") format("woff2");
+	src: url("assets/fonts/roboto-condensed.woff2") format("woff2");
 }
 @font-face {
 	font-family: "DM Serif Display";
 	font-style: normal;
 	font-weight: 400;
 	font-stretch: 100%;
-	src: url(public/fonts/dm-serif-display.woff2) format("woff2");
+	src: url(assets/fonts/dm-serif-display.woff2) format("woff2");
 }
 @font-face {
   font-family: Inter Variable;
   font-style: normal;
   font-weight: 100 900;
   font-display: swap;
-  src: url("public/fonts/InterVariable.woff2") format("woff2");
+  src: url("assets/fonts/InterVariable.woff2") format("woff2");
 }
 
 
@@ -51,7 +51,7 @@ html {
 	opacity: 1;
 }
 .muestra-noticia:hover > * > .hide-not-hover {
-	max-height: 80px;
+	max-height: 32px;
 	opacity: 1;
 }
 
