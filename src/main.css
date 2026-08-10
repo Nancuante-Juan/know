@@ -30,8 +30,7 @@ html {
   src: url("assets/fonts/InterVariable.woff2") format("woff2");
 }
 
-
-.Fonts-Inter { font-family: "Inter Variable", sans-serif; }
+.Fonts-Inter   { font-family: "Inter Variable", sans-serif; }
 .Fonts-RobotoC { font-family: 'Roboto Condensed', sans-serif; letter-spacing: -4%; line-height: 0.8;}
 .Fonts-DMSerif { font-family: 'DM Serif Display', serif; }
 
@@ -39,31 +38,13 @@ html {
 /***************/
 /* COMPONENTES */
 /***************/
-
 .hide-not-hover{
 	max-height: 0;
 	opacity: 0;
-	transition-duration: 500ms;
+	transition-duration: 200ms;
 }
-
-.muestra-noticia:hover > * > .hide-not-hover {
-	max-height: 100px;
-	opacity: 1;
-}
-.muestra-noticia:hover > * > .hide-not-hover {
-	max-height: 32px;
-	opacity: 1;
-}
-
-.muestra-noticia:hover > * > .muestra-noticia-titulo {
-	background-color: #F7FF00;
-	color: #000000;
-}
-.muestra-noticia-grande > * > .muestra-noticia-titulo {
-	background-color: #F7FF00;
-	color: #000000;
-}
-
-.muestra-noticia-fondo {
-	background: linear-gradient(180deg,rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
-}
+.muestra-noticia:hover > * > .hide-not-hover { max-height: 100px; opacity: 1; }
+.muestra-noticia:hover > * > .hide-not-hover { max-height: 32px;  opacity: 1; }
+.muestra-noticia:hover  > * > .muestra-noticia-titulo { background-color: #F7FF00; color: #000000; }
+.muestra-noticia-grande > * > .muestra-noticia-titulo { background-color: #F7FF00; color: #000000; }
+.muestra-noticia-fondo { background: linear-gradient(180deg,rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%); }
