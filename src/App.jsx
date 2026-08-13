@@ -1,7 +1,9 @@
 import PortadaNoticia from "./PortadaNoticia";
+import Configuracion from "./configuración";
 
 export default function App() { return (
 <div className="grid grid-cols-3 gap-4 p-4 pt-0 min-h-dvh bg-black">
+	<Configuracion />
 	<PortadaNoticia titulo="IMPORTANTE: me quede sin noticia" imagen={"src/assets/react.svg"} medio="Crónica" categorias="Política" descripcion="No sé" grande={true} />
 	<PortadaNoticia titulo="IMPORTANTE: me quede sin noticia" imagen={"src/assets/vite.svg"} medio="Crónica" categorias="Política" descripcion="No sé" />
 	<PortadaNoticia titulo="IMPORTANTE: me quede sin noticia" imagen={"src/assets/vite.svg"} medio="Crónica" categorias="Política" descripcion="No sé" />
