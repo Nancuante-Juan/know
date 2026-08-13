@@ -1,3 +1,5 @@
+import { Link } from "react-router";
+
 export default function BarraNavegación (/*{estado}*/) { return (
 <div className="flex py-2 px-4 bg-black text-white w-full">
 	<p className="Fonts-DMSerif text-4xl">Know</p>
@@ -25,7 +27,5 @@ var isBold = "";
 if (activado) { isBold = isBold + " font-black";}
 
 return (
-<div className="align-middle">
-	<a href={link} className={"flex underline text-xl Fonts-Inter" + isBold}>{texto}</a>
-</div>
+	<Link to={link} className={"flex underline text-xl items-center Fonts-RobotoC" + isBold}>{texto}</Link>
 );}
