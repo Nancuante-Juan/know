@@ -1,7 +1,6 @@
 import BarraNavegación from "./BarraNavegacion";
 import DivisorSeccion from "./DivisorSeccion";
 import PortadaNoticia from "./PortadaNoticia";
-import Configuracion from "./configuración";
 
 export default function App() { return (
 <div className="bg-black">
@@ -10,7 +9,7 @@ export default function App() { return (
 
 	
 	<DivisorSeccion seccion="Política"/>
-	<div className="grid grid-cols-3 gap-4 p-4 pt-0 ideal-height-pantalla">
+	<div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-4 p-4 pt-0 ideal-height-pantalla">
 		<PortadaNoticia titulo="El precio del oro alcanza nuevos máximos" imagen={"src/assets/fotos/tiempo_sur/foto_2.jpg"} medio="Tiempo Sur" categorias="Economia" descripcion="El oro se mantiene en un constante ascenso, generando interés en los inversores."/>
 		<PortadaNoticia titulo="Santa Cruz se prepara para un fin de semana con lluvias y temperaturas bajo cero" imagen={"src/assets/fotos/tiempo_sur/foto_1_main1.jpg"} medio="TiempoSur" categorias="Clima" descripcion="El Departamento de Meteorología y Climatología de la Administración General de Vialidad Provincial (AGVP), anticipa un..." />
 		<PortadaNoticia titulo="Platense empató 1-1 ante Coquimbo Unido" imagen={"src/assets/fotos/olé/foto_1.jpg"} medio="Olé" categorias="Fútbol" descripcion="Luego del remate que falló Mainero y de estar en ventaja todo el partido, al Calamar se lo igualó Vadalá..." />
