@@ -2,19 +2,7 @@ El trabajo de prácticas.
 
 Para usar esta mierda (si van a necesitar instalar `npm` en la compu, se joden):
 ```
-npm create vite@latest
-```
-
-
-Seleccionan:
-```
-React, Javascript (solo), ESLint, No
-```
-
-
-Luego:
-```
-npm install tailwindcss @tailwindcss/vite
+npm install
 ```
 
 
