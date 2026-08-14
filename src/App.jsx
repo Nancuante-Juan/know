@@ -2,7 +2,10 @@ import BarraNavegación from "./BarraNavegacion";
 import DefaultGrid from "./DefaultGrid";
 import PortadaNoticia from "./PortadaNoticia";
 
-export default function App() { return (
+export default function App() { 
+
+
+return (
 <div className="bg-black">
 	<BarraNavegación />
 

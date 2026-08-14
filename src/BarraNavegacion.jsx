@@ -2,7 +2,7 @@ import { Link } from "react-router";
 
 export default function BarraNavegación (/*{estado}*/) { return (
 <div className="flex px-4 bg-black text-white w-full">
-	<Link className="flex flex-col justify-center Fonts-DMSerif text-4xl bg-amarillo-hover">Know</Link>
+	<Link className="flex flex-col justify-center Fonts-DMSerif text-4xl bg-amarillo-hover" to="/">Know</Link>
 	<div className="flex flex-row gap-4 w-full justify-end">
 		<div className="flex overflow-x-scroll overflow-y-hidden scrollbar-none items-center" style={{maxWidth: "calc(100vw - (13.5rem + 2rem + 1rem))"}}>
 			<BotonBarra texto="Política" activado={true}/>
