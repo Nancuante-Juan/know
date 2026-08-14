@@ -57,7 +57,7 @@ html {
 	overflow: hidden;
 	text-overflow: ellipsis;
 }
-.muestra-noticia:hover > * > .hide-not-hover { max-height: 100px; opacity: 1; }
+.muestra-noticia:hover > * > .hide-not-hover { max-height: 72px; opacity: 1; }
 .muestra-noticia:hover  > * > .muestra-noticia-titulo { background-color: var(--amarillo); color: #000000; }
 .muestra-noticia-grande > * > .muestra-noticia-titulo { background-color: var(--amarillo); color: #000000; }
 

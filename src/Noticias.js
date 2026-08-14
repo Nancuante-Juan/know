@@ -1,3 +1,6 @@
+/********************************************/
+/* ESTE ARCHIVO SOLO CONTIENTE LAS NOTICIAS */
+/********************************************/
 export const noticias = [
 	{ 
 		"titulo":"El precio del oro alcanza nuevos máximos",
