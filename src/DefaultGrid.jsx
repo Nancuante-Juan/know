@@ -14,7 +14,7 @@ if (tipo === "") { return(
 
 	<div className="flex gap-4 md:p-4 md:pt-0 w-full snap-center" /*style={{ maxHeight: "calc(100vh - 52px)", minHeight: "calc(100vh - 52px)"}}*/>
 		{cara}
-		<div className="flex flex-col gap-4 h-full" style={{minWidth: "calc((100vh - 52px - 2rem - 1rem) / 16 * 9)"}}>
+		<div className="flex flex-col gap-4 h-full" style={{maxWidth: "calc((100vh - 52px - 2rem - 1rem) / 16 * 9)",minWidth: "calc((100vh - 52px - 2rem - 1rem) / 16 * 9)"}}>
 			{children}
 		</div>
 	</div>

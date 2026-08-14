@@ -1,21 +1,24 @@
+import AutoPortada from "./AutoPortada";
 import BarraNavegación from "./BarraNavegacion";
 import DefaultGrid from "./DefaultGrid";
 import PortadaNoticia from "./PortadaNoticia";
+import * as Recibir from "./RecibirNoticias";
 
 export default function App() { 
 
+var inicio = Recibir.Filtrado("", 4)
 
 return (
 <div className="bg-black">
 	<BarraNavegación />
-
-
-	<div className="overflow-y-auto overflow-x-hidden lg:snap-y snap-mandatory" style={{ maxHeight: "calc(100vh - 52px)", minHeight: "calc(100vh - 56px)"}}>
+	
+	<div className="overflow-y-auto overflow-x-hidden lg:snap-y snap-mandatory" style={{ maxHeight: "calc(100vh - 52px)", minHeight: "calc(100vh - 52px)",}}>
 		
-		<DefaultGrid tipo="inicio" cara={<PortadaNoticia titulo="El precio del oro alcanza nuevos máximos" imagen={"src/assets/fotos/tiempo_sur/foto_2.jpg"} medio="Tiempo Sur" categorias="Economia" descripcion="El oro se mantiene en un constante ascenso, generando interés en los inversores." tipo="grande"/>}>
-			<PortadaNoticia titulo="algo" imagen={"src/assets/fotos/tiempo_sur/foto_1_main1.jpg"} medio="aaa" categorias="bbb" descripcion="..."  tipo="pequeno3" />
-			<PortadaNoticia titulo="algo" imagen={"src/assets/fotos/tiempo_sur/foto_1_main1.jpg"} medio="aaa" categorias="bbb" descripcion="..."  tipo="pequeno3" />
-			<PortadaNoticia titulo="algo" imagen={"src/assets/fotos/tiempo_sur/foto_1_main1.jpg"} medio="aaa" categorias="bbb" descripcion="..."  tipo="pequeno3" />
+		<DefaultGrid tipo="inicio" cara={
+			<AutoPortada noticia={inicio[0]} tipo="grande" />}>
+			<AutoPortada noticia={inicio[1]} tipo="pequeno3" />
+			<AutoPortada noticia={inicio[2]} tipo="pequeno3" />
+			<AutoPortada noticia={inicio[3]} tipo="pequeno3" />
 		</DefaultGrid>
 	
 		<DefaultGrid seccion="Política" url="">

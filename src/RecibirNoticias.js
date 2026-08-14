@@ -8,24 +8,25 @@ export function Todo() {
 }
 
 export function Filtrado(categoria = "", limite) {
-	var MEDIOS_SUSCRITOS = ["aaa"];
-	var CATEGORIAS_ACEPTADAS = ["bbb"];
+	var MEDIOS_SUSCRITOS = ["Tiempo Sur", "Olé", "Crónica", "TyC Sports", "La Nacion"];
+	var CATEGORIAS_ACEPTADAS = ["Economia", "Clima", "Deporte", "Política", "Gaming"];
 	var noticias = Todo();
 	var final = [];
 	var debug = "";
-	var l = noticias.length;
+	var l = noticias.length - 1;
 	if (limite < l) { l = limite; }
 	
-	for (let i = 0; i < l; i++) {
+	for (let i = 0; i <= l; i++) {
 		if (categoria === "") {
-			if (!CATEGORIAS_ACEPTADAS.includes(noticias[i].categorias)) {
+			if (!noticias[i].categorias.some(e => CATEGORIAS_ACEPTADAS.includes(e))) {
 				continue;
 			}
 		} else {
-			if (categoria !== noticias[i].categorias) {
+			if (!noticias[i].categorias.some(e => categoria === e)) {
 				continue;
 			}
 		}
+		
 		
 		if (!MEDIOS_SUSCRITOS.includes(noticias[i].medio)) {
 			continue;
@@ -35,5 +36,5 @@ export function Filtrado(categoria = "", limite) {
 		debug = debug + noticias[i].titulo;
 	}
 
-	return(debug);
+	return(final);
 }
