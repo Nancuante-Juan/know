@@ -1,4 +1,7 @@
 export default function PortadaNoticia ({ titulo, imagen, medio, categorias, descripcion, tipo="" }) {
+
+categorias = categorias.toString().replace(",", " ⋅ ")
+
 if (tipo==="grande") { return (
 
 <div className="flex flex-col w-full min-h-full justify-end overflow-hidden bg-cover bg-center text-white muestra-noticia muestra-noticia-grande" style={{backgroundImage: "url("+imagen+")", }}>
