@@ -1,10 +1,10 @@
 import { Link } from "react-router";
 
 export default function BarraNavegación (/*{estado}*/) { return (
-<div className="flex py-2 px-4 bg-black text-white w-full">
-	<p className="Fonts-DMSerif text-4xl min-w-30">Know</p>
+<div className="flex px-4 bg-black text-white w-full">
+	<Link className="flex flex-col justify-center Fonts-DMSerif text-4xl bg-amarillo-hover">Know</Link>
 	<div className="flex flex-row gap-4 w-full justify-end">
-		<div className="flex gap-4 overflow-x-scroll overflow-y-hidden scrollbar-none" style={{maxWidth: "calc(100vw - (13.5rem + 2rem + 1rem))"}}>
+		<div className="flex overflow-x-scroll overflow-y-hidden scrollbar-none items-center" style={{maxWidth: "calc(100vw - (13.5rem + 2rem + 1rem))"}}>
 			<BotonBarra texto="Política" activado={true}/>
 			<BotonBarra texto="Economía" />
 			<BotonBarra texto="Farándula" />
@@ -14,20 +14,21 @@ export default function BarraNavegación (/*{estado}*/) { return (
 			<BotonBarra texto="Deporte" />
 			<BotonBarra texto="Vida" />
 		</div>
-		<div className="flex min-w-24 gap-4">
-			<img src="src/assets/icons/search24.svg" />
-			<img src="src/assets/icons/discover_tune24.svg" />
+		<div className="flex min-w-8 gap-4 items-center">
+			<img src="src/assets/icons/discover_tune24.svg" className="h-8"/>
 		</div>
 	</div>
-	
 </div>
 
 );}
 
 function BotonBarra ({texto, link, activado = false}) { 
-var isBold = "";
-if (activado) { isBold = isBold + " font-black";}
-
-return (
-	<Link to={link} className={"flex underline text-xl items-center" + isBold}>{texto}</Link>
-);}
+	var isBold = " bg-amarillo-hover underline";
+	if (activado) { isBold = " font-black";}
+	
+	return (
+		<Link to={link} className="flex text-xl hover:no-underline px-2 py-3 hover-parent">
+			<div className={"max-h-7" + isBold}>{texto}</div>
+		</Link>
+	);
+}
