@@ -15,7 +15,7 @@ export default function AutoGrid({tipo, lista, seccion}) {
 		
 	); } else if (tipo === "minicategoria") { return(
 	
-		<DefaultGrid seccion={seccion}>
+		<DefaultGrid seccion={seccion} url={"/c/"+seccion}>
 			<AutoPortada noticia={lista[0]} />
 			<AutoPortada noticia={lista[1]} />
 			<AutoPortada noticia={lista[2]} />

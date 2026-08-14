@@ -1,14 +1,17 @@
+import { useParams } from "react-router";
 import { Link } from "react-router";
 import * as Almac from "./Almacenamiento";
 
 export default function BarraNavegación ({catego_manual}) { 
+	const params = useParams();
+	const categoria_dominante = params.cat;	
 
 	var categorias = catego_manual;
 	if (catego_manual == undefined){
 		categorias = Almac.obt_CATEGORIAS();
 	}
 	const elements = categorias.map(cat =>
-		<BotonBarra texto={cat} />
+		<BotonBarra texto={cat} link={"/c/"+cat} activado={cat==categoria_dominante} />
 	);
 	
 	return (
@@ -19,7 +22,7 @@ export default function BarraNavegación ({catego_manual}) {
 				{elements}
 			</div>
 			<div className="flex min-w-8 gap-4 items-center">
-				<img src="src/assets/icons/discover_tune24.svg" className="h-8"/>
+				<img src={`/${"src/assets/icons/discover_tune24.svg"}`} className="h-8"/>
 			</div>
 		</div>
 	</div>
