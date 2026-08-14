@@ -1,9 +1,12 @@
 import { Link } from "react-router";
 import * as Almac from "./Almacenamiento";
 
-export default function BarraNavegación (/*{estado}*/) { 
-	
-	const categorias = Almac.obt_CATEGORIAS();
+export default function BarraNavegación ({catego_manual}) { 
+
+	var categorias = catego_manual;
+	if (catego_manual == undefined){
+		categorias = Almac.obt_CATEGORIAS();
+	}
 	const elements = categorias.map(cat =>
 		<BotonBarra texto={cat} />
 	);
