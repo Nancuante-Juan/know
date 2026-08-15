@@ -1,10 +1,62 @@
 @import "tailwindcss";
 :root {
 	--amarillo: #F7FF00;
+	--gris: #999999;
+	--rojo: #EA102D;
 }
 
 html {
-	font-family: "Inter";
+	font-family: "Inter", sans-serif;
+}
+
+img {
+	user-drag: none;
+	-webkit-user-drag: none;
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+
+select {
+	padding: 0.5rem;
+	width: 100%;
+	border: solid var(--gris) 2px;
+	background: #ffffff;
+}
+
+input[type="range"] {
+	-webkit-appearance: none;
+	height: 2rem;
+	border: solid var(--gris) 2px;
+	border-radius: 0;
+	cursor: pointer;
+	accent-color: var(--rojo);
+}
+
+input[type="range"]::-moz-range-track {
+	background: var(--rojo);
+	width:  calc(100% - 0.5rem);
+	height: calc(100% - 0.5rem);
+	background: linear-gradient(to right, var(--rojo) var(--range-pct, 0%), #ffffff var(--range-pct, 0%));
+	border-radius: 0px;
+	border: none;
+}
+
+input[type="range"]::-moz-range-thumb {
+	height: 3rem;
+	width: 0.3rem;
+	background: var(--rojo);
+	border-radius: 0px;
+	border: 3px solid #ffffff;
+}
+
+input[type="checkbox"] {
+	height: 2rem;
+	width: 2rem;
+	accent-color: var(--rojo);
+	border-radius: 0px;
+	border: 2px solid var(--gris);
 }
 
 /***********/
@@ -41,6 +93,7 @@ html {
 /* COLORES */
 /***********/
 .bg-amarillo { background-color: var(--amarillo); color: #000000;}
+.text-gris { color: var(--gris);}
 .bg-amarillo-hover:hover { background-color: var(--amarillo); color: #000000; text-decoration: none;}
 .hover-parent:hover > .bg-amarillo-hover { background-color: var(--amarillo); color: #000000; text-decoration: none;}
 .hover-parent:hover > * > .bg-amarillo-hover { background-color: var(--amarillo); color: #000000; text-decoration: none;}
@@ -74,6 +127,7 @@ html {
 
 h1{
 	font-size: 2.25rem;
+	font-family: 'DM Serif Display', serif;
 }
 
 .desenfoque-prog {
@@ -85,3 +139,8 @@ h1{
 
 .imagen-noticia { background-size: auto 100%; transition-duration: 500ms;}
 .imagen-noticia:hover { background-size: auto 103%; }
+
+.ow-the-edge {
+	box-shadow: 0px 0px 64px rgba(0, 0, 0, 0.4);
+}
+

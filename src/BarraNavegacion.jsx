@@ -21,7 +21,7 @@ export default function BarraNavegación ({catego_manual}) {
 			<div className="flex overflow-x-scroll overflow-y-hidden scrollbar-none items-center" style={{maxWidth: "calc(100vw - (13.5rem + 2rem + 1rem))"}}>
 				{elements}
 			</div>
-			<Link className="flex min-w-8 gap-4 items-center" to={"./Config"}>
+			<Link className="flex min-w-8 gap-4 items-center" to={"/Config"}>
 				<img src={`/${"src/assets/icons/discover_tune24.svg"}`} className="h-8"/>
 			</Link>
 		</div>
