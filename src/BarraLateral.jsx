@@ -16,7 +16,7 @@ export default function Configuracion() {
 	const [seleccionado, setSeleccionado] = useState(null);
  
 	return (
-		<div className="fixed top-5 right-5 flex flex-col items-end gap-[10px]">
+		<div className="fixed top-5 right-5 flex flex-col items-end gap-2.5">
 			<button className="bg-neutral-800 text-white px-4 py-2 rounded-md" onClick={() => setAbierto(!abierto)}>
 				- Configuración
 			</button>
