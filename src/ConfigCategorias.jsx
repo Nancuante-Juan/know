@@ -11,13 +11,13 @@ export default function ConfigCategorias() {
 	function suscribir(cat) {
 		const nuevas = [...suscritas, cat];
 		setSuscritas(nuevas);
-		Almac.guar_CATEGORIAS(nuevas.toString());
+		Almac.guar_CATEGORIAS(nuevas);
 	}
 
 	function desuscribir(cat) {
 		const nuevas = suscritas.filter(c => c !== cat);
 		setSuscritas(nuevas);
-		Almac.guar_CATEGORIAS(nuevas.toString());
+		Almac.guar_CATEGORIAS(nuevas);
 	}
 
 	return (
