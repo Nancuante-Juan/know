@@ -1,8 +1,16 @@
+import BarraNavegacion from "./BarraNavegacion";
+import BarraLateral from "./BarraLateral";
+import ConfigLectura from "./ConfigLectura";
+
 export default function Configuracion() {
-  return (
-    <div>
-      <h1>Configuración</h1>
-      <p>Esta es la página de configuración.</p>
-    </div>
-  );
+	return (
+		<div className="flex flex-col">
+			<BarraNavegacion />
+			<div className="flex flex-row">
+				<BarraLateral />
+				<ConfigLectura></ConfigLectura>
+				{/* UTILIZA CONFIG LECTURA PARA LA PAGINA DE LECTURA */}
+			</div>
+		</div>
+	);
 }
