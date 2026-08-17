@@ -14,7 +14,7 @@ export default function Noticia () {
 	
 	
 	async function get_text(id){
-		const module = await import(`/src/assets/noticias/${id}.jsx`);
+		const module = await import(`./assets/noticias/${id}.jsx`);
 		console.log(module);
 		const text = module.Devolver();
 		return (text);
