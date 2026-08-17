@@ -1,4 +1,4 @@
-export default function Slider({nombre, append = "", min,max,step}){
+export default function Slider({nombre, append = "", min, max, step, value, onChange}){
 	var nums = []
 	
 	for (let i = 0; i <= Math.floor ((max - min) / step); i++) {
@@ -12,7 +12,7 @@ export default function Slider({nombre, append = "", min,max,step}){
 	return(
 		<div className="flex flex-col max-w-120 min-w-1/3 w-full">
 			{nombre}:
-			<input type="range" min={min} max={max} step={step} />
+			<input type="range" min={min} max={max} step={step} value={value} onChange={onChange} />
 			<div className="flex justify-between text-gris -mx-2">
 				{numeros_html}
 			</div>

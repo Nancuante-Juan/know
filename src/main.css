@@ -3,6 +3,12 @@
 	--amarillo: #F7FF00;
 	--gris: #999999;
 	--rojo: #EA102D;
+	--lectura-tamano: 1rem;
+	--lectura-interlineado: 1.25;
+	--lectura-esp-caracteres: 0em;
+	--lectura-esp-palabras: 0em;
+	--lectura-color-texto: #000000;
+	--lectura-color-fondo: #ffffff;
 }
 
 html {
@@ -154,4 +160,12 @@ h1{
 
 .NOTICIA_CONTENT > h1 {
 	margin-top: 1.5rem;
+}
+.NOTICIA_CONTENT {
+	font-size: var(--lectura-tamano);
+	line-height: var(--lectura-interlineado);
+	letter-spacing: var(--lectura-esp-caracteres);
+	word-spacing: var(--lectura-esp-palabras);
+	color: var(--lectura-color-texto);
+	background-color: var(--lectura-color-fondo);
 }
