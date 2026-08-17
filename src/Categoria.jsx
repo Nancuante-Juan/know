@@ -18,7 +18,7 @@ export default function Categoria(){
 			<BarraNavegación />
 			
 			<div className="overflow-y-auto overflow-x-hidden" style={{ maxHeight: "calc(100vh - 52px)", minHeight: "calc(100vh - 52px)",}}>
-				<div className="flex flex-col text-8xl text-white Fonts-DMSerif w-full max-h-0 ml-4"  style={{ maxWidth:  "calc(100vw - 3rem - ((100vh - 52px - 2rem - 1rem) / 16 * 9))"}}>
+				<div className="flex flex-col text-8xl text-white Fonts-DMSerif w-full max-h-0 md:ml-4 ancho-de-noticia-grande">
 					<div className="flex flex-col w-full max-h-0"><div className="desenfoque-prog -scale-100 w-full min-h-50" /></div>
 					<p className="z-5 p-4">{categoria_dominante}</p>
 				</div>

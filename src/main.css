@@ -109,11 +109,17 @@ input[type="checkbox"] {
 	transition: 500ms;
 	overflow: hidden;
 	text-overflow: ellipsis;
+	line-clamp: 3;
 }
 .muestra-noticia:hover > * > .hide-not-hover { max-height: 72px; opacity: 1; }
 .muestra-noticia:hover  > * > .muestra-noticia-titulo { background-color: var(--amarillo); color: #000000; }
 .muestra-noticia-grande > * > .muestra-noticia-titulo { background-color: var(--amarillo); color: #000000; }
 
+@media (min-width: 48rem) {
+	.ancho-de-noticia-grande{
+		max-width: calc(100vw - 3rem - ((100vh - 52px - 2rem - 1rem) / 16 * 9) + 1px)
+	}
+}
 
 
 .ideal-h-noticia {
