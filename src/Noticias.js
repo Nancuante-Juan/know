@@ -67,35 +67,35 @@ export const noticias = [
 		"link":"https://cnnespanol.cnn.com/2026/08/12/ciencia/mejores-fotos-eclipse-solar-miercoles-trax"
 	},
 	{ 
-		"titulo":"algo",
-		"imagen":"src/assets/fotos/tiempo_sur/foto_1_main1.jpg",
-		"medio":"aaa",
-		"categorias":["bbb"],
-		"descripcion":"...",
-		"link":""
+		"titulo":"Milei volverá al Congreso para presentar el Presupuesto 2027",
+		"imagen":"src/assets/fotos/tiempo_sur/foto_3.jpg",
+		"medio":"TiempoSur",
+		"categorias":["Política"],
+		"descripcion":"El Presidente expondrá el 15 de septiembre ante la Cámara de Diputados los lineamientos de la denominada “ley de leyes”. El Gobierno buscará asegurar su aprobación antes del inicio del año electoral, en una discusión que volverá a poner en el centro la relación con las provincias y el debate sobre las PASO.",
+		"link":"https://www.tiemposur.com.ar/politica/milei-volvera-al-congreso-para-presentar-el-presupuesto-2027"
 	},
 	{ 
-		"titulo":"algo",
-		"imagen":"src/assets/fotos/tiempo_sur/foto_1_main1.jpg",
-		"medio":"aaa",
-		"categorias":["bbb"],
-		"descripcion":"...",
-		"link":""
+		"titulo":"Unión Santacruceña cayó en semifinales ante La Gloria de San Juan, pero cerró una destacada participación en el Nacional Zona Ascenso",
+		"imagen":"src/assets/fotos/nuevo_dia/foto_1.webp",
+		"medio":"NuevoDia",
+		"categorias":["Deporte"],
+		"descripcion":"Unión Santacruceña de Río Gallegos finalizó su participación en el Torneo Nacional Masculino Zona Ascenso, disputado en San Juan, tras caer por 4 a 1 ante La Gloria en una de las semifinales. El conjunto santacruceño no pudo alcanzar la final ni conseguir el ascenso al Torneo Nacional A, aunque completó una destacada campaña con el plantel de menor promedio de edad del certamen y la totalidad de sus jugadores formados en la institución.",
+		"link":"https://www.eldiarionuevodia.com.ar/locales/union-santacrucena-cayo-en-semifinales-ante-la-gloria-de-san-juan-pero-cerro-una-destacada-participacion-en-el-nacional-zona-ascenso-8645/"
 	},
 	{ 
-		"titulo":"algo",
-		"imagen":"src/assets/fotos/tiempo_sur/foto_1_main1.jpg",
-		"medio":"aaa",
-		"categorias":["bbb"],
-		"descripcion":"...",
-		"link":""
+		"titulo":"Juegazo AAA de una popular franquicia de acción tiene 95% de descuento y está casi gratis en Steam: últimas 48 horas para comprarlo por menos de $3 USD",
+		"imagen":"src/assets/fotos/levelup/foto_1.avif",
+		"medio":"Levelup",
+		"categorias":["Gaming"],
+		"descripcion":"El shooter cuesta $2.50 USD y acaba de recibir una importante actualización de contenido, y ahora es el mejor momento para adquirirlo",
+		"link":"https://www.levelup.com/noticias/juegazo-aaa-de-una-popular-franquicia-de-accion-tiene-95-de-descuento-y-esta-casi-gratis-en-steam-ultimas-48-horas-para-comprarlo-por-menos-de-3-usd/"
 	},
 	{ 
-		"titulo":"algo",
-		"imagen":"src/assets/fotos/tiempo_sur/foto_1_main1.jpg",
-		"medio":"aaa",
-		"categorias":["bbb"],
-		"descripcion":"...",
-		"link":""
+		"titulo":"Conocé como se presentará el clima este lunes en Río Gallegos",
+		"imagen":"src/assets/fotos/nuevo_dia/foto_2.webp",
+		"medio":"NuevoDia",
+		"categorias":["Clima"],
+		"descripcion":"El Servicio Meteorológico Nacional anticipa para este lunes 17 de agosto en Río Gallegos una jornada mayormente nublada, sin probabilidad de precipitaciones. La temperatura mínima prevista es de 1 grado y la máxima alcanzaría los 7 grados, con viento del sector noroeste y ráfagas que podrían llegar a los 50 kilómetros por hora durante la tarde y la noche.",
+		"link":"https://www.eldiarionuevodia.com.ar/locales/conoce-como-se-presentara-el-clima-este-lunes-en-rio-gallegos-4699/"
 	}
 ]
