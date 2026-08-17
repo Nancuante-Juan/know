@@ -36,7 +36,7 @@ export default function Noticia () {
 	
 	
 	return (
-		<div>
+		<div className="overflow-x-hidden">
 			<BarraNavegación />
 			<div className="flex flex-col w-screen h-[80vh] bg-cover text-white justify-end bg-center" style={{backgroundImage: "url("+`/${NOTI_INFO.imagen}`+")"}}>
 				<div className="flex w-full h-auto muestra-noticia-fondo p-6 z-5 gap-4 items-end">
