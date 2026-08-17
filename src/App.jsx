@@ -1,7 +1,6 @@
 import BarraNavegación from "./BarraNavegacion";
 import DivisorSeccion from "./DivisorSeccion";
 import PortadaNoticia from "./PortadaNoticia";
-import Configuracion from "./configuración";
 
 export default function App() { return (
 <div className="bg-black">
