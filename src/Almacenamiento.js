@@ -18,8 +18,8 @@ export function obt_CATEGORIAS(){
 	return data;
 }
 
-export function guar_MEDIOS(val)     { localStorage.setItem(MED_KEY, val); }
-export function guar_CATEGORIAS(val) { localStorage.setItem(CAT_KEY, val); }
+export function guar_MEDIOS(val)     { localStorage.setItem(MED_KEY, val.toString()); }
+export function guar_CATEGORIAS(val) { localStorage.setItem(CAT_KEY, val.toString()); }
 const LEC_KEY = "Lectura";
 
 export function obt_LECTURA(){
