@@ -109,5 +109,95 @@ export const noticias = [
 		categorias:["Clima"],
 		descripcion:"El Servicio Meteorológico Nacional anticipa para este lunes 17 de agosto en Río Gallegos una jornada mayormente nublada, sin probabilidad de precipitaciones. La temperatura mínima prevista es de 1 grado y la máxima alcanzaría los 7 grados, con viento del sector noroeste y ráfagas que podrían llegar a los 50 kilómetros por hora durante la tarde y la noche.",
 		link:"https://www.eldiarionuevodia.com.ar/locales/conoce-como-se-presentara-el-clima-este-lunes-en-rio-gallegos-4699/"
+	},
+	{ 
+		id: 12,
+		titulo:"",
+		imagen:"src/assets/fotos/",
+		medio:"",
+		categorias:[""],
+		descripcion:"",
+		link:""
+	},
+	{ 
+		id: 13,
+		titulo:"",
+		imagen:"src/assets/fotos/",
+		medio:"",
+		categorias:[""],
+		descripcion:"",
+		link:""
+	},
+	{ 
+		id: 14,
+		titulo:"",
+		imagen:"src/assets/fotos/",
+		medio:"",
+		categorias:[""],
+		descripcion:"",
+		link:""
+	},
+	{ 
+		id: 15,
+		titulo:"",
+		imagen:"src/assets/fotos/",
+		medio:"",
+		categorias:[""],
+		descripcion:"",
+		link:""
+	},
+	{ 
+		id: 16,
+		titulo:"",
+		imagen:"src/assets/fotos/",
+		medio:"",
+		categorias:[""],
+		descripcion:"",
+		link:""
+	},
+	{ 
+		id: 17,
+		titulo:"",
+		imagen:"src/assets/fotos/",
+		medio:"",
+		categorias:[""],
+		descripcion:"",
+		link:""
+	},
+	{ 
+		id: 18,
+		titulo:"",
+		imagen:"src/assets/fotos/",
+		medio:"",
+		categorias:[""],
+		descripcion:"",
+		link:""
+	},
+	{ 
+		id: 19,
+		titulo:"",
+		imagen:"src/assets/fotos/",
+		medio:"",
+		categorias:[""],
+		descripcion:"",
+		link:""
+	},
+	{ 
+		id: 20,
+		titulo:"",
+		imagen:"src/assets/fotos/",
+		medio:"",
+		categorias:[""],
+		descripcion:"",
+		link:""
+	},
+	{ 
+		id: ,
+		titulo:"",
+		imagen:"src/assets/fotos/",
+		medio:"",
+		categorias:[""],
+		descripcion:"",
+		link:""
 	}
 ]
