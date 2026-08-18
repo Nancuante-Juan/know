@@ -192,7 +192,7 @@ export const noticias = [
 		link:""
 	},
 	{ 
-		id: ,
+		id: 21,
 		titulo:"",
 		imagen:"src/assets/fotos/",
 		medio:"",
