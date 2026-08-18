@@ -20,7 +20,37 @@ export function obt_CATEGORIAS(){
 
 export function guar_MEDIOS(val)     { localStorage.setItem(MED_KEY, val); }
 export function guar_CATEGORIAS(val) { localStorage.setItem(CAT_KEY, val); }
+const LEC_KEY = "Lectura";
 
+export function obt_LECTURA(){
+	const def = {
+		tamano: 1,
+		interlineado: 1.25,
+		espCaracteres: 100,
+		espPalabras: 100,
+		verImagenes: true,
+		colorTexto: "#000000",
+		colorFondo: "#ffffff",
+	};
+	const dat = obtener_datos(LEC_KEY, JSON.stringify(def));
+	return JSON.parse(dat);
+}
+
+export function guar_LECTURA(val){
+	localStorage.setItem(LEC_KEY, JSON.stringify(val));
+	aplicar_LECTURA();
+}
+
+export function aplicar_LECTURA(){
+	const lectura = obt_LECTURA();
+	const raiz = document.documentElement.style;
+	raiz.setProperty("--lectura-tamano", lectura.tamano + "rem");
+	raiz.setProperty("--lectura-interlineado", lectura.interlineado);
+	raiz.setProperty("--lectura-esp-caracteres", ((lectura.espCaracteres - 100) * 0.002) + "em");
+	raiz.setProperty("--lectura-esp-palabras", ((lectura.espPalabras - 100) * 0.05) + "em");
+	raiz.setProperty("--lectura-color-texto", lectura.colorTexto);
+	raiz.setProperty("--lectura-color-fondo", lectura.colorFondo);
+}
 
 
 

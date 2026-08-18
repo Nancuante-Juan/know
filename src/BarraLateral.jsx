@@ -1,40 +1,31 @@
-import { useState } from "react";
-import "./main.css";
- 
-const AJUSTES = [
-	{ titulo: "Perfil", detalle: "Nombre, foto, datos" },
-	{ titulo: "Notificaciones", detalle: "Alertas y sonidos" },
-	{ titulo: "Privacidad", detalle: "Visibilidad y datos" },
-	{ titulo: "Seguridad", detalle: "Contraseña, 2FA" },
-	{ titulo: "Idioma", detalle: "Español (AR)" },
-	{ titulo: "Tema", detalle: "Claro / Oscuro" },
-];
- 
-export default function Configuracion() {
- 
-	const [abierto, setAbierto] = useState(false);
-	const [seleccionado, setSeleccionado] = useState(null);
- 
+import { Link, useLocation } from "react-router";
+
+export default function BarraLateral() {
+	const location = useLocation();
+	const ruta = location.pathname;
+
 	return (
-		<div className="fixed top-5 right-5 flex flex-col items-end gap-2.5">
-			<button className="bg-neutral-800 text-white px-4 py-2 rounded-md" onClick={() => setAbierto(!abierto)}>
-				- Configuración
-			</button>
- 
-			{abierto && (
-				<div className="w-[258px] max-h-[80vh] bg-neutral-100 border border-neutral-300 rounded-md p-3 flex flex-col gap-[10px] overflow-y-auto">
-					{AJUSTES.map((item) => (
-						<div
-							key={item.titulo}
-							onClick={() => setSeleccionado(seleccionado === item.titulo ? null : item.titulo)}
-							className={"bg-white border border-neutral-300 rounded-lg p-3 cursor-pointer transition-transform " + (seleccionado === item.titulo ? "scale-[1.15] z-10 rectangulo-seleccionado" : "")}
-						>
-							<div className="font-semibold">{item.titulo}</div>
-							<div className="text-sm text-neutral-500">{item.detalle}</div>
-						</div>
-					))}
-				</div>
-			)}
+		<div className="flex flex-col px-4 pt-8 min-w-56 text-gris">
+			<Link to="/" className="flex gap-2 items-center Fonts-DMSerif text-2xl mb-8">
+				{"<— Volver"}
+			</Link>
+			<div className="flex flex-col gap-2 text-xl">
+				<BotonLateral texto="Suscripciones" link="/ConfigSuscripciones" activado={ruta === "/ConfigSuscripciones"} />
+				<BotonLateral texto="Categorías" link="/ConfigCategorias" activado={ruta === "/ConfigCategorias"} />
+				<BotonLateral texto="Lectura" link="/Config" activado={ruta === "/Config"} />
+			</div>
 		</div>
 	);
+}
+
+function BotonLateral({texto, link, activado = false}) {
+	if (activado) { return (
+		<Link to={link} className="flex gap-2 items-center font-black" style={{color: "var(--rojo)"}}>
+			— {texto}
+		</Link>
+	); } else { return (
+		<Link to={link} className="flex gap-2 items-center text-gris hover:no-underline">
+			· {texto}
+		</Link>
+	); }
 }
