@@ -31,9 +31,6 @@ export default function ConfigLectura() {
 						<select>
 							<option>Inter</option>
 						</select>
-						<select>
-							<option>Regular</option>
-						</select>
 					</div>
 				</div>
 

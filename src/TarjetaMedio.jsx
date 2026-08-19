@@ -1,10 +1,9 @@
 export default function TarjetaMedio({nombre, icono, descripcion, categorias, suscrito = false, onClick}) {
 	return (
-		<div className="flex flex-col max-w-120 w-full min-w-1/3 gap-2 border-2 p-4" style={{borderColor: "var(--gris)"}}>
+		<div className="flex flex-col w-full min-w-1/3 gap-2 border-2 p-4" style={{borderColor: "var(--gris)"}}>
 			<div className="flex justify-between items-center">
 				<div className="flex gap-2 items-center">
 					{icono && <img src={`/${icono}`} className="h-6" />}
-					<p className="Fonts-RobotoC font-black text-xl">{nombre}</p>
 				</div>
 				<button onClick={onClick} className="px-3 py-1 text-sm text-white" style={{backgroundColor: suscrito ? "var(--gris)" : "var(--rojo)"}}>
 					{suscrito ? "− Dejar" : "+ Suscribirse"}
