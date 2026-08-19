@@ -35,15 +35,21 @@ export default function ConfigLectura() {
 				</div>
 
 				<Slider nombre="Tamaño de texto" min={0.5} max={2} step={0.25} value={lectura.tamano} onChange={e => actualizar("tamano", Number(e.target.value))}/>
+				
 				<Slider nombre="Espaciado entre líneas" min={0.75} max={1.75} step={0.25} value={lectura.interlineado} onChange={e => actualizar("interlineado", Number(e.target.value))}/>
+				
 				<Slider nombre="Espacio entre caractéres" append="%" min={80} max={120} step={20} value={lectura.espCaracteres} onChange={e => actualizar("espCaracteres", Number(e.target.value))}/>
+				
 				<Slider nombre="Espacio entre palabras" append="%" min={80} max={120} step={20} value={lectura.espPalabras} onChange={e => actualizar("espPalabras", Number(e.target.value))}/>
-				<Slider nombre="Ancho de página" append="%" min={40} max={100} step={20}/>
+				
+				<Slider nombre="Ancho de página" append="%" min={40} max={100} step={20} value={lectura.anchoPag} onChange={e => actualizar("anchoPag", Number(e.target.value))}/>
 				
 				<div className="flex gap-2 items-center max-w-120 w-full min-w-1/2">
 					<input type="checkbox" id="Ver imgs" checked={lectura.verImagenes} onChange={e => actualizar("verImagenes", e.target.checked)}/>
 					<label className="w-full" for="Ver imgs">Ver imágenes</label>
 				</div>
+				
+				<button onClick={restablecerTexto} className="bg-black text-white px-4 py-2 w-fit mt-2 ">Restablecer texto</button>
 			</div>
 
 			<div className="flex flex-col gap-2">
@@ -64,8 +70,7 @@ export default function ConfigLectura() {
 					<label className="w-full" for="Fondo papel">Fondo con textura</label>
 				</div>
 
-				<button onClick={restablecerColores} className="bg-amarillo px-3 py-1 w-fit mt-2 border-2 border-black underline font-black">Restablecer colores</button>
-				<button onClick={restablecerTexto} className="bg-black text-white px-3 py-1 w-fit mt-2 border-2 border-black underline font-black">Restablecer texto</button>
+				<button onClick={restablecerColores} className="bg-amarillo px-4 py-2 w-fit mt-2">Restablecer colores</button>
 			</div>
 		</div>
 	);

@@ -48,7 +48,7 @@ export default function Noticia () {
 			</div>
 			
 			<div className="flex flex-row" style={{backgroundColor: "var(--lectura-color-fondo)"}}>
-				<div className="w-full sticky h-full max-h-screen noticia n-barra-lateral n-bl-izquierda">
+				<div className="sticky h-full top-0 max-h-screen noticia n-barra-lateral n-bl-izquierda">
 					
 				</div>
 				
@@ -60,7 +60,7 @@ export default function Noticia () {
 					
 				</div>
 				
-				<div className="w-full sticky top-0 h-fit justify-end noticia n-barra-lateral n-bl-derecha">
+				<div className="sticky h-fit top-0 justify-end noticia n-barra-lateral n-bl-derecha">
 					<img className="h-16 p-4" src={`/${"src/assets/icons/styles24.svg"}`}/>
 				</div>
 			</div>

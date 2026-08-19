@@ -31,6 +31,7 @@ export function obt_LECTURA(){
 		verImagenes: true,
 		colorTexto: "#000000",
 		colorFondo: "#ffffff",
+		anchoPag: 60,
 	};
 	const dat = obtener_datos(LEC_KEY, JSON.stringify(def));
 	return JSON.parse(dat);
@@ -42,15 +43,15 @@ export function guar_LECTURA(val){
 }
 
 export function aplicar_LECTURA(){
-	const lectura = obt_LECTURA();
+	const conf = obt_LECTURA();
 	const raiz = document.documentElement.style;
-	raiz.setProperty("--lectura-tamano", lectura.tamano + "rem");
-	raiz.setProperty("--lectura-interlineado", lectura.interlineado);
-	raiz.setProperty("--lectura-esp-caracteres", ((lectura.espCaracteres - 100) * 0.002) + "em");
-	raiz.setProperty("--lectura-esp-palabras", ((lectura.espPalabras - 100) * 0.002) + "em");
-	raiz.setProperty("--lectura-color-texto", lectura.colorTexto);
-	raiz.setProperty("--lectura-color-fondo", lectura.colorFondo);
-	raiz.setProperty("--lectura-ancho-pagina", lectura.colorFondo);
+	raiz.setProperty("--lectura-tamano", conf.tamano + "rem");
+	raiz.setProperty("--lectura-interlineado", conf.interlineado);
+	raiz.setProperty("--lectura-esp-caracteres", ((conf.espCaracteres - 100) * 0.002) + "em");
+	raiz.setProperty("--lectura-esp-palabras", ((conf.espPalabras - 100) * 0.002) + "em");
+	raiz.setProperty("--lectura-color-texto", conf.colorTexto);
+	raiz.setProperty("--lectura-color-fondo", conf.colorFondo);
+	raiz.setProperty("--lectura-ancho-pagina", conf.anchoPag * 0.01);
 	
 }
 
