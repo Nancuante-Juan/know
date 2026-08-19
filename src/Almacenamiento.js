@@ -47,7 +47,7 @@ export function aplicar_LECTURA(){
 	raiz.setProperty("--lectura-tamano", lectura.tamano + "rem");
 	raiz.setProperty("--lectura-interlineado", lectura.interlineado);
 	raiz.setProperty("--lectura-esp-caracteres", ((lectura.espCaracteres - 100) * 0.002) + "em");
-	raiz.setProperty("--lectura-esp-palabras", ((lectura.espPalabras - 100) * 0.05) + "em");
+	raiz.setProperty("--lectura-esp-palabras", ((lectura.espPalabras - 100) * 0.002) + "em");
 	raiz.setProperty("--lectura-color-texto", lectura.colorTexto);
 	raiz.setProperty("--lectura-color-fondo", lectura.colorFondo);
 }

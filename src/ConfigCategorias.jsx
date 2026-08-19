@@ -2,7 +2,7 @@ import { useState } from "react";
 import ChipCategoria from "./ChipCategoria";
 import * as Almac from "./Almacenamiento";
 
-const TODAS_CATEGORIAS = ["Economia", "Sociedad", "Farandula", "Politica", "Deportes", "Clima", "Gaming", "Tecnologia"];
+const TODAS_CATEGORIAS = ["Economia", "Sociedad", "Farandula", "Política", "Deporte", "Clima", "Gaming", "Tecnologia"];
 
 export default function ConfigCategorias() {
 	const [suscritas, setSuscritas] = useState(Almac.obt_CATEGORIAS());

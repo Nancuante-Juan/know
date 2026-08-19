@@ -10,6 +10,16 @@ export default function ConfigLectura() {
 		setLectura(nueva);
 		Almac.guar_LECTURA(nueva);
 	}
+	function restablecerColores() {
+		const nueva = { ...lectura, colorTexto: "#000000", colorFondo: "#ffffff" };
+		setLectura(nueva);
+		Almac.guar_LECTURA(nueva);
+	}
+	function restablecerTexto() {
+		const nueva = { ...lectura, tamano: 1, interlineado: 1.25, espCaracteres: 100, espPalabras: 100, verImagenes: true };
+		setLectura(nueva);
+		Almac.guar_LECTURA(nueva);
+	}
 
 	return(
 		<div className="flex flex-col text-lg w-full">
@@ -56,6 +66,9 @@ export default function ConfigLectura() {
 					<input type="checkbox" id="Fondo papel"/>
 					<label className="w-full" for="Fondo papel">Fondo con textura</label>
 				</div>
+
+				<button onClick={restablecerColores} className="bg-amarillo px-3 py-1 w-fit mt-2 border-2 border-black underline font-black">Restablecer colores</button>
+				<button onClick={restablecerTexto} className="bg-black text-white px-3 py-1 w-fit mt-2 border-2 border-black underline font-black">Restablecer texto</button>
 			</div>
 		</div>
 	);
