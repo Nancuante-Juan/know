@@ -50,6 +50,8 @@ export function aplicar_LECTURA(){
 	raiz.setProperty("--lectura-esp-palabras", ((lectura.espPalabras - 100) * 0.002) + "em");
 	raiz.setProperty("--lectura-color-texto", lectura.colorTexto);
 	raiz.setProperty("--lectura-color-fondo", lectura.colorFondo);
+	raiz.setProperty("--lectura-ancho-pagina", lectura.colorFondo);
+	
 }
 
 

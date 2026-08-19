@@ -1,0 +1,24 @@
+:root {
+	--lectura-ancho-pagina: 60%;
+}
+
+.n-medio {
+	width: calc( 100vw * --lectura-ancho-pagina );
+}
+
+.n-barra-lateral {
+	display: hidden;
+	width: 100%;
+}
+
+@media (min-width: calc( 600px - (100vw * --lectura-ancho-pagina))) {
+	.n-bl-derecha{
+		display: flex;
+	}
+}
+
+@media (min-width: calc( 1200px - (100vw * --lectura-ancho-pagina))) {
+	.n-bl-izquierda{
+		display: flex;
+	}
+}
