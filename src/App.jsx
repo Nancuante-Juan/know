@@ -4,7 +4,7 @@ import * as Recibir from "./RecibirNoticias";
 import * as Almac from "./Almacenamiento";
 
 export default function App() { 
-	
+	Recibir.reset_ya_mostrado();
 	const inicio = Recibir.Filtrado("", 4);
 	const cats = Almac.obt_CATEGORIAS();
 	const cats_noticias = cats.map(cat =>

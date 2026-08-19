@@ -8,6 +8,7 @@ import AutoPortada from "./AutoPortada";
 export default function Categoria(){
 	const params = useParams();
 	const categoria_dominante = params.cat;	
+	Recibir.reset_ya_mostrado();
 	const lista_noticias = Recibir.Filtrado(categoria_dominante);
 	const noticias = lista_noticias.slice(4).map(not =>
 		<AutoPortada noticia={not} />
