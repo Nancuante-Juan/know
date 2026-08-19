@@ -199,5 +199,113 @@ export const noticias = [
 		categorias:["Economia"],
 		descripcion:"Entre instrumentos que dan cobertura cambiaria, menos compra de reservas y las tasas de interés, el Tesoro y el BCRA despliegan una estrategia para evitar una suba del tipo de cambio",
 		link:"https://www.lanacion.com.ar/economia/dolar/todo-lo-que-esta-haciendo-el-gobierno-para-contener-al-dolar-en-1500-nid19082026/"
+	},
+	{ 
+		id: 22,
+		titulo:"Isack Hadjar no correrá en el Gran Premio de los Países Bajos de la Fórmula 1 ",
+		imagen:"src/assets/fotos/la_nacion/foto_8.avif",
+		medio:"La Nacion",
+		categorias:["Deporte"],
+		descripcion:"El piloto francés, de Red Bull, sufrió una lesión y será reemplazado por Liam Lawson, excompañero de Max Verstappen, y actual integrante de Racing Bulls, el segundo equipo de la firma",
+		link:"https://www.lanacion.com.ar/deportes/automovilismo/isack-hadjar-no-correra-en-el-gran-premio-de-los-paises-bajos-de-la-formula-1-nid19082026/"
+	},
+	{ 
+		id: 23,
+		titulo:"Allanan ocho casas por el robo de cobre y secuestran armas de fuego",
+		imagen:"src/assets/fotos/tiempo_sur/foto_4.jpg",
+		medio:"Tiempo Sur",
+		categorias:["Policial"],
+		descripcion:"En simultáneo, se llevaron adelante ocho allanamientos en el marco de una investigación por el robo de cobre en zonas de yacimientos. Los procedimientos culminaron con la detención de un hombre y el secuestro de vehículos, armas, municiones, cables, cobre y otros elementos de interés para la causa.  ",
+		link:"https://www.tiemposur.com.ar/policiales/allanan-ocho-casas-por-el-robo-de-cobre-y-secuestran-armas-de-fuego"
+	},
+	{ 
+		id: 24,
+		titulo:"Construiran nuevos caniles destinados al Grupo de Operaciones Especiales",
+		imagen:"src/assets/fotos/tiempo_sur/foto_5.jpg",
+		medio:"Tiempo Sur",
+		categorias:["Policíal"],
+		descripcion:"Tras la reciente incorporación de nuevos perros a la Policía de Santa Cruz, el gobernador Claudio Vidal asumió el compromiso de construir espacios adecuados para las unidades caninas del GOE Zona Sur y Caleta Olivia. Santa Cruz Puede aportará los materiales necesarios para concretar la iniciativa. ",
+		link:"https://www.tiemposur.com.ar/policiales/construiran-nuevos-caniles-destinados-al-grupo-de-operaciones-especiales"
+	},
+	{ 
+		id: 25,
+		titulo:"scándalo por un hombre que festejó su cumpleaños con una torta  con una esvástica",
+		imagen:"src/assets/fotos/tiempo_sur/foto_6.jpg",
+		medio:"Tiempo Sur",
+		categorias:["Sociedad"],
+		descripcion:"Además, se viralizó una imagen de un niño haciendo el saludo nazi. ",
+		link:"https://www.tiemposur.com.ar/el-pa%C3%ADs/escandalo-por-un-hombre-que-festejo-su-cumpleanos-con-una-torta-con-una-esvastica"
+	},
+	{ 
+		id: 26,
+		titulo:"Un inflable se soltó durante los festejos por el Día del Niño en la provincia de Córdoba",
+		imagen:"src/assets/fotos/tiempo_sur/foto_7.jpg",
+		medio:"Tiempo Sur",
+		categorias:["Sociedad"],
+		descripcion:"El hecho quedó registrado por uno de los asistentes. ",
+		link:"https://www.tiemposur.com.ar/el-pa%C3%ADs/un-inflable-se-solto-durante-los-festejos-por-el-dia-del-nino-en-la-provincia-de-cordoba"
+	},
+	{ 
+		id: 27,
+		titulo:"Wisin anunció la creación de la Universidad del Perreo",
+		imagen:"src/assets/fotos/cronica/foto_2.jpg",
+		medio:"Cronica",
+		categorias:["Sociedad", "Farandula"],
+		descripcion:"El reconocido cantante puertorriqueño lanzó un proyecto educativo ubicado en Puerto Rico para preservar el legado y la historia del reggaetón.",
+		link:"https://www.cronica.com.ar/diarioshow/farandula/wisin-anuncio-la-creacion-de-la-universidad-del-perreo-1851/"
+	},
+	{ 
+		id: 28,
+		titulo:"Los hechos policiales más impactantes que conmueven hoy a Mendoza",
+		imagen:"src/assets/fotos/cronica/foto_3.jpg",
+		medio:"Cronica",
+		categorias:["Policial"],
+		descripcion:"Rescatan con vida dos niños y dos adultos en derrumbe. Manejaba borracho en camioneta robada con patente trucha, un nuevo sismo y más",
+		link:"https://www.cronica.com.ar/policiales/los-hechos-policiales-mas-impactante-que-conmueven-hoy-a-mendoza/"
+	},
+	{ 
+		id: 29,
+		titulo:"River visita a Independiente Santa Fe en una prueba de riesgo por la Copa Sudamericana",
+		imagen:"src/assets/fotos/cronica/foto_4.jpg",
+		medio:"Cronica",
+		categorias:["Deporte"],
+		descripcion:"Con Thiago Almada en el banco de suplentes, River se mide frente a Independiente Santa Fe en el partido de ida de los octavos de final de la Copa Sudamericana 2026.",
+		link:"https://www.cronica.com.ar/depo/copasudamericana/independiente-santa-fe-river-copa-sudamericana-en-vivo-minuto-a-minuto/"
+	},
+	{ 
+		id: 30,
+		titulo:"Fátima Flórez, contundente sobre la pelea entre Lali Espósito y Marcelo Polino:Es un tema",
+		imagen:"src/assets/fotos/cronica/foto_5.jpg",
+		medio:"Cronica",
+		categorias:["Farandula"],
+		descripcion:"La humorista se refirió al enfrentamiento entre la cantante y el periodista y dejó en claro cuál es su postura frente al conflicto. ¡Enterate qué dijo, en la nota! ",
+		link:"https://www.cronica.com.ar/diarioshow/farandula/fatima-florez-contundente-sobre-la-pelea-entre-lali-esposito-y-marcelo-polino-es-un-tema/"
+	},
+	{ 
+		id: 31,
+		titulo:"Jubilados y trabajadores de la salud marcharon al Congreso con el respaldo de la CGT",
+		imagen:"src/assets/fotos/cronica/foto_6.jpg",
+		medio:"Cronica",
+		categorias:["Política"],
+		descripcion:"En una nueva jornada de protestas, manifestantes y fuerzas federales se vieron cara a cara en el Congreso.",
+		link:"https://www.cronica.com.ar/politica/en-vivo-tension-en-la-marcha-de-jubilados-y-trabajadores-de-la-salud/"
+	},
+	{ 
+		id: 32,
+		titulo:"Aumenta la jubilación mínima: ¿Cómo queda en septiembre con el aumento y el bono?",
+		imagen:"src/assets/fotos/cronica/foto_7.jpg",
+		medio:"Cronica",
+		categorias:["Economia"],
+		descripcion:"ANSES confirmó que los jubilados tendrán una actualización en los haberes y, en el caso de las jubilaciones mínimas, el ingreso se verá reforzado por el bono de $70.000.",
+		link:"https://www.cronica.com.ar/sociedad/aumenta-la-jubilacion-minima-como-queda-en-septiembre-con-el-aumento-y-el-bono/"
+	},
+	{ 
+		id: 33,
+		titulo:"",
+		imagen:"src/assets/fotos/",
+		medio:"",
+		categorias:[""],
+		descripcion:"",
+		link:""
 	}
 ]
