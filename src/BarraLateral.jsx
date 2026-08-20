@@ -5,9 +5,10 @@ export default function BarraLateral() {
 	const ruta = location.pathname;
 
 	return (
-		<div className="flex flex-col pt-4 min-w-48 text-gris Fonts-RobotoC font-black text-2xl">
-			<Link to="/" className="flex gap-2 items-center text-2xl mb-16 px-2 py-3 hover:bg-black hover:text-white">
-				{"<- Volver"}
+		<div className="lg:flex flex-col min-w-48 text-gris Fonts-RobotoC font-black text-2xl hidden sticky top-[calc(52px+8rem)]">
+			<Link to="/" className="flex gap-2 items-center text-2xl mb-8 px-2 py-3 hover:bg-black hover:text-white">
+				<img src={`/${"src/assets/icons/back_gris24.svg"}`} color="white" />
+				Volver
 			</Link>
 			<div className="flex flex-col ">
 				<BotonLateral texto="Suscripciones" link="/ConfigSuscripciones" activado={ruta === "/ConfigSuscripciones"} />

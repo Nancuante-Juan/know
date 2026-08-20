@@ -31,7 +31,7 @@ export default function ConfigMedios() {
 	}
 
 	return (
-		<div className="flex flex-col text-lg w-full gap-8 md:grid md:grid-cols-2">
+		<div className="flex flex-col text-lg w-full gap-16 md:grid md:grid-cols-2">
 			<div className="flex flex-col gap-4">
 				<h1>Suscrito</h1>
 				<div className="flex flex-wrap gap-4">
