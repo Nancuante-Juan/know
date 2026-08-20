@@ -25,13 +25,14 @@ const LEC_KEY = "Lectura";
 export function obt_LECTURA(){
 	const def = {
 		tamano: 1,
-		interlineado: 1.25,
+		interlineado: 1.75,
+		espParrafos: 100,
 		espCaracteres: 100,
 		espPalabras: 100,
+		anchoPag: 60,
 		verImagenes: true,
 		colorTexto: "#000000",
 		colorFondo: "#ffffff",
-		anchoPag: 60,
 		fondoTextura: false,
 	};
 	const dat = obtener_datos(LEC_KEY, JSON.stringify(def));

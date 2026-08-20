@@ -1,4 +1,6 @@
+@import url("fonts.css");
 @import "tailwindcss";
+
 :root {
 	--amarillo: #F7FF00;
 	--gris: #999999;
@@ -66,35 +68,6 @@ input[type="checkbox"] {
 	border-radius: 0px;
 	border: 2px solid var(--gris);
 }
-
-/***********/
-/* FUENTES */
-/***********/
-@font-face {
-	font-family: "Roboto Condensed";
-	font-style: normal;
-	font-weight: 100 900;
-	font-stretch: 100%;
-	src: url("assets/fonts/roboto-condensed.woff2") format("woff2");
-}
-@font-face {
-	font-family: "DM Serif Display";
-	font-style: normal;
-	font-weight: 400;
-	font-stretch: 100%;
-	src: url(assets/fonts/dm-serif-display.woff2) format("woff2");
-}
-@font-face {
-  font-family: Inter Variable;
-  font-style: normal;
-  font-weight: 100 900;
-  font-display: swap;
-  src: url("assets/fonts/InterVariable.woff2") format("woff2");
-}
-
-.Fonts-Inter   { font-family: "Inter Variable", sans-serif; }
-.Fonts-RobotoC { font-family: 'Roboto Condensed', sans-serif; letter-spacing: -3%; line-height: 0.9;}
-.Fonts-DMSerif { font-family: 'DM Serif Display', serif; }
 
 
 /***********/
