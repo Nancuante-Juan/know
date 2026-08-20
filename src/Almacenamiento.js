@@ -5,7 +5,7 @@ const CAT_KEY = "Categorias";
 const MED_KEY = "Medios";
 
 export function obt_MEDIOS(){
-	const def = ["Tiempo Sur", "Olé", "Crónica", "TyC Sports", "La Nacion"];
+	const def = ["Tiempo Sur", "Olé", "Crónica", "TyC Sports", "La Nacion", "CNN", "NuevoDia", "Levelup", "TN" ];
 	const dat = obtener_datos(MED_KEY, def.toString()).split(",");
 	console.log(dat.toString());
 	return dat;
@@ -32,6 +32,7 @@ export function obt_LECTURA(){
 		colorTexto: "#000000",
 		colorFondo: "#ffffff",
 		anchoPag: 60,
+		fondoTextura: false,
 	};
 	const dat = obtener_datos(LEC_KEY, JSON.stringify(def));
 	return JSON.parse(dat);

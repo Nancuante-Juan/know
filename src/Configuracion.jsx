@@ -10,14 +10,18 @@ export default function Configuracion() {
 	const ruta = location.pathname;
 
 	var contenido = <ConfigLectura />;
-	if (ruta === "/ConfigCategorias") { contenido = <ConfigCategorias />; }
-	else if (ruta === "/ConfigSuscripciones") { contenido = <ConfigMedios />; }
+	var titulo = "Lectura";
+	if (ruta === "/ConfigCategorias") { contenido = <ConfigCategorias />; titulo = "Categorías"; }
+	else if (ruta === "/ConfigSuscripciones") { contenido = <ConfigMedios />; titulo = "Suscripciones"; }
 	return (
 		<div className="flex flex-col">
 			<BarraNavegacion />
 			<div className="flex flex-row">
 				<BarraLateral />
-				{contenido}
+				<div className="flex flex-col w-full">
+					<p className="Fonts-DMSerif text-8xl pt-4">{titulo}</p>
+					{contenido}
+				</div>
 			</div>
 		</div>
 	);

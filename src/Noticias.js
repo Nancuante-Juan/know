@@ -15,7 +15,7 @@ export const noticias = [
 		id: 1,
 		titulo: "Santa Cruz se prepara para un fin de semana con lluvias y temperaturas bajo cero",
 		imagen: "src/assets/fotos/tiempo_sur/foto_1_main1.jpg",
-		medio: "TiempoSur",
+		medio: "Tiempo Sur",
 		categorias: ["Clima"],
 		descripcion: "El Departamento de Meteorología y Climatología de la Administración General de Vialidad Provincial (AGVP),anticipa un...",
 		link: "https://www.tiemposur.com.ar/info-general/santa-cruz-se-prepara-para-un-fin-de-semana-con-lluvias-y-temperaturas-bajo-cero"
@@ -78,7 +78,7 @@ export const noticias = [
 		id: 8,
 		titulo:"Milei volverá al Congreso para presentar el Presupuesto 2027",
 		imagen:"src/assets/fotos/tiempo_sur/foto_3.jpg",
-		medio:"TiempoSur",
+		medio:"Tiempo Sur",
 		categorias:["Política"],
 		descripcion:"El Presidente expondrá el 15 de septiembre ante la Cámara de Diputados los lineamientos de la denominada “ley de leyes”. El Gobierno buscará asegurar su aprobación antes del inicio del año electoral, en una discusión que volverá a poner en el centro la relación con las provincias y el debate sobre las PASO.",
 		link:"https://www.tiemposur.com.ar/politica/milei-volvera-al-congreso-para-presentar-el-presupuesto-2027"

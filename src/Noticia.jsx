@@ -47,7 +47,7 @@ export default function Noticia () {
 				<div className="flex flex-col w-full max-h-0 justify-end"><div className="desenfoque-prog w-full ideal-h-noticia" /></div>
 			</div>
 			
-			<div className="flex flex-row" style={{backgroundColor: "var(--lectura-color-fondo)"}}>
+			<div className="flex flex-row bg-repeat" style={Almac.obt_LECTURA().fondoTextura ? {backgroundColor: "var(--lectura-color-fondo)", backgroundImage: "url(/src/assets/ruido.png)"} : {backgroundColor: "var(--lectura-color-fondo)"}}>
 				<div className="sticky h-full top-0 max-h-screen noticia n-barra-lateral n-bl-izquierda">
 					
 				</div>

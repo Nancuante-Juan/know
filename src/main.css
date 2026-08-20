@@ -101,6 +101,9 @@ input[type="checkbox"] {
 /* COLORES */
 /***********/
 .bg-amarillo { background-color: var(--amarillo); color: #000000;}
+.bg-gris     { background-color: var(--gris); color: #ffffff;}
+.line-gris   { border: solid var(--gris) 2px;}
+
 .text-gris { color: var(--gris);}
 .bg-amarillo-hover:hover { background-color: var(--amarillo); color: #000000; text-decoration: none;}
 .hover-parent:hover > .bg-amarillo-hover { background-color: var(--amarillo); color: #000000; text-decoration: none;}
@@ -167,5 +170,13 @@ h1{
 	letter-spacing: var(--lectura-esp-caracteres);
 	word-spacing: var(--lectura-esp-palabras);
 	color: var(--lectura-color-texto);
-	background-color: var(--lectura-color-fondo);
+	/*borrar background:
+	si en algún momento futuro alguien reutiliza .NOTICIA_CONTENT en otro componente
+	 que no esté dentro de ese contenedor con fondo (por ejemplo, si deciden mostrar 
+	 una vista previa del artículo en otra pantalla), ese texto quedaría sobre el fondo que 
+	 sea que herede de más arriba en la cadena (blanco por defecto del navegador, 
+	 o negro si está dentro de algún contenedor con bg-black como los que 
+	 ya existen en App.jsx/Categoria.jsx) — y ahí sí podría haber un problema de contraste si el color de 
+	texto elegido por el usuario no combina bien con ese fondo heredado inesperado.*/
+	/* Dejo esto por si las dudas antes de eliminar el "background-color: var(--lectura-color-fondo);" porque no dejaba la textura pasar por encima del texto de la noticia*/
 }

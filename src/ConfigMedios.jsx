@@ -8,8 +8,10 @@ const INFO_MEDIOS = {
 	"Crónica":       { icono: "src/assets/icons/iconos_medios/Cronica-logo.png", descripcion: "Últimas noticias de Neuquén, Río Negro y la Patagonia Argentina.", categorias: ["Policiales", "Politica", "Sociedad", "Salud"] },
 	"TyC Sports":    { icono: "src/assets/icons/iconos_medios/Tycsports-logo.png", descripcion: "Toda la información sobre fútbol, básquet y el resto de las disciplinas.", categorias: ["Deportes"] },
 	"La Nacion":     { icono: "src/assets/icons/iconos_medios/LaNacion-logo.webp", descripcion: "Las últimas noticias de la Argentina y del mundo en tiempo real.", categorias: ["Economia", "Sociedad", "Farandula", "Politica", "Deportes"] },
-	"El Economista": { icono: "src/assets/icons/iconos_medios/ElEconomista-logo.png", descripcion: "Últimas noticias sobre la economía argentina y del mundo.", categorias: ["Economia", "Sociedad", "Politica", "Tecnologia"] },
-	"Río Negro":     { icono: "src/assets/icons/iconos_medios/RioNegro-logo.webp", descripcion: "Últimas noticias de Neuquén, Río Negro y la Patagonia Argentina.", categorias: ["Economia", "Deportes", "Turismo", "Politica", "Policiales"] },
+	"CNN":           { icono: "src/assets/icons/iconos_medios/CNN-logo.png", descripcion: "Cobertura internacional en español, con foco en ciencia, tecnología y grandes historias globales.", categorias: ["Ciencia", "Tecnologia", "Deporte"] },
+	"NuevoDia":      { icono: "src/assets/icons/iconos_medios/NuevoDia-logo.png", descripcion: "El diario de Río Gallegos con la actualidad deportiva y el clima de la región.", categorias: ["Deporte", "Clima"] },
+	"Levelup":       { icono: "src/assets/icons/iconos_medios/Levelup-logo.png", descripcion: "Ofertas, lanzamientos y novedades del mundo de los videojuegos.", categorias: ["Gaming"] },
+	"TN":            { icono: "src/assets/icons/iconos_medios/TN-logo.png", descripcion: "Todo Noticias: la actualidad política, económica y social de Argentina, minuto a minuto.", categorias: ["Politica", "Economia", "Sociedad"] },
 };
 
 export default function ConfigMedios() {
