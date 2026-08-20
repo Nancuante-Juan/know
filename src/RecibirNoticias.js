@@ -37,7 +37,7 @@ export function Filtrado(categoria = "", limite) {
 		final.push(noticias[i]);
 		ya_mostrado.push(noticias[i].id);
 		debug = debug + noticias[i].titulo;
-		if (limite == undefined){
+		if (limite != undefined){
 			if (final.length >= limite){
 				break;
 			}

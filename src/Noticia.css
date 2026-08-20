@@ -1,0 +1,26 @@
+:root {
+	--lectura-ancho-pagina: 0.6;
+}
+
+.n-medio {
+	width: calc(100vw * var(--lectura-ancho-pagina));
+}
+
+.n-medio > img { width: calc(100vw * var(--lectura-ancho-pagina)); }
+
+.n-barra-lateral {
+	display: none;
+	width: 100%;
+}
+
+@media (min-width: calc( 100vw + 600px - (100vw * var(--lectura-ancho-pagina)))) {
+	.n-bl-derecha{
+		display: flex !important;
+	}
+}
+
+@media (min-width: calc( 100vw + 1200px - (100vw * var(--lectura-ancho-pagina)))) {
+	.n-bl-izquierda{
+		display: flex !important;
+	}
+}

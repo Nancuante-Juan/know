@@ -4,6 +4,7 @@ import BarraNavegación from "./BarraNavegacion";
 import * as Recibir from "./Noticias";
 import PersonalizarLectura from "./PersonalizarLecturaPopup";
 import * as Almac from "./Almacenamiento";
+import "./Noticia.css";
 
 export default function Noticia () {
 	const params = useParams();
@@ -46,12 +47,12 @@ export default function Noticia () {
 				<div className="flex flex-col w-full max-h-0 justify-end"><div className="desenfoque-prog w-full ideal-h-noticia" /></div>
 			</div>
 			
-			<div className="flex flex-row" style={{backgroundColor: "var(--lectura-color-fondo)"}}>
-				<div className="w-full sticky h-full max-h-screen hidden lg:flex">
+			<div className="flex flex-row bg-repeat" style={Almac.obt_LECTURA().fondoTextura ? {backgroundColor: "var(--lectura-color-fondo)", backgroundImage: "url(/src/assets/ruido.png)"} : {backgroundColor: "var(--lectura-color-fondo)"}}>
+				<div className="sticky h-full top-0 max-h-screen noticia n-barra-lateral n-bl-izquierda">
 					
 				</div>
 				
-				<div className="w-1000 select-text NOTICIA_CONTENT">
+				<div className="p-4 select-text NOTICIA_CONTENT noticia n-medio">
 					<div>{NOTI_INFO.medio + " ⋅ " + NOTI_INFO.categorias}</div>
 					<div className="md:hidden">{NOTI_INFO.descripcion}</div>
 					
@@ -59,7 +60,7 @@ export default function Noticia () {
 					
 				</div>
 				
-				<div className="w-full sticky top-0 h-fit hidden xl:flex justify-end">
+				<div className="sticky h-fit top-0 justify-end noticia n-barra-lateral n-bl-derecha">
 					<img className="h-16 p-4" src={`/${"src/assets/icons/styles24.svg"}`}/>
 				</div>
 			</div>
