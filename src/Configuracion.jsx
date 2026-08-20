@@ -9,17 +9,17 @@ export default function Configuracion() {
 	const location = useLocation();
 	const ruta = location.pathname;
 
-	var contenido = <ConfigLectura />;
+	var contenido = <ConfigLectura completo={true} />;
 	var titulo = "Lectura";
 	if (ruta === "/ConfigCategorias") { contenido = <ConfigCategorias />; titulo = "Categorías"; }
 	else if (ruta === "/ConfigSuscripciones") { contenido = <ConfigMedios />; titulo = "Suscripciones"; }
 	return (
 		<div className="flex flex-col">
 			<BarraNavegacion />
-			<div className="flex flex-row">
+			<div className="flex flex-row px-4 py-8 gap-8">
 				<BarraLateral />
 				<div className="flex flex-col w-full">
-					<p className="Fonts-DMSerif text-8xl pt-4">{titulo}</p>
+					<p className="Fonts-DMSerif text-8xl pb-4">{titulo}</p>
 					{contenido}
 				</div>
 			</div>

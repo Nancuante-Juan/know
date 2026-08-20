@@ -10,10 +10,10 @@ export default function Slider({nombre, append = "", min, max, step, value, onCh
 	);
 	
 	return(
-		<div className="flex flex-col max-w-120 min-w-1/3 w-full">
+		<div className="flex flex-col min-w-1/3 w-full">
 			{nombre}:
 			<input type="range" min={min} max={max} step={step} value={value} onChange={onChange} />
-			<div className="flex justify-between text-gris -mx-2">
+			<div className="flex text-sm justify-between text-gris -mx-2">
 				{numeros_html}
 			</div>
 		</div>

@@ -4,6 +4,8 @@
 import * as Notis from "./Noticias"
 import * as Almac from "./Almacenamiento"
 
+var ya_mostrado = [];
+
 export function Todo() {
 	return(Notis.noticias)
 }
@@ -24,12 +26,16 @@ export function Filtrado(categoria = "", limite) {
 			}
 		}
 		
-		
 		if (!Almac.obt_MEDIOS().includes(noticias[i].medio)) {
 			continue;
 		}
 
+		if (ya_mostrado.includes(noticias[i].id)) {
+			continue;
+		}
+
 		final.push(noticias[i]);
+		ya_mostrado.push(noticias[i].id);
 		debug = debug + noticias[i].titulo;
 		if (limite != undefined){
 			if (final.length >= limite){
@@ -39,4 +45,8 @@ export function Filtrado(categoria = "", limite) {
 	}
 
 	return(final);
+}
+
+export function reset_ya_mostrado() {
+	ya_mostrado = [-1,];
 }

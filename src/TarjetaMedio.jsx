@@ -5,14 +5,14 @@ export default function TarjetaMedio({nombre, icono, descripcion, categorias, su
 				<div className="flex gap-2 items-center">
 					{icono && <img src={`/${icono}`} className="h-6" />}
 				</div>
-				<button onClick={onClick} className="px-3 py-1 text-sm text-white" style={{backgroundColor: suscrito ? "var(--gris)" : "var(--rojo)"}}>
+				<button onClick={onClick} className="px-3 py-1 text-md text-white" style={{backgroundColor: suscrito ? "var(--gris)" : "var(--rojo)"}}>
 					{suscrito ? "− Dejar" : "+ Suscribirse"}
 				</button>
 			</div>
-			<p className="text-gris">{descripcion}</p>
+			<p className="">{descripcion}</p>
 			<div className="flex flex-wrap gap-2 text-sm">
 				{categorias.map(cat =>
-					<div className="border-2 px-2" style={{borderColor: "var(--gris)"}}>{cat}</div>
+					<div className="border-2 px-2 py-1 text-gris" style={{borderColor: "var(--gris)"}}>{cat}</div>
 				)}
 			</div>
 		</div>

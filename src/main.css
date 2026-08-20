@@ -1,8 +1,11 @@
+@import url("fonts.css");
 @import "tailwindcss";
+
 :root {
 	--amarillo: #F7FF00;
 	--gris: #999999;
 	--rojo: #EA102D;
+	--text-sm: 0.95rem;
 	--lectura-tamano: 1rem;
 	--lectura-interlineado: 1.25;
 	--lectura-esp-caracteres: 0em;
@@ -66,35 +69,6 @@ input[type="checkbox"] {
 	border-radius: 0px;
 	border: 2px solid var(--gris);
 }
-
-/***********/
-/* FUENTES */
-/***********/
-@font-face {
-	font-family: "Roboto Condensed";
-	font-style: normal;
-	font-weight: 100 900;
-	font-stretch: 100%;
-	src: url("assets/fonts/roboto-condensed.woff2") format("woff2");
-}
-@font-face {
-	font-family: "DM Serif Display";
-	font-style: normal;
-	font-weight: 400;
-	font-stretch: 100%;
-	src: url(assets/fonts/dm-serif-display.woff2) format("woff2");
-}
-@font-face {
-  font-family: Inter Variable;
-  font-style: normal;
-  font-weight: 100 900;
-  font-display: swap;
-  src: url("assets/fonts/InterVariable.woff2") format("woff2");
-}
-
-.Fonts-Inter   { font-family: "Inter Variable", sans-serif; }
-.Fonts-RobotoC { font-family: 'Roboto Condensed', sans-serif; letter-spacing: -3%; line-height: 0.9;}
-.Fonts-DMSerif { font-family: 'DM Serif Display', serif; }
 
 
 /***********/
@@ -179,4 +153,10 @@ h1{
 	 ya existen en App.jsx/Categoria.jsx) — y ahí sí podría haber un problema de contraste si el color de 
 	texto elegido por el usuario no combina bien con ese fondo heredado inesperado.*/
 	/* Dejo esto por si las dudas antes de eliminar el "background-color: var(--lectura-color-fondo);" porque no dejaba la textura pasar por encima del texto de la noticia*/
+}
+
+.btn-barra-lateral > .hover-parent{ transition: 200ms; }
+.btn-barra-lateral:hover > .hover-parent{
+	background-color: #ffffff;
+	width: 1rem;
 }
