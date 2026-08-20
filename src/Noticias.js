@@ -249,7 +249,7 @@ export const noticias = [
 		id: 27,
 		titulo:"Wisin anunció la creación de la Universidad del Perreo",
 		imagen:"src/assets/fotos/cronica/foto_2.jpg",
-		medio:"Cronica",
+		medio:"Crónica",
 		categorias:["Sociedad", "Farandula"],
 		descripcion:"El reconocido cantante puertorriqueño lanzó un proyecto educativo ubicado en Puerto Rico para preservar el legado y la historia del reggaetón.",
 		link:"https://www.cronica.com.ar/diarioshow/farandula/wisin-anuncio-la-creacion-de-la-universidad-del-perreo-1851/"
@@ -258,7 +258,7 @@ export const noticias = [
 		id: 28,
 		titulo:"Los hechos policiales más impactantes que conmueven hoy a Mendoza",
 		imagen:"src/assets/fotos/cronica/foto_3.jpg",
-		medio:"Cronica",
+		medio:"Crónica",
 		categorias:["Policial"],
 		descripcion:"Rescatan con vida dos niños y dos adultos en derrumbe. Manejaba borracho en camioneta robada con patente trucha, un nuevo sismo y más",
 		link:"https://www.cronica.com.ar/policiales/los-hechos-policiales-mas-impactante-que-conmueven-hoy-a-mendoza/"
@@ -267,7 +267,7 @@ export const noticias = [
 		id: 29,
 		titulo:"River visita a Independiente Santa Fe en una prueba de riesgo por la Copa Sudamericana",
 		imagen:"src/assets/fotos/cronica/foto_4.jpg",
-		medio:"Cronica",
+		medio:"Crónica",
 		categorias:["Deporte"],
 		descripcion:"Con Thiago Almada en el banco de suplentes, River se mide frente a Independiente Santa Fe en el partido de ida de los octavos de final de la Copa Sudamericana 2026.",
 		link:"https://www.cronica.com.ar/depo/copasudamericana/independiente-santa-fe-river-copa-sudamericana-en-vivo-minuto-a-minuto/"
@@ -276,7 +276,7 @@ export const noticias = [
 		id: 30,
 		titulo:"Fátima Flórez, contundente sobre la pelea entre Lali Espósito y Marcelo Polino:Es un tema",
 		imagen:"src/assets/fotos/cronica/foto_5.jpg",
-		medio:"Cronica",
+		medio:"Crónica",
 		categorias:["Farandula"],
 		descripcion:"La humorista se refirió al enfrentamiento entre la cantante y el periodista y dejó en claro cuál es su postura frente al conflicto. ¡Enterate qué dijo, en la nota! ",
 		link:"https://www.cronica.com.ar/diarioshow/farandula/fatima-florez-contundente-sobre-la-pelea-entre-lali-esposito-y-marcelo-polino-es-un-tema/"
@@ -285,7 +285,7 @@ export const noticias = [
 		id: 31,
 		titulo:"Jubilados y trabajadores de la salud marcharon al Congreso con el respaldo de la CGT",
 		imagen:"src/assets/fotos/cronica/foto_6.jpg",
-		medio:"Cronica",
+		medio:"Crónica",
 		categorias:["Política"],
 		descripcion:"En una nueva jornada de protestas, manifestantes y fuerzas federales se vieron cara a cara en el Congreso.",
 		link:"https://www.cronica.com.ar/politica/en-vivo-tension-en-la-marcha-de-jubilados-y-trabajadores-de-la-salud/"
@@ -294,7 +294,7 @@ export const noticias = [
 		id: 32,
 		titulo:"Aumenta la jubilación mínima: ¿Cómo queda en septiembre con el aumento y el bono?",
 		imagen:"src/assets/fotos/cronica/foto_7.jpg",
-		medio:"Cronica",
+		medio:"Crónica",
 		categorias:["Economia"],
 		descripcion:"ANSES confirmó que los jubilados tendrán una actualización en los haberes y, en el caso de las jubilaciones mínimas, el ingreso se verá reforzado por el bono de $70.000.",
 		link:"https://www.cronica.com.ar/sociedad/aumenta-la-jubilacion-minima-como-queda-en-septiembre-con-el-aumento-y-el-bono/"
