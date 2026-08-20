@@ -70,6 +70,9 @@ input[type="checkbox"] {
 	border: 2px solid var(--gris);
 }
 
+button {
+	text-align: start;
+}
 
 /***********/
 /* COLORES */

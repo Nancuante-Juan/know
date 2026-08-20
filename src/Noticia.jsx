@@ -6,6 +6,8 @@ import PersonalizarLectura from "./PersonalizarLecturaPopup";
 import * as Almac from "./Almacenamiento";
 import "./Noticia.css";
 
+
+
 export default function Noticia () {
 	const params = useParams();
 	const id = params.noti;
@@ -13,6 +15,9 @@ export default function Noticia () {
 
 	const [text, setText] = useState(null);
 	
+	const [panel_mostrar, setPanel_mostrar] = useState(false);
+
+	function ocultar() { setPanel_mostrar(false); }
 	
 	async function get_text(id){
 		const module = await import(`./assets/noticias/${id}.jsx`);
@@ -61,11 +66,13 @@ export default function Noticia () {
 				</div>
 				
 				<div className="sticky h-fit top-0 justify-end noticia n-barra-lateral n-bl-derecha">
-					<img className="h-16 p-4" src={`/${"src/assets/icons/styles24.svg"}`}/>
+					<button className="p-4" onClick={e => setPanel_mostrar(true)}>
+						<img className="h-8" src={`/${"src/assets/icons/styles24.svg"}`}/>
+					</button>
 				</div>
 			</div>
 			
-			<PersonalizarLectura />
+			<PersonalizarLectura mostrar={panel_mostrar} ocultar={ocultar} />
 		</div>
 	);
 }

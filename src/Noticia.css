@@ -3,23 +3,23 @@
 }
 
 .n-medio {
-	width: calc(100vw * var(--lectura-ancho-pagina));
+	min-width: calc(100vw * var(--lectura-ancho-pagina));
 }
 
-.n-medio > img { width: calc(100vw * var(--lectura-ancho-pagina)); }
+.n-medio > img { min-width: calc(100vw * var(--lectura-ancho-pagina)); }
 
 .n-barra-lateral {
-	display: none;
+	display: hidden;
 	width: 100%;
 }
 
-@media (min-width: calc( 100vw + 600px - (100vw * var(--lectura-ancho-pagina)))) {
+@media (min-width: calc( 100vw + 200px - (100vw * var(--lectura-ancho-pagina)))) {
 	.n-bl-derecha{
 		display: flex !important;
 	}
 }
 
-@media (min-width: calc( 100vw + 1200px - (100vw * var(--lectura-ancho-pagina)))) {
+@media (min-width: calc( 100vw + 400px - (100vw * var(--lectura-ancho-pagina)))) {
 	.n-bl-izquierda{
 		display: flex !important;
 	}
