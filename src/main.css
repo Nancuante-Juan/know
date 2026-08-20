@@ -153,3 +153,9 @@ h1{
 	texto elegido por el usuario no combina bien con ese fondo heredado inesperado.*/
 	/* Dejo esto por si las dudas antes de eliminar el "background-color: var(--lectura-color-fondo);" porque no dejaba la textura pasar por encima del texto de la noticia*/
 }
+
+.btn-barra-lateral > .hover-parent{ transition: 200ms; }
+.btn-barra-lateral:hover > .hover-parent{
+	background-color: #ffffff;
+	width: 1rem;
+}

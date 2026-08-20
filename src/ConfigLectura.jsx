@@ -44,7 +44,7 @@ export default function ConfigLectura({completo = false}) {
 					Restablecer
 				</button>
 			</div>
-			<div className={"flex gap-y-4 gap-x-16"+completo}>
+			<div className={"flex flex-col gap-y-4 gap-x-16" + completo}>
 				<div className="flex flex-col w-full min-w-1/3">
 					Tipografía:
 					<div className="flex gap-4">

@@ -20,12 +20,12 @@ export default function BarraLateral() {
 
 function BotonLateral({texto, link, activado = false}) {
 	if (activado) { return (
-		<Link to={link} className="flex gap-2 items-center px-2 py-3" style={{color: "var(--rojo)"}}>
-			— {texto}
+		<Link to={link} className="flex gap-1 items-center px-2 py-3" style={{color: "var(--rojo)"}}>
+			<div className="h-1 w-6 bg-[var(--rojo)]"/> {texto}
 		</Link>
 	); } else { return (
-		<Link to={link} className="flex gap-2 items-center text-blanco px-2 py-3 hover:no-underline hover:bg-[var(--rojo)] hover:text-white">
-			· {texto}
+		<Link to={link} className="flex gap-1 items-center text-blanco px-2 py-3 hover:bg-[var(--rojo)] hover:text-white btn-barra-lateral">
+			<div className="h-1 w-1 bg-[var(--gris)] hover-parent"/> {texto}
 		</Link>
 	); }
 }
