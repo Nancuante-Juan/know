@@ -61,7 +61,7 @@ export const noticias = [
 		titulo: "El eclipse solar de este miércoles,en imágenes",
 		imagen: "src/assets/fotos/cnn/foto_1.webp",
 		medio: "CNN",
-		categorias: ["Ciencia", "Tecnología"],
+		categorias: ["Ciencia", "Tecnologia"],
 		descripcion: "Un eclipse solar total creó un espectáculo celestial para millones de personas este miércoles...",
 		link: "https://cnnespanol.cnn.com/2026/08/12/deportes/venden-los-angeles-lakers-record-trax"
 	},
@@ -223,7 +223,7 @@ export const noticias = [
 		titulo:"Construiran nuevos caniles destinados al Grupo de Operaciones Especiales",
 		imagen:"src/assets/fotos/tiempo_sur/foto_5.jpg",
 		medio:"Tiempo Sur",
-		categorias:["Policíal"],
+		categorias:["Policial"],
 		descripcion:"Tras la reciente incorporación de nuevos perros a la Policía de Santa Cruz, el gobernador Claudio Vidal asumió el compromiso de construir espacios adecuados para las unidades caninas del GOE Zona Sur y Caleta Olivia. Santa Cruz Puede aportará los materiales necesarios para concretar la iniciativa. ",
 		link:"https://www.tiemposur.com.ar/policiales/construiran-nuevos-caniles-destinados-al-grupo-de-operaciones-especiales"
 	},
