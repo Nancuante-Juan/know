@@ -4,7 +4,7 @@ import * as Almac from "./Almacenamiento";
 export default function PortadaNoticia ({ titulo, imagen, medio, categorias, descripcion, tipo="", url }) {
 	imagen = `/${imagen}`
 	categorias = categorias.toString().replace(",", " ⋅ ")
-	const estiloFondo = Almac.obt_LECTURA().verImagenes ? {backgroundImage: "url("+imagen+")"} : {};
+	const estiloFondo = {backgroundImage: "url("+imagen+")"};
 	
 	if (tipo==="grande") { return (
 	

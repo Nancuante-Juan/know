@@ -44,7 +44,7 @@ export default function Noticia () {
 	return (
 		<div className="overflow-x-hidden">
 			<BarraNavegación />
-			<div className="flex flex-col w-screen h-[80vh] bg-cover text-white justify-end bg-center" style={Almac.obt_LECTURA().verImagenes ? {backgroundImage: "url("+`/${NOTI_INFO.imagen}`+")"} : {}}>
+			<div className="flex flex-col w-screen h-[80vh] bg-cover text-white justify-end bg-center" style={{backgroundImage: "url("+`/${NOTI_INFO.imagen}`+")"}}>
 				<div className="flex w-full h-auto muestra-noticia-fondo p-6 z-5 gap-4 items-end">
 					<div className="font-black text-6xl Fonts-RobotoC muestra-noticia-titulo w-fit bg-amarillo">{NOTI_INFO.titulo}</div>
 					<div className="hidden md:block">{NOTI_INFO.descripcion}</div>

@@ -54,7 +54,7 @@ export function aplicar_LECTURA(){
 	raiz.setProperty("--lectura-color-texto", conf.colorTexto);
 	raiz.setProperty("--lectura-color-fondo", conf.colorFondo);
 	raiz.setProperty("--lectura-ancho-pagina", conf.anchoPag * 0.01);
-	
+	raiz.setProperty("--lectura-ocultar-imagenes", conf.verImagenes ? "flex" : "none");
 }
 
 

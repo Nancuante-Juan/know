@@ -6,7 +6,16 @@
 	min-width: calc(100vw * var(--lectura-ancho-pagina));
 }
 
-.n-medio > img { min-width: calc(100vw * var(--lectura-ancho-pagina)); }
+.n-medio > * > img { 
+	max-height: 60vh;
+	align-self: center;
+	background-size: contain;
+}
+
+.n-medio > .NOTICIA_CONTENT {
+	display: flex;
+	flex-direction: column;
+}
 
 .n-barra-lateral {
 	display: hidden;

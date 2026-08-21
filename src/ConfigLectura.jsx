@@ -27,7 +27,8 @@ export default function ConfigLectura({completo = false}) {
 			espCaracteres: 100,
 			espPalabras: 100,
 			anchoPag: 60,
-			verImagenes: true };
+			verImagenes: true 
+		};
 		setLectura(nueva);
 		Almac.guar_LECTURA(nueva);
 	}
