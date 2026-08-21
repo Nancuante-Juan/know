@@ -7,6 +7,9 @@
 	--lectura-color-texto: #000000;
 	--lectura-color-fondo: #ffffff;
 	--lectura-ocultar-imagenes: "flex";
+	--ancho-def: 1500px;
+	--ancho-calc: calc(1500px * var(--lectura-ancho-pagina));
+	--ancho-barra-derecha: calc( 100vw + 200px - var(--ancho-calc));
 }
 
 .NOTICIA_CONTENT > h1 {
@@ -34,7 +37,7 @@
 
 
 .n-medio {
-	min-width: calc(100vw * var(--lectura-ancho-pagina));
+	min-width: var(--ancho-calc);
 }
 
 .n-medio > * > img { 
@@ -49,18 +52,21 @@
 }
 
 .n-barra-lateral {
-	display: none;
+	/*display: none;*/
 	width: 100%;
 }
 
-@media (min-width: calc( 100vw + 200px - (100vw * var(--lectura-ancho-pagina)))) {
-	.n-bl-derecha{
+@media(min-width: var(--ancho-barra-derecha)) {
+	.n-bl-derecha {
 		display: flex !important;
+		background-color: aqua;
 	}
 }
 
-@media (min-width: calc( 100vw + 400px - (100vw * var(--lectura-ancho-pagina)))) {
-	.n-bl-izquierda{
+@media(min-width: calc( 100vw + 400px - var(--ancho-calc))) {
+	.n-barra-lateral {
 		display: flex !important;
+		background-color: aqua;
+
 	}
 }
