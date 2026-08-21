@@ -23,7 +23,7 @@ export default function Categoria(){
 					<div className="flex flex-col w-full max-h-0"><div className="desenfoque-prog -scale-100 w-full min-h-50" /></div>
 					<p className="z-5 p-4">{categoria_dominante}</p>
 				</div>
-				<AutoGrid tipo="inicio" lista={Recibir.Filtrado(categoria_dominante, 4)}/>
+				<AutoGrid tipo="inicio" lista={lista_noticias.slice(0,4)}/>
 				<DefaultGrid tipo="infinite">{noticias}</DefaultGrid>
 			</div>
 		</div>

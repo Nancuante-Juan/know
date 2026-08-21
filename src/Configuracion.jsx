@@ -16,7 +16,7 @@ export default function Configuracion() {
 	return (
 		<div className="flex flex-col">
 			<BarraNavegacion />
-			<div className="flex flex-row px-4 py-8 gap-8">
+			<div className="flex flex-row pl-4 pr-8 py-8 gap-8">
 				<BarraLateral />
 				<div className="flex flex-col w-full">
 					<p className="Fonts-DMSerif text-8xl pb-4">{titulo}</p>

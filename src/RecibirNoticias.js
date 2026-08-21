@@ -48,5 +48,5 @@ export function Filtrado(categoria = "", limite) {
 }
 
 export function reset_ya_mostrado() {
-	ya_mostrado = [-1,];
+	ya_mostrado.length = 0;
 }
