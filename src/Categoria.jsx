@@ -13,6 +13,12 @@ export default function Categoria(){
 	const noticias = lista_noticias.slice(4).map(not =>
 		<AutoPortada noticia={not} />
 	);
+
+	function grilla_no_noticias() { 
+		if (noticias.length > 3) { return (
+			<DefaultGrid tipo="infinite">{noticias}</DefaultGrid>
+		);} else { return; }
+	}
 	
 	return (
 		<div className="bg-black">
@@ -24,7 +30,7 @@ export default function Categoria(){
 					<p className="z-5 p-4">{categoria_dominante}</p>
 				</div>
 				<AutoGrid tipo="inicio" lista={lista_noticias.slice(0,4)}/>
-				<DefaultGrid tipo="infinite">{noticias}</DefaultGrid>
+				{grilla_no_noticias()}
 			</div>
 		</div>
 	);
