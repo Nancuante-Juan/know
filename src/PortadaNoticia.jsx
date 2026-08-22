@@ -1,14 +1,15 @@
 import { Link } from "react-router";
 import * as Almac from "./Almacenamiento";
 
-export default function PortadaNoticia ({ titulo, imagen, medio, categorias, descripcion, tipo="", url }) {
+export default function PortadaNoticia ({ titulo, imagen, medio, categorias, descripcion, tipo="", url, dentro }) {
 	imagen = `/${imagen}`
-	categorias = categorias.toString().replace(",", " ⋅ ")
+	categorias = categorias.toString().replaceAll(",", " ⋅ ")
 	const estiloFondo = {backgroundImage: "url("+imagen+")"};
 	
 	if (tipo==="grande") { return (
 	
-		<Link className="flex flex-col w-full min-h-full justify-end overflow-hidden bg-center text-white muestra-noticia muestra-noticia-grande imagen-noticia" style={estiloFondo} to={url} reloadDocument>
+		<Link className="flex flex-col w-full min-h-full ideal-h-grande overflow-hidden bg-center text-white muestra-noticia muestra-noticia-grande imagen-noticia" style={estiloFondo} to={url} reloadDocument>
+			{dentro}
 			<div className="flex flex-col w-full h-auto muestra-noticia-fondo p-6 z-5 gap-2">
 				<div className="truncate">{medio + " ⋅ " + categorias}</div>
 				<div className="font-black text-6xl Fonts-RobotoC muestra-noticia-titulo w-fit">{titulo}</div>

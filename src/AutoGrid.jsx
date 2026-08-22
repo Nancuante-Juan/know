@@ -1,13 +1,13 @@
 import AutoPortada from "./AutoPortada";
 import DefaultGrid from "./DefaultGrid";
 
-export default function AutoGrid({tipo, lista, seccion, invertir=false}) {
+export default function AutoGrid({tipo, lista, seccion, invertir=false, dentro}) {
 	if (lista.length === 0) {return;}
 	
 	if (tipo === "inicio") { return(
 	
 		<DefaultGrid tipo="inicio" invertir={invertir} cara={
-			<AutoPortada noticia={lista[0]} tipo="grande" />}>
+			<AutoPortada noticia={lista[0]} tipo="grande" dentro={dentro} />}>
 			<AutoPortada noticia={lista[1]} tipo="pequeno3" />
 			<AutoPortada noticia={lista[2]} tipo="pequeno3" />
 			<AutoPortada noticia={lista[3]} tipo="pequeno3" />

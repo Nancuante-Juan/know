@@ -25,11 +25,7 @@ export default function Categoria(){
 			<BarraNavegación />
 			
 			<div className="overflow-y-auto overflow-x-hidden trans" style={{ maxHeight: "calc(100vh - 52px)", minHeight: "calc(100vh - 52px)",}}>
-				<div className="flex flex-col text-8xl text-white Fonts-DMSerif w-full max-h-0 md:ml-4 ancho-de-noticia-grande">
-					<div className="flex flex-col w-full max-h-0"><div className="desenfoque-prog -scale-100 w-full min-h-50" /></div>
-					<p className="z-5 p-4">{categoria_dominante}</p>
-				</div>
-				<AutoGrid tipo="inicio" lista={lista_noticias.slice(0,4)}/>
+				<AutoGrid tipo="inicio" lista={lista_noticias.slice(0,4)} dentro={nombre_categoria(categoria_dominante)}/>
 				{grilla_no_noticias()}
 			</div>
 			<script>
@@ -38,3 +34,12 @@ export default function Categoria(){
 		</div>
 	);
 }
+
+function nombre_categoria(categoria_dominante) { return (
+	<div className="flex flex-col text-8xl text-white Fonts-DMSerif w-full h-full">
+		<div className="flex flex-col w-full max-h-0"> 
+			<div className="desenfoque-prog -scale-100 min-w-[100%+16px] min-h-50 -m-2px"></div>
+		</div>
+		<p className="z-5 p-4">{categoria_dominante}</p>
+	</div>
+); }

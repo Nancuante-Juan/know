@@ -1,6 +1,6 @@
 import PortadaNoticia from "./PortadaNoticia";
 
-export default function AutoPortada ({noticia, tipo=""}) { 
+export default function AutoPortada ({noticia, tipo="", dentro}) { 
 	if (noticia == undefined) { return; }
 
 	return (
@@ -12,6 +12,7 @@ export default function AutoPortada ({noticia, tipo=""}) {
 			descripcion={noticia.descripcion}
 			tipo={tipo}
 			url={"/n/"+noticia.id}
+			dentro={dentro}
 		/>
 	); 
 }
