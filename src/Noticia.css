@@ -42,7 +42,7 @@
 }
 
 .n-medio > * > img { 
-	width: var(--ancho-calc);
+	min-width: 60vh;
 	max-height: 60vh;
 	align-self: center;
 	background-size: contain;
@@ -51,6 +51,10 @@
 .n-medio > .NOTICIA_CONTENT {
 	display: flex;
 	flex-direction: column;
+}
+
+.n-medio > .NOTICIA_CONTENT > * {
+	margin-top: 1.5rem;
 }
 
 .n-barra-lateral {

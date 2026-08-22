@@ -59,8 +59,6 @@ export default function ConfigLectura({completo = false}) {
 				
 				<Slider nombre="Espaciado entre líneas" min={1.25} max={2.5} step={0.25} value={lectura.interlineado} onChange={e => actualizar("interlineado", Number(e.target.value))}/>
 
-				<Slider nombre="Espacio entre párrafos" append="%" min={100} max={300} step={40} value={lectura.espParrafos} onChange={e => actualizar("espParrafos", Number(e.target.value))}/>
-				
 				<Slider nombre="Espaciado entre caractéres" append="%" min={80} max={200} step={20} value={lectura.espCaracteres} onChange={e => actualizar("espCaracteres", Number(e.target.value))}/>
 				
 				<Slider nombre="Espacio entre palabras" append="%" min={100} max={300} step={40} value={lectura.espPalabras} onChange={e => actualizar("espPalabras", Number(e.target.value))}/>
