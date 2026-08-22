@@ -60,21 +60,6 @@
 }
 
 .n-barra-lateral {
-	/*display: none;*/
+	display: flex;
 	width: 100%;
-}
-
-@media(min-width: var(--ancho-barra-derecha)) {
-	.n-bl-derecha {
-		display: flex !important;
-		background-color: aqua;
-	}
-}
-
-@media(min-width: calc( 100vw + 400px - var(--ancho-calc))) {
-	.n-barra-lateral {
-		display: flex !important;
-		background-color: aqua;
-
-	}
 }
