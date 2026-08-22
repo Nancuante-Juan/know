@@ -44,7 +44,7 @@ input[type="range"]::-moz-range-track {
 	background: var(--rojo);
 	width:  calc(100% - 0.5rem);
 	height: calc(100% - 0.5rem);
-	background: linear-gradient(to right, var(--rojo) var(--range-pct, 0%), var(--lectura-color-fondo) var(--range-pct, 0%));
+	background: var(--lectura-color-fondo);
 	border-radius: 0px;
 	border: none;
 }

@@ -24,6 +24,7 @@ const LEC_KEY = "Lectura";
 
 export function obt_LECTURA(){
 	const def = {
+		fuente: "Inter",
 		tamano: 1,
 		interlineado: 1.75,
 		espParrafos: 100,
@@ -47,6 +48,7 @@ export function guar_LECTURA(val){
 export function aplicar_LECTURA(){
 	const conf = obt_LECTURA();
 	const raiz = document.documentElement.style;
+	raiz.setProperty("--lectura-fuente", conf.fuente);
 	raiz.setProperty("--lectura-tamano", conf.tamano + "rem");
 	raiz.setProperty("--lectura-interlineado", conf.interlineado);
 	raiz.setProperty("--lectura-esp-caracteres", ((conf.espCaracteres - 100) * 0.002) + "em");

@@ -22,6 +22,7 @@ export default function ConfigLectura({completo = false}) {
 	}
 	function restablecerTexto() {
 		const nueva = { ...lectura,
+			fuente: "Inter",
 			tamano: 1,
 			interlineado: 1.75,
 			espCaracteres: 100,
@@ -49,8 +50,13 @@ export default function ConfigLectura({completo = false}) {
 				<div className="flex flex-col w-full min-w-1/3">
 					Tipografía:
 					<div className="flex gap-4">
-						<select>
-							<option>Inter</option>
+						<select value={lectura.fuente} onChange={e => actualizar("fuente", e.target.value)}>
+							<option value="Inter"     >Inter</option>
+							<option value="Lexend"    >Lexend</option>
+							<option value="Lora"      >Lora</option>
+							<option value="Montserrat">Montserrat</option>
+							<option value="Noto Serif">Noto Serif</option>
+							<option value="Roboto"    >Roboto</option>
 						</select>
 					</div>
 				</div>
