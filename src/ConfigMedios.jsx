@@ -1,5 +1,4 @@
 import { useState } from "react";
-import TarjetaMedio from "./TarjetaMedio";
 import * as Almac from "./Almacenamiento";
 
 const INFO_MEDIOS = {
@@ -50,5 +49,22 @@ export default function ConfigMedios() {
 				</div>
 			</div>
 		</div>
+	);
+}
+
+function TarjetaMedio({nombre, icono, descripcion, categorias, suscrito = false, onClick}) {
+	return (
+		<button onClick={onClick} className="flex flex-col w-full min-w-1/3 gap-2 border-2 p-4 hover:bg-zinc-200" style={{borderColor: "var(--gris)"}}>
+			<div className="flex justify-between items-center">
+				<div className="flex gap-2 items-center">
+					{icono && <img src={`/${icono}`} className="h-6" />}
+				</div>
+				<div className="px-3 py-1 text-md text-white" style={{backgroundColor: suscrito ? "var(--gris)" : "var(--rojo)"}}>
+					{suscrito ? "− Dejar" : "+ Suscribirse"}
+				</div>
+			</div>
+			<p className="">{descripcion}</p>
+			<div className="text-gris text-sm" >{categorias.toString().replaceAll(",", " ⋅ ")}</div>
+		</button>
 	);
 }

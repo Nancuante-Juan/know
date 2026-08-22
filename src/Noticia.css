@@ -6,6 +6,7 @@
 	--lectura-esp-palabras: 0em;
 	--lectura-color-texto: #000000;
 	--lectura-color-fondo: #ffffff;
+	--lectura-ruido: url(/src/assets/ruido.png);
 	--lectura-ocultar-imagenes: "flex";
 	--ancho-def: 1500px;
 	--ancho-calc: calc(1500px * var(--lectura-ancho-pagina));
@@ -41,6 +42,7 @@
 }
 
 .n-medio > * > img { 
+	width: var(--ancho-calc);
 	max-height: 60vh;
 	align-self: center;
 	background-size: contain;

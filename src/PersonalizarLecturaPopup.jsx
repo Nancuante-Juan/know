@@ -5,7 +5,7 @@ export default function PersonalizarLecturaPopup({mostrar = false, ocultar}) {
 	if (mostrar){mostrar = "fixed"}
 	else {mostrar = "hidden"}
 	return (
-		<button className={"fixed top-0 right-0 w-screen h-screen p-4 flex bg-[#00000099] z-25 "+mostrar}>
+		<div className={"fixed top-0 right-0 w-screen h-screen p-4 flex bg-[#00000099] z-25 "+mostrar}>
 			<button className="w-[calc(100%-33rem)]" onClick={ocultar} />
 			<div className="flex flex-col w-132 bg-white ow-the-edge z-20 overflow-x-hidden overflow-y-auto" style={{minHeight: "calc(100vh - 2rem)", maxHeight: "calc(100vh - 2rem)", maxWidth: "calc(100vw - 2rem)"}}>
 				<div className="flex justify-between items-center h-fit w-full sticky bg-white top-0 p-8">
@@ -18,6 +18,6 @@ export default function PersonalizarLecturaPopup({mostrar = false, ocultar}) {
 					<ConfigLectura />
 				</div>
 			</div>
-		</button>
+		</div>
 	);
 }

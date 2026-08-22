@@ -4,7 +4,7 @@
 import * as Notis from "./Noticias"
 import * as Almac from "./Almacenamiento"
 
-var ya_mostrado = [];
+export var ya_mostrado = [];
 
 export function Todo() {
 	return(Notis.noticias)

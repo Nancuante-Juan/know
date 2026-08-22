@@ -74,12 +74,13 @@ button {
 .bg-amarillo { background-color: var(--amarillo); color: #000000;}
 .bg-gris     { background-color: var(--gris); color: #ffffff;}
 .line-gris   { border: solid var(--gris) 2px;}
-
+.line-rojo   { border: solid var(--rojo) 2px;}
+.text-rojo   { color: var(--rojo);}
 .text-gris { color: var(--gris);}
+
 .bg-amarillo-hover:hover { background-color: var(--amarillo); color: #000000; text-decoration: none;}
 .hover-parent:hover > .bg-amarillo-hover { background-color: var(--amarillo); color: #000000; text-decoration: none;}
 .hover-parent:hover > * > .bg-amarillo-hover { background-color: var(--amarillo); color: #000000; text-decoration: none;}
-
 
 
 /***************/
@@ -135,5 +136,6 @@ h1{
 .btn-barra-lateral > .hover-parent{ transition: 200ms; }
 .btn-barra-lateral:hover > .hover-parent{
 	background-color: #ffffff;
+	transition-property: width;
 	width: 1rem;
 }

@@ -1,5 +1,4 @@
 import { useState } from "react";
-import ChipCategoria from "./ChipCategoria";
 import * as Almac from "./Almacenamiento";
 
 const TODAS_CATEGORIAS = ["Economia", "Sociedad", "Farandula", "Política", "Deporte", "Clima", "Gaming", "Tecnologia", "Ciencia", "Vehiculos", "Policial"];
@@ -21,17 +20,8 @@ export default function ConfigCategorias() {
 	}
 
 	return (
-		<div className="flex flex-col text-lg w-full gap-8">
-			<div className="flex flex-col gap-4">
-				<h1>Le podría interesar</h1>
-				<div className="flex flex-wrap gap-2">
-					{recomendadas.map(cat =>
-						<ChipCategoria texto={cat} suscrita={false} onClick={() => suscribir(cat)} />
-					)}
-				</div>
-			</div>
-
-			<div className="flex flex-col gap-4">
+		<div className="flex text-lg w-full gap-16">
+			<div className="flex flex-col gap-4 w-full">
 				<h1>Suscritas</h1>
 				<div className="flex flex-wrap gap-2">
 					{suscritas.map(cat =>
@@ -39,6 +29,29 @@ export default function ConfigCategorias() {
 					)}
 				</div>
 			</div>
+
+			<div className="flex flex-col gap-4 w-full">
+				<h1>Le podría interesar</h1>
+				<div className="flex flex-wrap gap-2">
+					{recomendadas.map(cat =>
+						<ChipCategoria texto={cat} suscrita={false} onClick={() => suscribir(cat)} />
+					)}
+				</div>
+			</div>
 		</div>
 	);
+}
+
+function ChipCategoria({texto, suscrita = false, onClick}) {
+	if (suscrita) { return (
+		<button onClick={onClick} className="flex gap-2 items-center border-2 px-3 py-1 min-h-10 hover:bg-zinc-200" style={{borderColor: "var(--gris)"}}>
+			{texto}
+			<span>−</span>
+		</button>
+	); } else { return (
+		<button onClick={onClick} className="flex gap-2 items-center border-2 px-3 py-1 min-h-10 hover:bg-zinc-200" style={{borderColor: "var(--rojo)", color: "var(--rojo)"}}>
+			{texto}
+			<span>+</span>
+		</button>
+	); }
 }
