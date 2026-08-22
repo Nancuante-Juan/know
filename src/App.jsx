@@ -15,7 +15,7 @@ export default function App() {
 		<div className="bg-black">
 			<BarraNavegación />
 			
-			<div className="overflow-y-auto overflow-x-hidden lg:snap-y snap-mandatory" style={{ maxHeight: "calc(100vh - 52px)", minHeight: "calc(100vh - 52px)",}}>
+			<div className="overflow-y-auto overflow-x-hidden lg:snap-y snap-mandatory trans" style={{ maxHeight: "calc(100vh - 52px)", minHeight: "calc(100vh - 52px)",}}>
 				<AutoGrid tipo="inicio" lista={inicio} invertir={true}/>
 				{cats_noticias}
 			</div>

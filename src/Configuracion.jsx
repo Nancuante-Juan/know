@@ -16,9 +16,9 @@ export default function Configuracion() {
 	return (
 		<div className="flex flex-col">
 			<BarraNavegacion />
-			<div className="flex flex-row pl-4 pr-8 py-8 gap-8">
+			<div className="flex flex-row pl-0 lg:pl-4 trans min-h-[calc(100vh-52px)] " style={{backgroundColor: "var(--lectura-color-fondo)", backgroundImage: "var(--lectura-ruido)", color: "var(--lectura-color-texto)"}}>
 				<BarraLateral />
-				<div className="flex flex-col w-full">
+				<div className="flex flex-col w-full max-h-[calc(100vh-52px)] py-8 px-8 overflow-x-hidden overflow-y-auto">
 					<p className="Fonts-DMSerif text-8xl pb-4">{titulo}</p>
 					{contenido}
 				</div>

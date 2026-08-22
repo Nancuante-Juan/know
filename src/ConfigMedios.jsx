@@ -30,7 +30,7 @@ export default function ConfigMedios() {
 	}
 
 	return (
-		<div className="flex flex-col text-lg w-full gap-16 md:grid md:grid-cols-2">
+		<div className="flex flex-col text-lg w-full gap-16 md:grid md:grid-cols-2 trans">
 			<div className="flex flex-col gap-4">
 				<h1>Suscrito</h1>
 				<div className="flex flex-wrap gap-4">
@@ -54,7 +54,7 @@ export default function ConfigMedios() {
 
 function TarjetaMedio({nombre, icono, descripcion, categorias, suscrito = false, onClick}) {
 	return (
-		<button onClick={onClick} className="flex flex-col w-full min-w-1/3 gap-2 border-2 p-4 hover:bg-zinc-200" style={{borderColor: "var(--gris)"}}>
+		<button onClick={onClick} className="flex flex-col w-full min-w-1/3 gap-2 border-2 p-4 bg-(--lectura-color-fondo) hover:bg-[#99999933]" style={{borderColor: "var(--gris)"}}>
 			<div className="flex justify-between items-center">
 				<div className="flex gap-2 items-center">
 					{icono && <img src={`/${icono}`} className="h-6" />}

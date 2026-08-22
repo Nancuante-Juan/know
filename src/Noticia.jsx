@@ -46,9 +46,9 @@ export default function Noticia () {
 	Filter.ya_mostrado.push(NOTI_INFO.id);
 	
 	return (
-		<div className="overflow-x-hidden">
+		<div className="overflow-x-hidden bg-black">
 			<BarraNavegación />
-			<div className="flex flex-col w-screen h-[80vh] bg-cover text-white justify-end bg-center" style={{backgroundImage: "url("+`/${NOTI_INFO.imagen}`+")"}}>
+			<div className="flex flex-col w-screen h-[80vh] bg-cover text-white justify-end bg-center trans" style={{backgroundImage: "url("+`/${NOTI_INFO.imagen}`+")"}}>
 				<div className="flex w-full h-auto muestra-noticia-fondo p-6 z-5 gap-4 items-end">
 					<div className="font-black text-6xl Fonts-RobotoC muestra-noticia-titulo w-fit bg-amarillo">{NOTI_INFO.titulo}</div>
 					<div className="hidden md:block">{NOTI_INFO.descripcion}</div>
@@ -56,7 +56,7 @@ export default function Noticia () {
 				<div className="flex flex-col w-full max-h-0 justify-end"><div className="desenfoque-prog w-full ideal-h-noticia" /></div>
 			</div>
 			
-			<div className="flex flex-row bg-repeat" style={{backgroundColor: "var(--lectura-color-fondo)", backgroundImage: "var(--lectura-ruido)"}}>
+			<div className="flex flex-row bg-repeat min-h-[20vh] trans" style={{backgroundColor: "var(--lectura-color-fondo)", backgroundImage: "var(--lectura-ruido)"}}>
 				<div className="sticky h-full top-0 max-h-screen noticia n-barra-lateral n-bl-izquierda">
 					
 				</div>
@@ -88,7 +88,7 @@ export default function Noticia () {
 					
 				</div>
 
-				<h1 className="w-full px-4 py-[6px] Fonts-DMSerif text-4xl"> Comentarios (6) </h1>
+				<h1 className="w-full px-4 py-1.5 Fonts-DMSerif text-4xl"> Comentarios (6) </h1>
 				<div className="flex flex-col md:grid lg:grid-cols-3 md:grid-cols-2 gap-4 p-4 pt-0">
 					<Comentario nombre="Miguel" comentario="HOla" />
 					<Comentario nombre="Jorgiño" comentario="我喜欢香肠面包" />

@@ -15,18 +15,5 @@
 			<p class="Fonts-DMSerif text-8xl">Know</p>
 			ESTÁ PAGINA REQUIERE DE JAVASCRIPT PARA PODER FUNCIONAR, POR FAVOR HABILITALO.
 		</noscript>
-		<script>
-			const slider = document.querySelector('input[type=range]');
-			const handleInput = (el) => {
-				const min = el.min || 0;
-				const max = el.max || 100;
-				const pct = (el.value - min) / (max - min) * 100;
-				el.style.setProperty('--range-pct', pct + '%');
-				console.log("heloo")
-			};
-		
-			slider.addEventListener('input', (e) => handleInput(e.target));
-			handleInput(slider);
-		</script>
 	</body>
 </html>

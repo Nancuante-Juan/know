@@ -20,7 +20,7 @@ export default function ConfigCategorias() {
 	}
 
 	return (
-		<div className="flex text-lg w-full gap-16">
+		<div className="flex text-lg w-full gap-16 trans">
 			<div className="flex flex-col gap-4 w-full">
 				<h1>Suscritas</h1>
 				<div className="flex flex-wrap gap-2">
@@ -43,15 +43,13 @@ export default function ConfigCategorias() {
 }
 
 function ChipCategoria({texto, suscrita = false, onClick}) {
-	if (suscrita) { return (
-		<button onClick={onClick} className="flex gap-2 items-center border-2 px-3 py-1 min-h-10 hover:bg-zinc-200" style={{borderColor: "var(--gris)"}}>
+	const icon = suscrita ? "-" : "+"
+	const color = suscrita ? "border-[var(--gris)] text-[var(--lectura-color-texto)]" : " border-[var(--rojo)] text-[var(--rojo)]"
+
+	return (
+		<button onClick={onClick} className={"flex gap-2 items-center border-2 px-3 py-1 min-h-10 hover:bg-[#99999933] bg-(--lectura-color-fondo) "+color}>
 			{texto}
-			<span>−</span>
+			<span>{icon}</span>
 		</button>
-	); } else { return (
-		<button onClick={onClick} className="flex gap-2 items-center border-2 px-3 py-1 min-h-10 hover:bg-zinc-200" style={{borderColor: "var(--rojo)", color: "var(--rojo)"}}>
-			{texto}
-			<span>+</span>
-		</button>
-	); }
+	);
 }

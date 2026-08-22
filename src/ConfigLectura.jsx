@@ -37,7 +37,7 @@ export default function ConfigLectura({completo = false}) {
 	else {completo = ""}
 
 	return(
-		<div className="flex flex-col text-lg w-full">
+		<div className="flex flex-col text-lg w-full trans">
 			<div className="flex justify-between items-center">
 				<h1>Texto</h1>
 				<button onClick={restablecerTexto} className="bg-amarillo px-4 py-2 w-fit flex flex-row gap-2"> 

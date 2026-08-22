@@ -24,7 +24,7 @@ export default function Categoria(){
 		<div className="bg-black">
 			<BarraNavegación />
 			
-			<div className="overflow-y-auto overflow-x-hidden" style={{ maxHeight: "calc(100vh - 52px)", minHeight: "calc(100vh - 52px)",}}>
+			<div className="overflow-y-auto overflow-x-hidden trans" style={{ maxHeight: "calc(100vh - 52px)", minHeight: "calc(100vh - 52px)",}}>
 				<div className="flex flex-col text-8xl text-white Fonts-DMSerif w-full max-h-0 md:ml-4 ancho-de-noticia-grande">
 					<div className="flex flex-col w-full max-h-0"><div className="desenfoque-prog -scale-100 w-full min-h-50" /></div>
 					<p className="z-5 p-4">{categoria_dominante}</p>
@@ -32,6 +32,9 @@ export default function Categoria(){
 				<AutoGrid tipo="inicio" lista={lista_noticias.slice(0,4)}/>
 				{grilla_no_noticias()}
 			</div>
+			<script>
+
+			</script>
 		</div>
 	);
 }
