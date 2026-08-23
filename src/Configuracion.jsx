@@ -28,7 +28,6 @@ export default function Configuracion() {
 	const [prev_page, setPrev_page] = useState(ruta);
 	if (ruta !== prev_page){
 		ocultar_selector();
-		window.scrollTo(0,0);
 		setPrev_page(ruta);
 	}
 

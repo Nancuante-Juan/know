@@ -31,16 +31,17 @@ export default function Noticia () {
 	function ocultar() { setMenu_mostrar(false); }
 	const [selector_mostrar, setSelector_mostrar] = useState(false);
 	function ocultar_selector() { setSelector_mostrar(false); }
-	const [prev_page, setPrev_page] = useState(id);
-	if (id !== prev_page){
-		setPrev_page(id);
-		window.scrollTo(0,0);
+
+	const ruta = decodeURI(useLocation().pathname);
+	const [prev_ruta, setPrev_ruta] = useState(ruta);
+	if (ruta != prev_ruta){
+		setPrev_ruta(ruta);
 		setMenu_mostrar(false);
 		setPanel_mostrar(false);
 		setSelector_mostrar(false);
-		const collection = document.getElementsByClassName("trans");
-		for (let i = 0; i < collection.length; i++) {
-			collection[i].animate([{opacity:0},{opacity:1}],{duration: 200}).play();
+		const collection_trans = document.getElementsByClassName("trans");
+		for (let i = 0; i < collection_trans.length; i++) {
+			collection_trans[i].animate([{opacity:0},{opacity:1}],{duration: 200}).play();
 		}
 	}
 
