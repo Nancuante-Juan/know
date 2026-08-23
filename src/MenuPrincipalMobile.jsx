@@ -8,7 +8,7 @@ export default function MenuPrincipalMobile({mostrar=false, close_event}) {
 	
 	var categorias = Almac.obt_CATEGORIAS();
 	const elements = categorias.map(cat =>
-		<Boton texto={cat} link={"/c/"+cat} activado={false} />
+		<Boton texto={cat} link={"/c/"+cat} />
 	);
 
 

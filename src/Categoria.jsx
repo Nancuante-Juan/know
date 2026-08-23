@@ -30,6 +30,7 @@ export default function Categoria(){
 	const [prev_page, setPrev_page] = useState(categoria_dominante);
 	if (categoria_dominante !== prev_page){
 		ocultar();
+		window.scrollTo(0,0);
 		setPrev_page(categoria_dominante);
 		const collection = document.getElementsByClassName("trans");
 		for (let i = 0; i < collection.length; i++) {

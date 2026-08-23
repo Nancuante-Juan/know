@@ -83,11 +83,11 @@ export default function ConfigLectura({completo = false}) {
 			<div className="flex justify-between items-center pt-8 ">
 				<h1>Colores</h1>
 				<div className="flex gap-2">
-					<button onClick={invertirColores} className="bg-black text-white px-4 py-2 w-fit flex flex-row gap-2">
+					<button onClick={invertirColores} className="text-[0rem] md:text-lg md:gap-2 bg-black text-white px-4 py-2 w-fit flex flex-row">
 						<img src={`/${"src/assets/icons/swap24.svg"}`}/>
 						Invertir
 					</button>
-					<button onClick={restablecerColores} className="bg-amarillo px-4 py-2 w-fit flex flex-row gap-2">
+					<button onClick={restablecerColores} className="text-[0rem] md:text-lg md:gap-2 bg-amarillo px-4 py-2 w-fit flex flex-row">
 						<img src={`/${"src/assets/icons/reset_colors24.svg"}`}/>
 						Restablecer
 					</button>
