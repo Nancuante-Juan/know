@@ -8,8 +8,9 @@ import BarraNavegación from "./BarraNavegacion";
 import PersonalizarLectura from "./PersonalizarLecturaPopup";
 import DivisorSeccion from "./DivisorSeccion";
 import AutoGrid from "./AutoGrid";
-
-
+import BarraPrincipalMobile from "./BarraPrincipalMobile";
+import MenuPrincipalMobile from "./MenuPrincipalMobile";
+import SelectorMobile from "./SelectorMobile";
 
 export default function Noticia () {
 	const params = useParams();
@@ -17,14 +18,26 @@ export default function Noticia () {
 	const NOTI_INFO = Recibir.noticias[id];
 
 	const [text, setText] = useState(null);
-	
+	const [lectura, setLectura] = useState(Almac.obt_LECTURA);
+	function update_lectura() {setLectura(Almac.obt_LECTURA)};
+
 	const [panel_mostrar, setPanel_mostrar] = useState(false);
-	function ocultar() { setPanel_mostrar(false); }
+	function ocultar_panel() { setPanel_mostrar(false); }
 	
+
+
+	//////// MENU /////////////
+	const [menu_mostrar, setMenu_mostrar] = useState(false);
+	function ocultar() { setMenu_mostrar(false); }
+	const [selector_mostrar, setSelector_mostrar] = useState(false);
+	function ocultar_selector() { setSelector_mostrar(false); }
 	const [prev_page, setPrev_page] = useState(id);
 	if (id !== prev_page){
 		setPrev_page(id);
 		window.scrollTo(0,0);
+		setMenu_mostrar(false);
+		setPanel_mostrar(false);
+		setSelector_mostrar(false);
 		const collection = document.getElementsByClassName("trans");
 		for (let i = 0; i < collection.length; i++) {
 			collection[i].animate([{opacity:0},{opacity:1}],{duration: 200}).play();
@@ -67,22 +80,41 @@ export default function Noticia () {
 			</div>
 			
 			<div className="flex flex-row bg-repeat min-h-[20vh] trans" style={{backgroundColor: "var(--lectura-color-fondo)", backgroundImage: "var(--lectura-ruido)"}}>
-				<div className="sticky h-full top-0 max-h-screen noticia n-barra-lateral n-bl-izquierda">
+				{lectura.anchoPag !== 100 ? <div className="sticky h-full top-0 max-h-screen hidden md:flex w-full noticia n-barra-lateral n-bl-izquierda">
+					{lectura.anchoPag < 70 ?
+					<button className="p-4 hidden md:flex xl:hidden" onClick={e => setPanel_mostrar(true)}>
+						<img className="h-8" src={`/${"src/assets/icons/styles24.svg"}`}/>
+					</button> : 
+					<button className="p-4 hidden md:flex" onClick={e => setPanel_mostrar(true)}>
+						<img className="h-8" src={`/${"src/assets/icons/styles24.svg"}`}/>
+					</button>
+					}
 					
-				</div>
+				</div> : <></>}
 				
-				<div className="p-4 select-text NOTICIA_CONTENT noticia n-medio">
+				<div className="p-4 select-text w-full NOTICIA_CONTENT noticia n-medio">
 					<div>{NOTI_INFO.medio + " ⋅ " + NOTI_INFO.categorias.toString().replaceAll(",", " ⋅ ")}</div>
 					<div className="md:hidden">{NOTI_INFO.descripcion}</div>
 					
 					{text}
 				</div>
 				
-				<div className="sticky h-fit top-0 justify-end noticia n-barra-lateral n-bl-derecha">
+				{lectura.anchoPag < 70 ? <div className="sticky h-fit top-0 w-full hidden xl:flex justify-end noticia n-barra-lateral n-bl-derecha">
 					<button className="p-4" onClick={e => setPanel_mostrar(true)}>
 						<img className="h-8" src={`/${"src/assets/icons/styles24.svg"}`}/>
 					</button>
-				</div>	
+				</div> : <></>}
+
+				{lectura.anchoPag == 100 ?
+					<div className="hidden md:flex fixed p-4 gap-2 bottom-0 w-120 max-w-screen z-10">
+						<button className="p-2 w-full bg-black text-white text-2xl Fonts-RobotoC font-black min-h-12" onClick={e => setSelector_mostrar(true)}>
+							- [Inicio]
+						</button>
+						<button className="p-2 bg-black" onClick={e => setPanel_mostrar(true)}>
+							<img src={`/${"src/assets/icons/styles_white24.svg"}`} alt="Menú" className="min-h-8 min-w-8" />
+						</button>
+					</div>
+				: <></>}
 			</div>
 
 			<div className="flex flex-col max-w-screen bg-black text-white">
@@ -108,9 +140,24 @@ export default function Noticia () {
 					<Comentario nombre="Olm0mazos_Max1" comentario="tiki... tiki" />
 				</div>
 				<AutoGrid tipo="minicategoria" seccion={NOTI_INFO.categorias[0]} lista={Filter.Filtrado(NOTI_INFO.categorias[0], 6)}/>
+				<div className="min-h-40 md:min-h-12" />
 			</div>
 			
-			<PersonalizarLectura mostrar={panel_mostrar} ocultar={ocultar} />
+			<PersonalizarLectura mostrar={panel_mostrar} ocultar={ocultar_panel} update={update_lectura}/>
+						
+			<BarraPrincipalMobile>
+				<button className="p-2 w-full bg-black text-white text-2xl Fonts-RobotoC font-black min-h-12" onClick={e => setSelector_mostrar(true)}>
+					- [Inicio]
+				</button>
+				<button className="p-2 bg-black" onClick={e => setPanel_mostrar(true)}>
+					<img src={`/${"src/assets/icons/styles_white24.svg"}`} alt="Menú" className="min-h-8 min-w-8" />
+				</button>
+				<button className="block md:hidden p-2 bg-black" onClick={e => setMenu_mostrar(true)}>
+					<img src={`/${"src/assets/icons/menu24.svg"}`} alt="Menú" className="min-h-8 min-w-8" />
+				</button>
+			</BarraPrincipalMobile>
+			<MenuPrincipalMobile mostrar={menu_mostrar} close_event={ocultar} />
+			<SelectorMobile mostrar={selector_mostrar} close_event={ocultar_selector} lista={["[Inicio]", "titulo 1", "titulo2"]} urls={["/", "/", "/"]} too_small=""/>
 
 		</div>
 	);

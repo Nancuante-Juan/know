@@ -2,13 +2,17 @@ import { useState } from "react";
 import Slider from "./Slider";
 import * as Almac from "./Almacenamiento";
 
-export default function ConfigLectura({completo = false}) {
+export default function ConfigLectura({completo = false, update} ) {
 	const [lectura, setLectura] = useState(Almac.obt_LECTURA());
 
+	
 	function actualizar(campo, valor) {
 		const nueva = { ...lectura, [campo]: valor };
 		setLectura(nueva);
 		Almac.guar_LECTURA(nueva);
+		if (update != undefined) {
+			update();
+		}
 	}
 	function restablecerColores() {
 		const nueva = { ...lectura, colorTexto: "#000000", colorFondo: "#ffffff" };
@@ -69,7 +73,7 @@ export default function ConfigLectura({completo = false}) {
 				
 				<Slider nombre="Espacio entre palabras" append="%" min={100} max={300} step={40} value={lectura.espPalabras} onChange={e => actualizar("espPalabras", Number(e.target.value))}/>
 				
-				<Slider nombre="Ancho de página" append="%" min={40} max={100} step={20} value={lectura.anchoPag} onChange={e => actualizar("anchoPag", Number(e.target.value))}/>
+				<Slider nombre="Ancho de página" append="%" min={40} max={100} step={20} value={lectura.anchoPag} onChange={e => actualizar("anchoPag", Number(e.target.value))} extraCSS=" hidden md:flex" />
 				
 				<div className="flex gap-2 items-center max-w-120 w-full min-w-1/2">
 				

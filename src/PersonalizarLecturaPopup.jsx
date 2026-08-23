@@ -1,13 +1,13 @@
 import ConfigLectura from "./ConfigLectura";
 import Nots from "./Noticia";
 
-export default function PersonalizarLecturaPopup({mostrar = false, ocultar}) {
+export default function PersonalizarLecturaPopup({mostrar = false, ocultar, update}) {
 	if (mostrar){mostrar = "fixed"}
 	else {mostrar = "hidden"}
 	return (
-		<div className={"fixed top-0 right-0 w-screen h-screen flex z-25 "+mostrar}>
+		<div className={"fixed top-0 right-0 w-screen h-screen flex z-100 "+mostrar}>
 			<button className="w-[calc(100%-33rem)]" onClick={ocultar} />
-			<div className="flex flex-col w-132 bg-(--lectura-color-fondo) text-(--lectura-color-texto) ow-the-edge z-20 overflow-x-hidden overflow-y-auto min-h-screen max-h-screen" style={{ maxWidth: "calc(100vw - 2rem)"}}>
+			<div className="flex flex-col w-132 max-w-screen bg-(--lectura-color-fondo) text-(--lectura-color-texto) ow-the-edge z-20 overflow-x-hidden overflow-y-auto min-h-screen max-h-screen">
 				<div className="flex justify-between items-center h-fit w-full sticky bg-(--lectura-color-fondo) z-50 top-0 p-8">
 					<p className="text-4xl Fonts-RobotoC font-black">PERSONALIZACIÓN</p>
 					<button onClick={ocultar}>
@@ -15,7 +15,8 @@ export default function PersonalizarLecturaPopup({mostrar = false, ocultar}) {
 					</button>
 				</div>
 				<div className="p-8 pt-0">
-					<ConfigLectura />
+					<ConfigLectura update={update} />
+					<div className="min-h-12 md:min-h-0" />
 				</div>
 			</div>
 		</div>

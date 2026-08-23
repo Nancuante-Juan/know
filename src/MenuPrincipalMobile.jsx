@@ -1,4 +1,3 @@
-import ElAdaptadorDeBarras3000 from "./ElAdaptadorDeBarras3000";
 import { useLocation } from "react-router";
 import { Link } from "react-router";
 import * as Almac from "./Almacenamiento";
@@ -13,7 +12,7 @@ export default function MenuPrincipalMobile({mostrar=false, close_event}) {
 
 
 	return (
-		<div className={moscss+" absolute top-0 flex-col min-h-lvh min-w-screen h-screen justify-end z-80 bg-black"}>
+		<div className={moscss+" fixed top-0 flex-col min-h-lvh min-w-screen h-screen justify-end z-80 bg-black"}>
 			<div className="flex px-4 bg-black text-white w-full min-h-13">
 				<Link className="flex flex-col justify-center Fonts-DMSerif text-4xl bg-amarillo-hover" to="/">Know</Link>
 			</div>
@@ -32,7 +31,7 @@ export default function MenuPrincipalMobile({mostrar=false, close_event}) {
 				</button>
 
 			</div>
-			<ElAdaptadorDeBarras3000 />
+			<div className="bg-black min-h-[calc(100lvh-100dvh)]"/>
 		</div>
 	);
 }
