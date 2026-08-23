@@ -45,16 +45,16 @@ export default function Configuracion() {
 				</div>
 			</div>
 			
-			<BarraPrincipalMobile>
-				<button className="p-2 w-full bg-black text-white text-2xl Fonts-RobotoC font-black" onClick={e => setSelector_mostrar(true)}>
+			<BarraPrincipalMobile too_small="lg:hidden">
+				<button className="p-2 w-full bg-black text-white text-2xl Fonts-RobotoC font-black min-h-12" onClick={e => setSelector_mostrar(true)}>
 					- {titulo}
 				</button>
-				<button className="p-2 bg-black" onClick={e => setMenu_mostrar(true)}>
-					<img src={`/${"src/assets/icons/menu24.svg"}`} alt="Menú" className="h-8" />
+				<button className="block md:hidden p-2 bg-black" onClick={e => setMenu_mostrar(true)}>
+					<img src={`/${"src/assets/icons/menu24.svg"}`} alt="Menú" className="min-h-8 min-w-8" />
 				</button>
 			</BarraPrincipalMobile>
 			<MenuPrincipalMobile mostrar={menu_mostrar} close_event={ocultar} />
-			<SelectorMobile mostrar={selector_mostrar} close_event={ocultar_selector} lista={["Suscripciones", "Categorias", "Lectura"]} urls={["/Config/Suscripciones", "/Config/Categorias", "/Config/Lectura"]}/>
+			<SelectorMobile mostrar={selector_mostrar} close_event={ocultar_selector} lista={["Suscripciones", "Categorias", "Lectura"]} urls={["/Config/Suscripciones", "/Config/Categorias", "/Config/Lectura"]} too_small="lg:hidden" />
 		</div>
 	);
 }

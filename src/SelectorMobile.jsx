@@ -3,8 +3,8 @@ import { useLocation } from "react-router";
 import { Link } from "react-router";
 import * as Almac from "./Almacenamiento";
 
-export default function MenuPrincipalMobile({mostrar=false, close_event, lista=[], urls=[]}) {
-	var moscss = mostrar ? "flex md:hidden " : "hidden ";
+export default function MenuPrincipalMobile({mostrar=false, close_event, lista=[], urls=[], too_small="md:hidden"}) {
+	var moscss = mostrar ? "flex "+too_small+" " : "hidden ";
 	
 	const elements = lista.map(el =>
 		<Boton texto={el} link={urls[lista.indexOf(el)]} />

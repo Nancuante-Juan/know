@@ -1,7 +1,7 @@
 import ElAdaptadorDeBarras3000 from "./ElAdaptadorDeBarras3000";
 
-export default function BarraPrincipalMobile({children}) { return (
-	<div className="md:hidden flex flex-col w-screen z-50 justify-end max-h-0">
+export default function BarraPrincipalMobile({children, too_small="md:hidden "}) { return (
+	<div className={too_small+" flex flex-col w-screen z-50 justify-end max-h-0"}>
 		<div className="flex w-full h-auto p-4 z-55 gap-2 justify-end">
 			{children}
 		</div>
