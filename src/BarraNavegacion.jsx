@@ -1,9 +1,10 @@
-import { useParams } from "react-router";
+import { useParams, useLocation } from "react-router";
 import { Link } from "react-router";
 import * as Almac from "./Almacenamiento";
 
 export default function BarraNavegación ({catego_manual}) { 
 	const params = useParams();
+	const ruta = decodeURI(useLocation().pathname);
 	const categoria_dominante = params.cat;	
 
 	var categorias = catego_manual;
@@ -22,7 +23,10 @@ export default function BarraNavegación ({catego_manual}) {
 				{elements}
 			</div>
 			<Link className="hidden md:flex min-w-8 gap-4 items-center" to={"/Config/Suscripciones"}>
-				<img src={`/${"src/assets/icons/discover_tune24.svg"}`} className="h-8"/>
+				{ ruta.split("/")[1] === "Config" ?
+					<img src={`/${"src/assets/icons/discover_tune_red24.svg"}`} className="h-8"/> :
+					<img src={`/${"src/assets/icons/discover_tune24.svg"}`} className="h-8"/>
+				}
 			</Link>
 		</div>
 	</div>
@@ -32,11 +36,11 @@ export default function BarraNavegación ({catego_manual}) {
 
 function BotonBarra ({texto, link, activado = false}) { 
 	var isBold = " bg-amarillo-hover underline";
-	if (activado) { isBold = " font-black";}
+	if (activado) { isBold = " font-black text-(--rojo)";}
 	
 	return (
 		<Link to={link} className="flex text-xl hover:no-underline px-2 py-3 hover-parent">
-			<div className={"max-h-7" + isBold}>{texto}</div>
+			<div className={"max-h-7 " + isBold}>{texto}</div>
 		</Link>
 	);
 }

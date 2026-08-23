@@ -25,7 +25,7 @@ const LEC_KEY = "Lectura";
 export function obt_LECTURA(){
 	const def = {
 		fuente: "Inter",
-		tamano: 1,
+		tamano: 1.25,
 		interlineado: 1.75,
 		espParrafos: 100,
 		espCaracteres: 100,
@@ -34,7 +34,7 @@ export function obt_LECTURA(){
 		verImagenes: true,
 		colorTexto: "#000000",
 		colorFondo: "#ffffff",
-		fondoTextura: false,
+		fondoTextura: true,
 	};
 	const dat = obtener_datos(LEC_KEY, JSON.stringify(def));
 	return JSON.parse(dat);

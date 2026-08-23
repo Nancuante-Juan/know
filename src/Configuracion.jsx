@@ -10,8 +10,7 @@ import MenuPrincipalMobile from "./MenuPrincipalMobile";
 import SelectorMobile from "./SelectorMobile";
 
 export default function Configuracion() {
-	const location = useLocation();
-	const ruta = location.pathname;
+	const ruta = decodeURI(useLocation().pathname);
 
 	var contenido;
 	var titulo;

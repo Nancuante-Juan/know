@@ -27,6 +27,8 @@ img {
 }
 
 select {
+	min-height: 2.5rem;
+	max-height: 2.5rem;
 	padding: 0.5rem;
 	width: 100%;
 	border: solid var(--gris) 2px;
@@ -36,7 +38,7 @@ select {
 input[type="range"] {
 	-webkit-appearance: none;
 	appearance: none;
-	height: 2rem;
+	height: 2.5rem;
 	border: solid var(--gris) 2px;
 	border-radius: 0;
 	cursor: pointer;
@@ -44,9 +46,8 @@ input[type="range"] {
 }
 
 input[type="range"]::-moz-range-track {
-	background: var(--rojo);
-	width:  calc(100% - 0.5rem);
-	height: calc(100% - 0.5rem);
+	width:  calc(100%);
+	height: calc(100%);
 	background: var(--lectura-color-fondo);
 	border-radius: 0px;
 	border: none;
@@ -61,7 +62,7 @@ input[type="range"]::-moz-range-thumb {
 }
 
 input[type="checkbox"] {
-	height: 2rem;
+	height: 4rem;
 	width: 2rem;
 	accent-color: var(--rojo);
 	border-radius: 0px;
@@ -114,10 +115,10 @@ button {
 	min-height: var(--tamano-h-tarjeta);
 }
 .ideal-h-grande {
-	height: 72vh;
+	height: 70vh;
 }
 
-@media (min-width: 48rem) and (min-height: 50rem){
+@media (min-width: 48rem) and (min-height: 48rem){
 	.ideal-h-noticia {
 		max-height: calc((100vh - 52px - 52px - 2rem)/2);
 		min-height: calc((100vh - 52px - 52px - 2rem)/2);
@@ -136,14 +137,14 @@ button {
 	}
 }
 
-@media (min-width: 48rem) and (max-height: 50rem){
+@media (min-width: 48rem) and (max-height: 48rem){
 	.ideal-h-grande {
 		max-height: calc( var(--tamano-h-tarjeta) * 3 + 2rem);
 		min-height: calc( var(--tamano-h-tarjeta) * 3 + 2rem);
 	}
 }
 
-@media (min-width: 64rem) and (min-height: 50rem){
+@media (min-width: 64rem) and (min-height: 48rem){
 	.MAIN-APP{
 		scroll-snap-type: y var(--tw-scroll-snap-strictness);
 	}

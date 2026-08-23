@@ -17,7 +17,7 @@ export default function BarraLateral() {
 }
 
 function BotonLateral({texto, link}) {
-	const ruta      = useLocation().pathname;
+	const ruta      = decodeURI(useLocation().pathname);
 	const activado  = ruta === link;
 	const parentcss = activado ? " text-(--rojo)" : " hover:bg-(--rojo) hover:text-white"
 	const childcss  = activado ? " w-6 bg-(--rojo)" : " hover-parent w-1 bg-(--gris)"

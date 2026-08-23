@@ -71,17 +71,24 @@ export default function Noticia () {
 	return (
 		<div className="overflow-x-hidden bg-black">
 			<BarraNavegación />
-			<div className="flex flex-col w-screen h-[72vh] bg-cover text-white justify-end bg-center trans" style={{backgroundImage: "url("+`/${NOTI_INFO.imagen}`+")"}}>
-				<div className="flex w-full h-auto muestra-noticia-fondo p-6 z-5 gap-4 items-end">
+			<div className="flex flex-col w-screen h-[64svh] md:h-[74svh] bg-cover text-white justify-end bg-center trans" style={{backgroundImage: "url("+`/${NOTI_INFO.imagen}`+")"}}>
+				<div className="flex w-full h-auto muestra-noticia-fondo p-4 z-5 gap-4 items-end">
 					<div className="font-black text-6xl Fonts-RobotoC muestra-noticia-titulo w-fit bg-amarillo">{NOTI_INFO.titulo}</div>
 					<div className="hidden md:block">{NOTI_INFO.descripcion}</div>
 				</div>
 				<div className="flex flex-col w-full max-h-0 justify-end"><div className="desenfoque-prog w-full ideal-h-noticia" /></div>
 			</div>
 			
-			<div className="flex flex-row bg-repeat min-h-[20vh] trans" style={{backgroundColor: "var(--lectura-color-fondo)", backgroundImage: "var(--lectura-ruido)"}}>
+			<div className="flex flex-row bg-repeat min-h-[30vh] trans" style={{backgroundColor: "var(--lectura-color-fondo)", backgroundImage: "var(--lectura-ruido)"}}>
 				{lectura.anchoPag !== 100 ? <div className="sticky h-full top-0 max-h-screen hidden md:flex w-full noticia n-barra-lateral n-bl-izquierda">
-					{lectura.anchoPag < 70 ?
+
+
+
+					{/* ACA VA EL INDICE DE LA NOTICIA */}
+
+
+
+					{lectura.anchoPag < 70 ? /* si el ancho de la noticia es demasiado pequeño o la ventana lo es el botono se muestra a la izquierda */
 					<button className="p-4 hidden md:flex xl:hidden" onClick={e => setPanel_mostrar(true)}>
 						<img className="h-8" src={`/${"src/assets/icons/styles24.svg"}`}/>
 					</button> : 
@@ -93,8 +100,9 @@ export default function Noticia () {
 				</div> : <></>}
 				
 				<div className="p-4 select-text w-full NOTICIA_CONTENT noticia n-medio">
-					<div>{NOTI_INFO.medio + " ⋅ " + NOTI_INFO.categorias.toString().replaceAll(",", " ⋅ ")}</div>
-					<div className="md:hidden">{NOTI_INFO.descripcion}</div>
+					<div className="md:hidden Fonts-RobotoC italic ignore-noticia descripcion">{NOTI_INFO.descripcion}</div>
+
+					<div className=" ignore-noticia medio">{NOTI_INFO.medio + " ⋅ " + NOTI_INFO.categorias.toString().replaceAll(",", " ⋅ ")}</div>
 					
 					{text}
 				</div>
@@ -157,7 +165,10 @@ export default function Noticia () {
 				</button>
 			</BarraPrincipalMobile>
 			<MenuPrincipalMobile mostrar={menu_mostrar} close_event={ocultar} />
-			<SelectorMobile mostrar={selector_mostrar} close_event={ocultar_selector} lista={["[Inicio]", "titulo 1", "titulo2"]} urls={["/", "/", "/"]} too_small=""/>
+			<SelectorMobile mostrar={selector_mostrar} close_event={ocultar_selector} 
+					lista={["[Inicio]", "titulo 1", "titulo2"]} 
+					urls={["/", "/", "/"]}  
+			too_small=""/> {/*el indice tambien va aca en el selectir*/}
 
 		</div>
 	);

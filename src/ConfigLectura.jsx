@@ -27,7 +27,7 @@ export default function ConfigLectura({completo = false, update} ) {
 	function restablecerTexto() {
 		const nueva = { ...lectura,
 			fuente: "Inter",
-			tamano: 1,
+			tamano: 1.25,
 			interlineado: 1.75,
 			espCaracteres: 100,
 			espPalabras: 100,

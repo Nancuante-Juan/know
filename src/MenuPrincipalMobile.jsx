@@ -4,6 +4,7 @@ import * as Almac from "./Almacenamiento";
 
 export default function MenuPrincipalMobile({mostrar=false, close_event}) {
 	var moscss = mostrar ? "flex md:hidden " : "hidden ";
+	const ruta = decodeURI(useLocation().pathname);
 	
 	var categorias = Almac.obt_CATEGORIAS();
 	const elements = categorias.map(cat =>
@@ -24,7 +25,10 @@ export default function MenuPrincipalMobile({mostrar=false, close_event}) {
 
 			<div className="flex p-4 justify-between">
 				<Link className="p-2 bg-black" to="/Config/Suscripciones">
-					<img src={`/${"src/assets/icons/discover_tune24.svg"}`} alt="Ajustes" className="h-12" />
+					{ ruta.split("/")[1] === "Config" ?
+						<img src={`/${"src/assets/icons/discover_tune_red24.svg"}`} className="h-12 text-(--rojo)" alt="Ajustes" /> :
+						<img src={`/${"src/assets/icons/discover_tune24.svg"}`} className="h-12" alt="Ajustes"/>
+					}
 				</Link>
 				<button className="p-2 bg-black" onClick={close_event}>
 					<img src={`/${"src/assets/icons/close_white24.svg"}`} alt="Cerrar" className="h-12" />
@@ -39,8 +43,8 @@ export default function MenuPrincipalMobile({mostrar=false, close_event}) {
 
 
 function Boton({texto, link}) {
-	const ruta      = useLocation().pathname;
-	const activado  = ruta === link;
+	const ruta      = decodeURI(useLocation().pathname);
+	const activado  = ruta == link;
 	const parentcss = activado ? " text-(--rojo)" : " hover:bg-(--rojo) hover:text-white"
 	const childcss  = activado ? " w-6 bg-(--rojo)" : " hover-parent w-1 bg-white"
 	return (
