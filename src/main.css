@@ -153,6 +153,16 @@ button {
 	}
 }
 
+.MAIN-APP{
+	min-height: fit-content;
+}
+@media (min-width: 48rem){
+	.MAIN-APP {
+		max-height: calc(100vh - 52px);
+		min-height: calc(100vh - 52px);
+	}
+}
+
 
 
 h1{
@@ -164,6 +174,13 @@ h1{
 	background: rgba(0, 0, 0, 0.8);
 	backdrop-filter: blur(64px);
 	mask-image: linear-gradient(to top, rgba(0,0,0,1) 20%, rgba(0,0,0,0));
+	transition-property: none;
+}
+
+.desenfoque-prog-barra {
+	background: rgba(0, 0, 0, 0.6);
+	backdrop-filter: blur(32px);
+	mask-image: linear-gradient(to top, rgba(0,0,0,1) 40%, rgba(0,0,0,0.5) 60%, rgba(0,0,0,0));
 	transition-property: none;
 }
 

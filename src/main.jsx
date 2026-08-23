@@ -11,8 +11,8 @@ createRoot(document.getElementById('root')).render(
 		<Route path="/"         element={<App />} />
 		<Route path="/c/:cat/"  element={<Categoria />} />
 		<Route path="/n/:noti/" element={<Noticia />} />
-		<Route path="/Config"              element={<Configuracion />} />
-		<Route path="/ConfigCategorias"    element={<Configuracion />} />
-		<Route path="/ConfigSuscripciones" element={<Configuracion />} />
+		<Route path="/Config/Lectura"       element={<Configuracion />} />
+		<Route path="/Config/Categorias"    element={<Configuracion />} />
+		<Route path="/Config/Suscripciones" element={<Configuracion />} />
 	</Routes> </BrowserRouter>
 );

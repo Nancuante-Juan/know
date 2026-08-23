@@ -9,10 +9,11 @@ export default function Configuracion() {
 	const location = useLocation();
 	const ruta = location.pathname;
 
-	var contenido = <ConfigLectura completo={true} />;
-	var titulo = "Lectura";
-	if (ruta === "/ConfigCategorias") { contenido = <ConfigCategorias />; titulo = "Categorías"; }
-	else if (ruta === "/ConfigSuscripciones") { contenido = <ConfigMedios />; titulo = "Suscripciones"; }
+	var contenido;
+	var titulo;
+	if (ruta === "/Config/Categorias") { contenido = <ConfigCategorias />; titulo = "Categorías"; }
+	else if (ruta === "/Config/Suscripciones") { contenido = <ConfigMedios />; titulo = "Suscripciones"; }
+	else { contenido = <ConfigLectura completo={true} />; titulo = "Lectura";}
 	return (
 		<div className="flex flex-col">
 			<BarraNavegacion />

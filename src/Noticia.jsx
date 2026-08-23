@@ -19,9 +19,19 @@ export default function Noticia () {
 	const [text, setText] = useState(null);
 	
 	const [panel_mostrar, setPanel_mostrar] = useState(false);
-
 	function ocultar() { setPanel_mostrar(false); }
 	
+	const [prev_page, setPrev_page] = useState(id);
+	if (id !== prev_page){
+		setPrev_page(id);
+		window.scrollTo(0,0);
+		const collection = document.getElementsByClassName("trans");
+		for (let i = 0; i < collection.length; i++) {
+			collection[i].animate([{opacity:0},{opacity:1}],{duration: 200}).play();
+		}
+	}
+
+
 	async function get_text(id){
 		const module = await import(`./assets/noticias/${id}.jsx`);
 		console.log(module);

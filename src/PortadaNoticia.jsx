@@ -8,7 +8,7 @@ export default function PortadaNoticia ({ titulo, imagen, medio, categorias, des
 	
 	if (tipo==="grande") { return (
 	
-		<Link className="flex flex-col w-full min-h-full ideal-h-grande overflow-hidden bg-center text-white muestra-noticia muestra-noticia-grande imagen-noticia" style={estiloFondo} to={url} reloadDocument>
+		<Link className="flex flex-col w-full min-h-full ideal-h-grande overflow-hidden justify-end bg-center text-white muestra-noticia muestra-noticia-grande imagen-noticia" style={estiloFondo} to={url}>
 			{dentro}
 			<div className="flex flex-col w-full h-auto muestra-noticia-fondo p-6 z-5 gap-2">
 				<div className="truncate">{medio + " ⋅ " + categorias}</div>
@@ -20,7 +20,7 @@ export default function PortadaNoticia ({ titulo, imagen, medio, categorias, des
 	
 	);} else if (tipo === "pequeno3") { return (
 	
-		<Link className="flex flex-col w-full ideal-h-noticia-3 justify-end overflow-hidden bg-center text-white muestra-noticia muestra-noticia-pequena imagen-noticia" style={estiloFondo} to={url} reloadDocument>
+		<Link className="flex flex-col w-full ideal-h-noticia-3 justify-end overflow-hidden bg-center text-white muestra-noticia muestra-noticia-pequena imagen-noticia" style={estiloFondo} to={url}>
 		
 			<div className="flex flex-col w-full h-auto muestra-noticia-fondo p-4 z-5 gap-2">
 				<div className="hide-not-hover truncate">{medio + " ⋅ " + categorias}</div>
@@ -33,7 +33,7 @@ export default function PortadaNoticia ({ titulo, imagen, medio, categorias, des
 	
 	);} else { return (
 	
-		<Link className="flex flex-col w-full ideal-h-noticia justify-end overflow-hidden bg-center text-white muestra-noticia muestra-noticia-pequena imagen-noticia" style={estiloFondo} to={url} reloadDocument>
+		<Link className="flex flex-col w-full ideal-h-noticia justify-end overflow-hidden bg-center text-white muestra-noticia muestra-noticia-pequena imagen-noticia" style={estiloFondo} to={url}>
 		
 			<div className="flex flex-col w-full h-auto muestra-noticia-fondo p-4 z-5 gap-2">
 				<div className="hide-not-hover truncate">{medio + " ⋅ " + categorias}</div>

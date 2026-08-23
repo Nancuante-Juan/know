@@ -1,9 +1,6 @@
 import { Link, useLocation } from "react-router";
 
 export default function BarraLateral() {
-	const location = useLocation();
-	const ruta = location.pathname;
-
 	return (
 		<div className="lg:flex flex-col min-w-48 text-gris Fonts-RobotoC font-black text-2xl hidden py-8">
 			<Link to="/" className="flex gap-2 items-center text-2xl mb-8 px-2 py-3 hover:bg-[#99999933]">
@@ -11,22 +8,22 @@ export default function BarraLateral() {
 				Volver
 			</Link>
 			<div className="flex flex-col ">
-				<BotonLateral texto="Suscripciones" link="/ConfigSuscripciones" activado={ruta === "/ConfigSuscripciones"} />
-				<BotonLateral texto="Categorías" link="/ConfigCategorias" activado={ruta === "/ConfigCategorias"} />
-				<BotonLateral texto="Lectura" link="/Config" activado={ruta === "/Config"} />
+				<BotonLateral texto="Suscripciones" link="/Config/Suscripciones" />
+				<BotonLateral texto="Categorías" link="/Config/Categorias" />
+				<BotonLateral texto="Lectura" link="/Config/Lectura" />
 			</div>
 		</div>
 	);
 }
 
-function BotonLateral({texto, link, activado = false}) {
-	if (activado) { return (
-		<Link to={link} className="flex gap-1 items-center px-2 py-3" style={{color: "var(--rojo)"}}>
-			<div className="h-1 w-6 bg-(--rojo)"/> {texto}
+function BotonLateral({texto, link}) {
+	const ruta      = useLocation().pathname;
+	const activado  = ruta === link;
+	const parentcss = activado ? " text-(--rojo)" : " hover:bg-(--rojo) hover:text-white"
+	const childcss  = activado ? " w-6 bg-(--rojo)" : " hover-parent w-1 bg-(--gris)"
+	return (
+		<Link to={link} className={"flex gap-1 items-center px-2 py-3 btn-barra-lateral "+parentcss}>
+			<div className={"h-1 "+childcss}/> {texto}
 		</Link>
-	); } else { return (
-		<Link to={link} className="flex gap-1 items-center text-blanco px-2 py-3 hover:bg-(--rojo) hover:text-white btn-barra-lateral">
-			<div className="h-1 w-1 bg-(--gris) hover-parent"/> {texto}
-		</Link>
-	); }
+	);
 }

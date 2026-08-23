@@ -15,13 +15,13 @@ export default function BarraNavegación ({catego_manual}) {
 	);
 	
 	return (
-	<div className="flex px-4 bg-black text-white w-full">
+	<div className="flex px-4 bg-black text-white w-full min-h-13">
 		<Link className="flex flex-col justify-center Fonts-DMSerif text-4xl bg-amarillo-hover" to="/">Know</Link>
 		<div className="flex flex-row gap-4 w-full justify-end">
-			<div className="flex overflow-x-scroll overflow-y-hidden scrollbar-none items-center" style={{maxWidth: "calc(100vw - (13.5rem + 2rem + 1rem))"}}>
+			<div className="hidden md:flex overflow-x-scroll overflow-y-hidden scrollbar-none items-center" style={{maxWidth: "calc(100vw - (13.5rem + 2rem + 1rem))"}}>
 				{elements}
 			</div>
-			<Link className="flex min-w-8 gap-4 items-center" to={"/Config"}>
+			<Link className="hidden md:flex min-w-8 gap-4 items-center" to={"/Config/Suscripciones"}>
 				<img src={`/${"src/assets/icons/discover_tune24.svg"}`} className="h-8"/>
 			</Link>
 		</div>

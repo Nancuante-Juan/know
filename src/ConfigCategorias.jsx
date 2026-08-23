@@ -20,7 +20,7 @@ export default function ConfigCategorias() {
 	}
 
 	return (
-		<div className="flex text-lg w-full gap-16 trans">
+		<div className="flex flex-col md:flex-row text-lg w-full gap-16 trans">
 			<div className="flex flex-col gap-4 w-full">
 				<h1>Suscritas</h1>
 				<div className="flex flex-wrap gap-2">
