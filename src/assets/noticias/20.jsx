@@ -19,7 +19,7 @@ export function Devolver() { return (
         <br />La actividad comenzará a acumularse desde octubre, con la siembra de soja de primera. Hacia fines de noviembre se sumarán la cosecha de trigo y las siembras de soja de segunda y maíz tardío.
 
         <img src={`/${"src/assets/noticias/imagen/lanacion/niño3.avif"}`} alt="" />
-        <center>En noviembre podría llover un 70% más que el promedio, según el modelo elaborado por la BCR</center>
+        <small><center>En noviembre podría llover un 70% más que el promedio, según el modelo elaborado por la BCR</center></small>
 
         <br />“Cada semana que avancemos a diciembre se va a poner más difícil. Si se puede sembrar, habrá que hacerlo sin postergar nada, porque será clave evitar cuellos de botella”, afirmó.
 
