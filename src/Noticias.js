@@ -63,7 +63,7 @@ export const noticias = [
 		medio: "CNN",
 		categorias: ["Ciencia", "Tecnologia"],
 		descripcion: "Un eclipse solar total creó un espectáculo celestial para millones de personas este miércoles...",
-		link: "https://cnnespanol.cnn.com/2026/08/12/deportes/venden-los-angeles-lakers-record-trax"
+		link: "https://cnnespanol.cnn.com/2026/08/12/ciencia/mejores-fotos-eclipse-solar-miercoles-trax"
 	},
 	{
 		id: 7,
@@ -72,7 +72,7 @@ export const noticias = [
 		medio: "CNN",
 		categorias: ["Deporte"],
 		descripcion: "El ex CEO de Disney Bob Iger y el capitalista de riesgo Josh Kushner están comprando uno de los activos más...",
-		link: "https://cnnespanol.cnn.com/2026/08/12/ciencia/mejores-fotos-eclipse-solar-miercoles-trax"
+		link: "https://cnnespanol.cnn.com/2026/08/12/deportes/venden-los-angeles-lakers-record-trax"
 	},
 	{ 
 		id: 8,

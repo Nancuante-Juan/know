@@ -24,6 +24,8 @@ export function Devolver() { return (
 
         <br />Las heladas continuarán presentes en amplios sectores de la provincia, aunque con una disminución progresiva de su intensidad y duración. A partir del martes 18 de agosto se espera una mejora significativa de las condiciones térmicas.
 
+        <img src={`/${"src/assets/noticias/imagen/tiemposur/clima.jpg"}`} alt="" />
+
         <h1>Recomendaciones</h1>
 
         Ante este escenario, la Administración General de Vialidad Provincial (AGVP) y la Agencia Provincial de Seguridad Vial (APSV) recomendaron extremar las precauciones al conducir y reducir la velocidad ante la posible presencia de lluvia, nieve, hielo, escarcha, niebla o baja visibilidad.
