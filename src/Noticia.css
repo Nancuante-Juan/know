@@ -19,6 +19,10 @@
 }
 .NOTICIA_CONTENT > img {
 	display: var(--lectura-ocultar-imagenes);
+	min-width: calc(var(--ancho-calc) - 2rem);
+	max-height: 60vh;
+	align-self: center;
+	object-fit: contain;
 }
 .NOTICIA_CONTENT {
 	font-family: var(--lectura-fuente);
@@ -41,13 +45,6 @@
 
 .n-medio {
 	min-width: var(--ancho-calc);
-}
-
-.n-medio > * > img { 
-	min-width: 60vh;
-	max-height: 60vh;
-	align-self: center;
-	background-size: contain;
 }
 
 .n-medio > .NOTICIA_CONTENT {
