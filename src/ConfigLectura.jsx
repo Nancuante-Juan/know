@@ -15,7 +15,7 @@ export default function ConfigLectura({completo = false, update} ) {
 		}
 	}
 	function restablecerColores() {
-		const nueva = { ...lectura, colorTexto: "#000000", colorFondo: "#ffffff" };
+		const nueva = { ...lectura, colorTexto: "#4f4c58", colorFondo: "#ffffff" };
 		setLectura(nueva);
 		Almac.guar_LECTURA(nueva);
 	}
@@ -36,6 +36,9 @@ export default function ConfigLectura({completo = false, update} ) {
 		};
 		setLectura(nueva);
 		Almac.guar_LECTURA(nueva);
+		if (update != undefined) {
+			update();
+		}
 	}
 
 	if (completo) { completo = " md:grid md:grid-cols-2"}

@@ -32,7 +32,7 @@ export function obt_LECTURA(){
 		espPalabras: 100,
 		anchoPag: 60,
 		verImagenes: true,
-		colorTexto: "#000000",
+		colorTexto: "#4f4c58",
 		colorFondo: "#ffffff",
 		fondoTextura: true,
 	};
