@@ -18,7 +18,7 @@ export default function Categoria(){
 	);
 
 	function grilla_no_noticias() { 
-		if (noticias.length > 3) { return (
+		if (lista_noticias.length > 4) { return (
 			<DefaultGrid tipo="infinite">{noticias}</DefaultGrid>
 		);} else { return; }
 	}

@@ -7,14 +7,12 @@ const MED_KEY = "Medios";
 export function obt_MEDIOS(){
 	const def = ["Tiempo Sur", "Olé", "Crónica", "TyC Sports", "La Nacion", "CNN", "NuevoDia", "Levelup", "TN" ];
 	const dat = obtener_datos(MED_KEY, def.toString()).split(",");
-	console.log(dat.toString());
 	return dat;
 }
 
 export function obt_CATEGORIAS(){
 	const def = ["Economia", "Clima", "Deporte", "Política", "Gaming"];
 	const data = obtener_datos(CAT_KEY, def.toString()).split(",");
-	console.log(data.toString());
 	return data;
 }
 

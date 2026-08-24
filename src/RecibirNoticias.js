@@ -13,7 +13,6 @@ export function Todo() {
 export function Filtrado(categoria = "", limite) {
 	var noticias = Todo();
 	var final = [];
-	var debug = "";
 	
 	for (let i = 0; i < noticias.length; i++) {
 		if (categoria === "") {
@@ -36,7 +35,6 @@ export function Filtrado(categoria = "", limite) {
 
 		final.push(noticias[i]);
 		ya_mostrado.push(noticias[i].id);
-		debug = debug + noticias[i].titulo;
 		if (limite != undefined){
 			if (final.length >= limite){
 				break;
