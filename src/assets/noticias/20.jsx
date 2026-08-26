@@ -28,14 +28,14 @@ export function Devolver() { return (
         <br />Por otro lado, en la BCR dijeron que el Niño también suele estar relacionado con un aumento de las temperaturas. Durante el evento de 2015/16, el invierno de 2015 fue el más cálido de los últimos 60 años. “Este año, al darse un acoplamiento incluso antes que en 2015, es muy probable que volvamos a tener un final de invierno moderado por El Niño”, explicó.
 
         <img src={`/${"src/assets/noticias/imagen/lanacion/niño4.avif"}`} alt="" />
-        <center>El Niño genera lluvias por encima de lo normal</center>
+        <small><center>El Niño genera lluvias por encima de lo normal</center></small>
 
         <br />También podrían registrarse olas de calor durante el verano. El especialista recordó que en enero de la campaña 2023/24 se produjeron varios episodios de temperaturas muy elevadas. Frente a este panorama, consideró que una siembra de maíz entre fines de agosto y principios de septiembre podría ser una opción válida.
 
         <br />En la campaña 2015/16, el momento de mayor fuerza de El Niño se produjo durante enero y febrero. Además, las lluvias abundantes y las altas temperaturas de abril provocaron una pérdida de seis millones de toneladas de soja en la Argentina. Para el ciclo actual, las curvas muestran una evolución diferente.
 
         <img src={`/${"src/assets/noticias/imagen/lanacion/niño5.avif"}`} alt="" />
-        <center>En diciembre podría llover casi el doble de lo que suele llover en la región núcleo</center>
+        <small><center>En diciembre podría llover casi el doble de lo que suele llover en la región núcleo</center></small>
 
         <br />“A diferencia de 2016, cuando seguíamos bajo la influencia de El Niño, esta vez las curvas de evolución muestran que en abril estaremos muy cerca de la neutralidad”, explicó Elorriaga. De todos modos, aclaró que en abril suelen producirse eventos de ciclogénesis por el cambio de estación. Pueden aparecer tanto en años Niño como Niña, aunque el ingreso adicional de humedad puede agravarlos.
 

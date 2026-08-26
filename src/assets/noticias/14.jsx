@@ -13,7 +13,7 @@ export function Devolver() { return (
         <br />Si bien descartó que el objetivo sea generar un boom de créditos en dólares, consideró que la medida puede contribuir a mejorar el acceso al financiamiento para determinados sectores, especialmente las pymes y los desarrollos inmobiliarios.
 
         <img src={`/${"src/assets/noticias/imagen/tn/tienda1.avif"}`} alt="" />
-        <center>El Gobierno confía en que la inflación de agosto estará por debajo de 2%. (Foto: Daniel Vides/NA).</center>
+        <small><center>El Gobierno confía en que la inflación de agosto estará por debajo de 2%. (Foto: Daniel Vides/NA).</center></small>
 
         <br />Los dichos de Bausili sucedieron después de que el INDEC difundiera la evolución de los precios mayoristas. Según el organismo estadístico, el índice de precios internos al por mayor (IPIM) aumentó 0,8% en julio, acumuló una suba de 16,6% en los primeros siete meses del año y registró una variación interanual de 31,1%.
 

@@ -1,8 +1,38 @@
 export function Devolver() { return (
 	<div className="NOTICIA_CONTENT">
-        
-
-        <img src={`/${"src/assets/noticias/imagen/"}`} alt="" />
+        -Crimen en Las Heras. Mataron a un joven de 20 años. La víctima fatal fue identificado como Franco Ezequiel Suárez. El hecho tuvo lugar esta madrugada en el interior del Barrio Democracia. En el lugar hallaron cuatro vainas servidas calibre 9 milímetros. 
+        <br />
+        <br />-Rescataron con vida a un bebé de 6 meses y a un niño de 4 años tras el derrumbe de una vivienda en el departamento Junín. Los hechos sucedieron ante la caída de un techo en la propiedad ubicada en la intersección de calle Olivares y Carril Centro. Dos adultos mayores también permanecen con vida y lograron rescatarlos de entre los escombros. En el lugar trabajaron Bomberos y efectivos policiales.  
+        <br />
+        <br />-La Fiscalía de Homicidios y los abogados de la familia de Alan Villouta tienen 15 días para apelar el cuestionado sobreseimiento al empresario Alejandro Verdenelli que está acusado de atropellar, matar y dejar abandonado al joven Villouta. El abogado manejaba borracho por el Acceso Sur y se dio a la fuga. La apelación deberá ser tratada por la Corte de justicia de Mendoza, la misma que se tomó 5 años y 10 meses para resolver un recurso de casación. En caso de que el Tribunal de la Corte aceptara los argumentos de la apelación, podría "caerse" el sobreseimiento al acusado Verdenelli. 
+        <br />
+        <br />-Un violador serial no se contiene ni 24 horas sin abusar. Vive en el departamento Tupungato. Salió de la cárcel donde purgaba una condena por abuso sexual. Al otro día, intentó violar a una mujer. La Fiscalía solicitó que sea encerrado por el peligro que representa. En el Penal también intentó agredir sexualmente a compañeros de pabellón. Ahora le dieron prisión preventiva al abusador de nombre Agustín Albornoz. De acuerdo con el marco legal aplicable al caso, de determinarse su responsabilidad, la escala penal prevista podría alcanzar una sanción mínima de 20 años de reclusión. 
+        <br />
+        <br />-El conductor de una camioneta fue interceptado en Guaymallén cuando circulaba alcoholizado. Personal de Policía Vial procedió a verificar documentación personal del hombre y del vehículo. Como resultado obtuvieron que la camioneta Partner era robada y circulaba con patente falsa. El procedimiento se concretó a las 02:05 de este miércoles en la intersección de las calles Francisco Álvarez y Palmira, cuando los uniformados detuvieron la marcha del rodado al advertir que su conductor, de 33 años, se desplazaba en aparente estado de ebriedad. El acusado quedó a disposición de la oficina fiscal.
+        <br />
+        <br />-Desde el próximo mes de Septiembre rige en todo el país la nueva Ley Penal Juvenil donde la baja de imputabilidad se aplica a aquellos que delinquen desde los 14 años de edad. Un informe señala que en Mendoza actualmente hay 464 jóvenes bajo supervisión y 46 privados de la libertad internados en el exCose. Una de las novedades más importantes de la nueva Ley Penal Juvenil es la creación de la figura del supervisor. Se trata de profesionales con formación en educación, pedagogía, psicología o trabajo social que tendrán entrevistas semanales con cada joven que bajo un proceso judicial y deberán presentar informes mensuales sobre su situación.
+        <br />
+        <br />-Sigue temblando en Mendoza. El último sismo se registró anoche. Sucedió a la hora 21 con 29 minutos y alcanzó una intensidad leve de 2.9 grados. El epicentro se ubicó entre San Rafael y Malargüe. 
+        <br />
+        <br />-Defensa Civil advierte a la población que el kit de emergencias puede permitir sobrevivir durante 72 horas luego de un terremoto, pero debe contar con los elementos esenciales. Entre ellos se encuentran: Ropa de abrigo. Linterna y radio con pilas. Una manta liviana. Chocolates y barras de cereales. Botella de agua. Velas y fósforos. Copia de las llaves de la casa y de los vehículos. Documentos. Alcohol en gel. Bolsas de plástico. Botiquín y sobre todo se recomienda siempre tener a mano los medicamentos recetados que se consumen a diario. 
+        <br />
+        <br />-A las 9 abrió el Paso hacia Chile por el sistema Cristo Redentor. Estará habilitado hasta la hora 21 solo para el transporte de cargas con uso obligatorio de cadenas. En la jornada anterior pasaron hacia el vecino país 1420 camiones. 
+        <br />
+        <br />-Quedó habilitado un puente peatonal sobre el Acceso Este. Es el que quedó destruído por un incidente vial y que está ubicado frente al Mercado Cooperativo de Guaymallén. Estaba clausurado desde hace un año y medio. Piden a la gente que lo use y no siga cruzando por la ruta para evitar accidentes fatales. 
+        <br />
+        <br />-Inseguridad en San Rafael. Dos hombres robaron un tanque de agua de 400 litros de una propiedad ubicada en calles Alberdi y Las Heras. Fueron denunciados y lograron dar con ellos mediante un operativo. Los acusados tienen 37 y 38 años y quedaron a disposición de la oficina fiscal. 
+        <br />
+        <br />-El Municipio de Malargüe inició una investigación interna luego de que circulara en redes sociales un video en el que se acusaba a un funcionario de utilizar una camioneta institucional Toyota Hilux para fines personales: un festejo de cumpleaños y mudanzas para la apertura de local comercial familiar.
+        <br />
+        <br />-Incidente vial en el Acceso Sur. Sucedió a medida mañana entre dos autos y una moto en la mano que va al norte. El hecho tuvo lugar en el tramo que va entre calle Aráoz y Bulnes. Se registraron heridos. 
+        <br />
+        <br />-Encontraron a Nancy, la niña de 3 años que estaba siendo buscada en San Luis y en Mendoza. La búsqueda se concentró en el Parque Industrial Norte, donde reside su familia en la vecina provincia y se extendió a distintos puntos, también en Mendoza. Se había activado el Alerta Sofía en todo el país. 
+        <br />
+        <br />-Está en Mendoza Gastón Pauls. El actor participó de un acto oficial donde quedó inaugurado el Servicio de Deshabituación de Adicciones. La actividad se cumplió este mediodía en el Hospital "El Sauce" ubicado en Guaymallén.
+        <br />
+        <br />-Explosiones y un incendio destruyeron un depósito. Se registraron pérdidas totales. El siniestro ocurrió durante esta madrugada en un galpón ubicado en calles Paso Hondo y Recuero en el departamento Las Heras. En el lugar había pallets, tarros de pintura y papeles. No se informaron personas heridas.
+        <br />
+        <br />-Le quitaron una vivienda a una mujer porque ocultó datos. La provincia rechazó el recurso presentado por la mujer que buscaba mantener la titularidad de una propiedad del Instituto Provincial de la Vivienda ubicada en el barrio Francisco Amigores de Las Heras. La medida oficial, que fue publicada este miércoles en el Boletín Oficial, confirmó la anulación de los actos administrativos previos que le habían otorgado el inmueble. La investigación administrativa determinó que la beneficiaria inició los trámites de regularización por ocupación ocultando la existencia de procesos judiciales en trámite y un vínculo directo con la adjudicataria original, quien era su madre. Los antecedentes del expediente demostraron que la titular histórica no había abandonado voluntariamente la casa. Al constatarse que la presentación original incluyó datos fraguados y omitió litigios en curso, las autoridades declararon la nulidad absoluta del proceso inicial y ratificaron la decisión del directorio del IPV de retrotraer la adjudicación.
 
     </div>
 ); }
