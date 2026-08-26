@@ -9,7 +9,7 @@ export function Devolver() { return (
         <br />Si bien el grupo de petroleras que componen Southern Energy, liderado por PAE, tienen un RIGI aprobado por más de US$15.000 millones y hay otros proyectos como el de YPF que ronda los US$51.000 millones, la iniciativa de Tecpetrol es la más grande autorizada hasta el momento.
 
         <img src={`/${"src/assets/noticias/imagen/tn/foto1.avif"}`} alt="" />
-        <center>El proyecto de Tecpetrol promete una inversión que alcanza los US$6.400 millones. (Foto: REUTERS/Alexander Villegas/File Photo)</center>
+        <small><center>El proyecto de Tecpetrol promete una inversión que alcanza los US$6.400 millones. (Foto: REUTERS/Alexander Villegas/File Photo)</center></small>
         <br />
         <br />En paralelo, Pampa Energía también recibió el visto bueno para avanzar con el proyecto de Rincón de Aranda, donde invertirá US$4521 millones, mientras que el oleoducto Vaca Muerta Sur (VMOS) también fue aprobado para un desembolso de US$2900 millones para la infraestructura de evacuación de crudo desde la cuenca neuquina hasta las costas de Río Negro.
 
@@ -20,7 +20,7 @@ export function Devolver() { return (
         <br />“Esto es solamente de los RIGI que hemos aprobado, que son un tercio de la totalidad. En breve se van a enterar de que son un cuarto porque van a venir alguno que otro RIGI por hasta US$50.000 millones”, adelantó Caputo la semana pasada en su paso por la Bolsa de Comercio de Córdoba (BCC).
 
         <img src={`/${"src/assets/noticias/imagen/tn/foto2.avif"}`} alt="" />
-        <center>El ministro de Economía, Luis Caputo, anticipó un flujo cada vez mayor de dólares y descartó inestabilidad cambiaria para 2027. (Foto: Daniel Vides/NA).</center>
+        <small><center>El ministro de Economía, Luis Caputo, anticipó un flujo cada vez mayor de dólares y descartó inestabilidad cambiaria para 2027. (Foto: Daniel Vides/NA).</center></small>
         <br />
         <br />En ese contexto, el Gobierno promete un flujo de dólares “cada vez más alto” y descarta posibles turbulencias cambiarias para el próximo año, a pesar del factor electoral.
 

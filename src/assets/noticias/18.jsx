@@ -11,7 +11,7 @@ export function Devolver() { return (
         <br />Es importante saber que la prevención comienza antes de poner en marcha la moto; Honda recomienda realizar una revisión preventiva que incluya neumáticos, comandos, luces, fluidos y transmisión. También aconseja utilizar un casco homologado, con el visor limpio y transparente, y sumar, si es posible, un sistema Pinlock para evitar que se empañe.
 
         <img src={`/${"src/assets/noticias/imagen/lanacion/ventademoto1.avif"}`} alt="" />
-        <center>El mercado de las motos 0km, a diferencia del de los autos, creció un 41% en el acumulado del año</center>
+        <small><center>El mercado de las motos 0km, a diferencia del de los autos, creció un 41% en el acumulado del año</center></small>
 
         <br />Entre los controles mecánicos, la marca japonesa líder en ventas especifica que hay que comprobar la presión y el estado de los neumáticos, verificar el funcionamiento de las luces, controlar los niveles de aceite, combustible, líquido de frenos y refrigerante cuando corresponda, y revisar la batería, que puede verse afectada por las bajas temperaturas.
 
@@ -40,7 +40,7 @@ export function Devolver() { return (
         <br />Giachetti recomienda no abrir completamente el visor, sino apenas unos milímetros para permitir la ventilación. También señala que una alternativa efectiva es utilizar un casco equipado con sistema antivaho o Pinlock.
 
         <img src={`/${"src/assets/noticias/imagen/lanacion/ventademoto2.avif"}`} alt="" />
-        <center>La Honda Wave es el modelo 0km con más ventas</center>
+        <small><center>La Honda Wave es el modelo 0km con más ventas</center></small>
 
         <br />Tanto la preparación de la moto como la evaluación de las condiciones del entorno forman parte de una conducción segura. El ACA recomienda consultar el pronóstico meteorológico y las condiciones del tránsito antes de iniciar el viaje, teniendo en cuenta su duración y la posibilidad de que el clima empeore. También plantea evaluar si realmente es necesario realizar el recorrido bajo esas condiciones o si existe otra alternativa.
 

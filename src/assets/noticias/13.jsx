@@ -9,7 +9,7 @@ export function Devolver() { return (
         <br />El goleador bahiense, referente y capitán indiscutido del plantel, tiene un vínculo firmado que lo une a la institución hasta junio de 2029, estatus que el club no está dispuesto a alterar bajo ninguna circunstancia en esta ventana de pases.
 
         <img src={`/${"src/assets/noticias/imagen/tn/futbol1.avif"}`} alt="" />
-        <center>Lautaro viene de anotar uno de los goles más importantes del Mundial con la Selección argentina. (Foto: Reuters).</center>
+        <small><center>Lautaro viene de anotar uno de los goles más importantes del Mundial con la Selección argentina. (Foto: Reuters).</center></small>
         <br />
         <br />De esta manera, el Barcelona sufre un nuevo revés en sus pretensiones de reforzar el frente de ataque. Mientras el club catalán continúa evaluando alternativas para sumar un ‘9’ tras las fallidas vías de Julián Álvarez y el ‘Toro’, en el Inter aseguran con firmeza que el futuro de Lautaro Martínez seguirá ligado al club por un tiempo más.
 
