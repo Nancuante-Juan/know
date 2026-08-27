@@ -165,9 +165,9 @@ export default function Noticia () {
 			<PersonalizarLectura mostrar={panel_mostrar} ocultar={ocultar_panel} update={update_lectura}/>
 						
 			<BarraPrincipalMobile>
-				<button className="p-2 w-full bg-black text-white text-2xl Fonts-RobotoC font-black min-h-12" onClick={e => setSelector_mostrar(true)}>
+				{/*<button className="p-2 w-full bg-black text-white text-2xl Fonts-RobotoC font-black min-h-12" onClick={e => setSelector_mostrar(true)}>
 					- [Inicio]
-				</button>
+				</button>*/}
 				<button className="p-2 bg-black" onClick={e => setPanel_mostrar(true)}>
 					<img src={`/${"src/assets/icons/styles_white24.svg"}`} alt="Menú" className="min-h-8 min-w-8" />
 				</button>
