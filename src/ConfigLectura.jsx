@@ -2,6 +2,13 @@ import { useState } from "react";
 import Slider from "./Slider";
 import * as Almac from "./Almacenamiento";
 
+const PALETAS = [
+	{ nombre: "Paleta clara",   colorTexto: "#4f4c58", colorFondo: "#ffffff" },
+	{ nombre: "Paleta oscura",  colorTexto: "#ffffff", colorFondo: "#24242e" },
+	{ nombre: "Paleta cálida",  colorTexto: "#330909", colorFondo: "#fbf0ef" },
+	{ nombre: "Alto contraste", colorTexto: "#ffffff", colorFondo: "#000000" },
+];
+
 export default function ConfigLectura({completo = false, update} ) {
 	const [lectura, setLectura] = useState(Almac.obt_LECTURA());
 
@@ -21,6 +28,11 @@ export default function ConfigLectura({completo = false, update} ) {
 	}
 	function invertirColores() {
 		const nueva = { ...lectura, colorTexto: lectura.colorFondo, colorFondo: lectura.colorTexto };
+		setLectura(nueva);
+		Almac.guar_LECTURA(nueva);
+	}
+	function seleccionarPaleta(paleta) {
+		const nueva = { ...lectura, colorTexto: paleta.colorTexto, colorFondo: paleta.colorFondo };
 		setLectura(nueva);
 		Almac.guar_LECTURA(nueva);
 	}
@@ -100,7 +112,12 @@ export default function ConfigLectura({completo = false, update} ) {
 					</button>
 				</div>
 			</div>
-			<div className="flex flex-col gap-2 pt-2">
+			<div className="grid grid-cols-2 md:grid-cols-4 gap-2 pt-4">
+				{PALETAS.map(paleta =>
+					<PaletaSwatch paleta={paleta} seleccionada={lectura.colorTexto === paleta.colorTexto && lectura.colorFondo === paleta.colorFondo} onClick={() => seleccionarPaleta(paleta)} />
+				)}
+			</div>
+			<div className="flex flex-col gap-2 pt-4">
 				<div className="flex gap-2 items-center">
 					<input type="color" id="Color texto" value={lectura.colorTexto} onChange={e => actualizar("colorTexto", e.target.value)}/>
 					<label className="w-full" for="Color texto">Texto</label>
@@ -117,5 +134,15 @@ export default function ConfigLectura({completo = false, update} ) {
 				</div>
 			</div>
 		</div>
+	);
+}
+
+function PaletaSwatch({paleta, seleccionada, onClick}) {
+	const borde = seleccionada ? "border-(--rojo)" : "border-(--gris)";
+	return (
+		<button onClick={onClick} className={"flex flex-col gap-1 p-3 border-2 text-left "+borde} style={{backgroundColor: paleta.colorFondo, color: paleta.colorTexto}}>
+			<p className="font-black">{paleta.nombre}</p>
+			<p className="text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor inci...</p>
+		</button>
 	);
 }

@@ -11,6 +11,7 @@ import AutoGrid from "./AutoGrid";
 import BarraPrincipalMobile from "./BarraPrincipalMobile";
 import MenuPrincipalMobile from "./MenuPrincipalMobile";
 import SelectorMobile from "./SelectorMobile";
+const EMOJIS = ["👍", "❤️", "😮", "😡", "😢", "😮‍💨", "🗣️", "🔥"];
 
 export default function Noticia () {
 	const params = useParams();
@@ -20,6 +21,9 @@ export default function Noticia () {
 	const [text, setText] = useState(null);
 	const [lectura, setLectura] = useState(Almac.obt_LECTURA);
 	function update_lectura() {setLectura(Almac.obt_LECTURA)};
+
+	const [conteos, setConteos] = useState({});
+	const [reaccionActiva, setReaccionActiva] = useState(undefined);
 
 	const [panel_mostrar, setPanel_mostrar] = useState(false);
 	function ocultar_panel() { setPanel_mostrar(false); }
@@ -65,6 +69,18 @@ export default function Noticia () {
 			ignore = true;
 		};
 	}, [id]);
+
+	useEffect(() => {
+		const nuevosConteos = {};
+		EMOJIS.forEach(e => { nuevosConteos[e] = Math.floor(Math.random() * 10); });
+		setConteos(nuevosConteos);
+		setReaccionActiva(Almac.obt_REACCION(id));
+	}, [id]);
+
+	function reaccionar(emoji) {
+		const nueva = Almac.guar_REACCION(id, emoji);
+		setReaccionActiva(nueva);
+	}
 	
 	Filter.reset_ya_mostrado();
 	Filter.ya_mostrado.push(NOTI_INFO.id);
@@ -128,15 +144,9 @@ export default function Noticia () {
 
 			<div className="flex flex-col max-w-screen bg-black text-white">
 				<div className="flex flex-wrap justify-center gap-2 p-2">
-					<Reacciones emoji="👍" cuenta={5} />
-					<Reacciones emoji="❤️" cuenta={8} />
-					<Reacciones emoji="😮" cuenta={9} />
-					<Reacciones emoji="😡" cuenta={1} />
-					<Reacciones emoji="😢" cuenta={8} />
-					<Reacciones emoji="😮‍💨" cuenta={1} />
-					<Reacciones emoji="🗣️" cuenta={0} />
-					<Reacciones emoji="🔥" cuenta={2} />
-					
+					{EMOJIS.map(e =>
+						<Reacciones emoji={e} cuenta={conteos[e] ?? 0} activado={reaccionActiva === e} onClick={() => reaccionar(e)} />
+					)}
 				</div>
 
 				<h1 className="w-full px-4 py-1.5 Fonts-DMSerif text-4xl"> Comentarios (6) </h1>
@@ -177,13 +187,12 @@ export default function Noticia () {
 
 
 
-function Reacciones ({emoji="", cuenta=0}) {
-    const [pulsado, setPulsado] = useState(false);
-    const pulscss = pulsado ? "line-rojo text-rojo" : "line-gris text-gris";
-    const pulsnum = pulsado ? 1 : 0;
+function Reacciones ({emoji="", cuenta=0, activado=false, onClick}) {
+    const pulscss = activado ? "line-rojo text-rojo" : "line-gris text-gris";
+    const pulsnum = activado ? 1 : 0;
 
     return (
-        <button className={"px-2 py-1 min-w-24 hover:bg-zinc-700 text-xl "+pulscss} onClick={e => setPulsado(!pulsado)} style={{textAlign:"center"}}>
+        <button className={"px-2 py-1 min-w-24 hover:bg-zinc-700 text-xl "+pulscss} onClick={onClick} style={{textAlign:"center"}}>
             {emoji} {cuenta + pulsnum}
         </button>
     );

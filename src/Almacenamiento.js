@@ -23,7 +23,7 @@ const LEC_KEY = "Lectura";
 export function obt_LECTURA(){
 	const def = {
 		fuente: "Inter",
-		tamano: 1.25,
+		tamano: window.innerWidth < 768 ? 1 : 1.25,
 		interlineado: 1.75,
 		espParrafos: 100,
 		espCaracteres: 100,
@@ -58,7 +58,27 @@ export function aplicar_LECTURA(){
 	raiz.setProperty("--lectura-ruido", conf.fondoTextura ? "url(/src/assets/ruido.png)" : "none");
 
 }
+const REAC_KEY = "Reacciones";
 
+export function obt_REACCIONES(){
+	const dat = obtener_datos(REAC_KEY, JSON.stringify({}));
+	return JSON.parse(dat);
+}
+
+export function obt_REACCION(id){
+	return obt_REACCIONES()[id];
+}
+
+export function guar_REACCION(id, emoji){
+	const reacciones = obt_REACCIONES();
+	if (reacciones[id] === emoji) {
+		delete reacciones[id];
+	} else {
+		reacciones[id] = emoji;
+	}
+	localStorage.setItem(REAC_KEY, JSON.stringify(reacciones));
+	return reacciones[id];
+}
 
 
 

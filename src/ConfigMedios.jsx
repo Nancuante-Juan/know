@@ -6,7 +6,7 @@ const INFO_MEDIOS = {
 	"Olé":           { icono: "src/assets/icons/iconos_medios/Ole-logo.png", descripcion: "Noticias deportivas de Argentina y el mundo.", categorias: ["Deportes"] },
 	"Crónica":       { icono: "src/assets/icons/iconos_medios/Cronica-logo.png", descripcion: "Últimas noticias de Neuquén, Río Negro y la Patagonia Argentina.", categorias: ["Policiales", "Politica", "Sociedad", "Salud"] },
 	"TyC Sports":    { icono: "src/assets/icons/iconos_medios/Tycsports-logo.png", descripcion: "Toda la información sobre fútbol, básquet y el resto de las disciplinas.", categorias: ["Deportes"] },
-	"La Nacion":     { icono: "src/assets/icons/iconos_medios/LaNacion-logo.webp", descripcion: "Las últimas noticias de la Argentina y del mundo en tiempo real.", categorias: ["Economia", "Sociedad", "Farandula", "Politica", "Deportes"] },
+	"La Nacion":     { icono: "src/assets/icons/iconos_medios/LaNacion-logo1.png", descripcion: "Las últimas noticias de la Argentina y del mundo en tiempo real.", categorias: ["Economia", "Sociedad", "Farandula", "Politica", "Deportes"] },
 	"CNN":           { icono: "src/assets/icons/iconos_medios/CNN-logo.png", descripcion: "Cobertura internacional en español, con foco en ciencia, tecnología y grandes historias globales.", categorias: ["Ciencia", "Tecnologia", "Deporte"] },
 	"NuevoDia":      { icono: "src/assets/icons/iconos_medios/NuevoDia-logo.png", descripcion: "El diario de Río Gallegos con la actualidad deportiva y el clima de la región.", categorias: ["Deporte", "Clima"] },
 	"Levelup":       { icono: "src/assets/icons/iconos_medios/Levelup-logo.png", descripcion: "Ofertas, lanzamientos y novedades del mundo de los videojuegos.", categorias: ["Gaming"] },
@@ -55,11 +55,11 @@ export default function ConfigMedios() {
 function TarjetaMedio({nombre, icono, descripcion, categorias, suscrito = false, onClick}) {
 	return (
 		<button onClick={onClick} className="flex flex-col w-full min-w-1/3 gap-2 border-2 p-4 bg-(--lectura-color-fondo) hover:bg-[#99999933]" style={{borderColor: "var(--gris)"}}>
-			<div className="flex justify-between items-center">
-				<div className="flex gap-2 items-center">
-					{icono && <img src={`/${icono}`} className="h-6" />}
+			<div className="flex justify-between items-center gap-2">
+				<div className="flex gap-2 items-center min-w-0">
+					{icono && <img src={`/${icono}`} className="max-h-6 max-w-45 object-contain" />}
 				</div>
-				<div className="px-3 py-1 text-md text-white" style={{backgroundColor: suscrito ? "var(--gris)" : "var(--rojo)"}}>
+				<div className="px-3 py-1 text-md text-white shrink-0" style={{backgroundColor: suscrito ? "var(--gris)" : "var(--rojo)"}}>
 					{suscrito ? "− Dejar" : "+ Suscribirse"}
 				</div>
 			</div>
