@@ -185,7 +185,7 @@ export const noticias = [
 	{ 
 		id: 20,
 		titulo:"“Súper Niño”: anticipan lluvias de hasta casi el doble de lo normal y los meses más críticos",
-		imagen:"src/assets/fotos/la_nacion/foto_6.avif",
+		imagen:"src/assets/fotos/la_nacion/foto_6.jpg",
 		medio:"La Nacion",
 		categorias:["Economia", "Clima"],
 		descripcion:"La Bolsa de Comercio de Rosario calculó las precipitaciones para los últimos tres meses del año en la región agrícola núcleo; podría registrarse un 30% más de lo habitual en octubre, un 70% más en noviembre y un 90% más en diciembre",
