@@ -299,13 +299,4 @@ export const noticias = [
 		descripcion:"ANSES confirmó que los jubilados tendrán una actualización en los haberes y, en el caso de las jubilaciones mínimas, el ingreso se verá reforzado por el bono de $70.000.",
 		link:"https://www.cronica.com.ar/sociedad/aumenta-la-jubilacion-minima-como-queda-en-septiembre-con-el-aumento-y-el-bono/"
 	},
-	{ 
-		id: 33,
-		titulo:"",
-		imagen:"src/assets/fotos/",
-		medio:"",
-		categorias:[""],
-		descripcion:"",
-		link:""
-	}
 ]

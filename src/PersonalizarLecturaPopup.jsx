@@ -1,5 +1,4 @@
 import ConfigLectura from "./ConfigLectura";
-import Nots from "./Noticia";
 
 export default function PersonalizarLecturaPopup({mostrar = false, ocultar, update}) {
 	if (mostrar){mostrar = "fixed"}

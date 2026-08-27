@@ -11,7 +11,7 @@ const PALETAS = [
 
 export default function ConfigLectura({completo = false, update} ) {
 	const [lectura, setLectura] = useState(Almac.obt_LECTURA());
-
+	const cuadrado = completo ? " md:grid-cols-4" : " md:grid-cols-2"
 	
 	function actualizar(campo, valor) {
 		const nueva = { ...lectura, [campo]: valor };
@@ -39,7 +39,7 @@ export default function ConfigLectura({completo = false, update} ) {
 	function restablecerTexto() {
 		const nueva = { ...lectura,
 			fuente: "Inter",
-			tamano: 1.25,
+			tamano: window.innerWidth < 768 ? 1 : 1.25,
 			interlineado: 1.75,
 			espCaracteres: 100,
 			espPalabras: 100,
@@ -112,9 +112,9 @@ export default function ConfigLectura({completo = false, update} ) {
 					</button>
 				</div>
 			</div>
-			<div className="grid grid-cols-2 md:grid-cols-4 gap-2 pt-4">
+			<div className={"grid grid-cols-2 gap-2 pt-4 "+cuadrado}>
 				{PALETAS.map(paleta =>
-					<PaletaSwatch paleta={paleta} seleccionada={lectura.colorTexto === paleta.colorTexto && lectura.colorFondo === paleta.colorFondo} onClick={() => seleccionarPaleta(paleta)} />
+					<PaletaSwatch paleta={paleta} seleccionada={lectura.colorTexto === paleta.colorTexto && lectura.colorFondo === paleta.colorFondo} onClick={() => seleccionarPaleta(paleta)}  />
 				)}
 			</div>
 			<div className="flex flex-col gap-2 pt-4">
@@ -141,8 +141,8 @@ function PaletaSwatch({paleta, seleccionada, onClick}) {
 	const borde = seleccionada ? "border-(--rojo)" : "border-(--gris)";
 	return (
 		<button onClick={onClick} className={"flex flex-col gap-1 p-3 border-2 text-left "+borde} style={{backgroundColor: paleta.colorFondo, color: paleta.colorTexto}}>
-			<p className="font-black">{paleta.nombre}</p>
-			<p className="text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor inci...</p>
+			<p className="font-black Fonts-RobotoC text-xl">{paleta.nombre}</p>
+			<p className="text-sm line-clamp-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor inci...</p>
 		</button>
 	);
 }
