@@ -51,7 +51,7 @@ export const noticias = [
 		id: 5,
 		titulo: "El Gobierno dice que comprará al menos otros US$10.000 millones",
 		imagen: "src/assets/fotos/la_nacion/foto_1.avif",
-		medio: "La Nacion",
+		medio: "La Nación",
 		categorias: ["Política", "Economia"],
 		descripcion: "El viceministro de Economía,José Luis Daza,aseguró que el país llegará a los próximos comicios con mejores condiciones financieras...",
 		link: "https://www.lanacion.com.ar/economia/el-gobierno-dice-que-comprara-al-menos-otros-us10000-millones-de-reservas-antes-de-las-elecciones-de-nid12082026/"
@@ -150,7 +150,7 @@ export const noticias = [
 		id: 16,
 		titulo:"Se suma una nueva pista en la Ciudad para rendir el examen de conducción de motos",
 		imagen:"src/assets/fotos/la_nacion/foto_2.avif",
-		medio:"La Nacion",
+		medio:"La Nación",
 		categorias:["Vehiculos"],
 		descripcion:"La apertura de este nuevo espacio en el barrio de Palermo busca ampliar la cantidad de turnos disponibles para quienes solicitan el otorgamiento o la ampliación de la licencia de conducir de la categoría motos (A), en un contexto de aumento de la demanda",
 		link:"https://www.lanacion.com.ar/autos/se-suma-una-nueva-pista-en-la-ciudad-para-rendir-el-examen-de-conduccion-de-motos-donde-esta-nid15122025/"
@@ -159,7 +159,7 @@ export const noticias = [
 		id: 17,
 		titulo:"Cuánto cuesta la Volkswagen Amarok en agosto 2026",
 		imagen:"src/assets/fotos/la_nacion/foto_3.avif",
-		medio:"La Nacion",
+		medio:"La Nación",
 		categorias:["Vehiculos"],
 		descripcion:"La pickup de la automotriz alemana fue el único modelo que mantuvo sus precios sin cambios para este mes: cuánto cuesta cada versión",
 		link:"https://www.lanacion.com.ar/autos/cuanto-cuesta-la-volkswagen-amarok-en-agosto-2026-nid18082026/"
@@ -168,7 +168,7 @@ export const noticias = [
 		id: 18,
 		titulo:"Especialistas explican cómo hay que manejar una moto en días fríos para evitar accidentes",
 		imagen:"src/assets/fotos/la_nacion/foto_4.avif",
-		medio:"La Nacion",
+		medio:"La Nación",
 		categorias:["Vehiculos"],
 		descripcion:"Con las bajas temperaturas, aumentan los riesgos para los motociclistas: cómo preparar la moto y adaptarla para una conducción más segura",
 		link:"https://www.lanacion.com.ar/autos/especialistas-explican-como-hay-que-manejar-una-moto-en-dias-frios-para-evitar-accidentes-nid16082026/"
@@ -177,7 +177,7 @@ export const noticias = [
 		id: 19,
 		titulo:"El Gobierno aprobó el RIGI para la mayor inversión de la historia de la petrolera de Techint: US$6400 millones",
 		imagen:"src/assets/fotos/la_nacion/foto_5.avif",
-		medio:"La Nacion",
+		medio:"La Nación",
 		categorias:["Economia"],
 		descripcion:"Tecpetrol desarrollará Los Toldos II Este en Vaca Muerta y prevé alcanzar una producción de 70.000 barriles diarios de petróleo en 2027; más de US$2000 millones se desembolsarán hasta fines del próximo año",
 		link:"https://www.lanacion.com.ar/economia/el-gobierno-aprobo-el-rigi-para-la-mayor-inversion-de-la-historia-de-la-petrolera-de-techint-us6400-nid19082026/"
@@ -186,7 +186,7 @@ export const noticias = [
 		id: 20,
 		titulo:"“Súper Niño”: anticipan lluvias de hasta casi el doble de lo normal y los meses más críticos",
 		imagen:"src/assets/fotos/la_nacion/foto_6.jpg",
-		medio:"La Nacion",
+		medio:"La Nación",
 		categorias:["Economia", "Clima"],
 		descripcion:"La Bolsa de Comercio de Rosario calculó las precipitaciones para los últimos tres meses del año en la región agrícola núcleo; podría registrarse un 30% más de lo habitual en octubre, un 70% más en noviembre y un 90% más en diciembre",
 		link:"https://www.lanacion.com.ar/economia/campo/advierten-que-por-el-nino-fuerte-podria-llover-hasta-casi-el-doble-de-lo-normal-nid19082026/"
@@ -195,7 +195,7 @@ export const noticias = [
 		id: 21,
 		titulo:"Todo lo que está haciendo el Gobierno para contener al dólar en $1500",
 		imagen:"src/assets/fotos/la_nacion/foto_7.avif",
-		medio:"La Nacion",
+		medio:"La Nación",
 		categorias:["Economia"],
 		descripcion:"Entre instrumentos que dan cobertura cambiaria, menos compra de reservas y las tasas de interés, el Tesoro y el BCRA despliegan una estrategia para evitar una suba del tipo de cambio",
 		link:"https://www.lanacion.com.ar/economia/dolar/todo-lo-que-esta-haciendo-el-gobierno-para-contener-al-dolar-en-1500-nid19082026/"
@@ -204,7 +204,7 @@ export const noticias = [
 		id: 22,
 		titulo:"Isack Hadjar no correrá en el Gran Premio de los Países Bajos de la Fórmula 1 ",
 		imagen:"src/assets/fotos/la_nacion/foto_8.avif",
-		medio:"La Nacion",
+		medio:"La Nación",
 		categorias:["Deporte"],
 		descripcion:"El piloto francés, de Red Bull, sufrió una lesión y será reemplazado por Liam Lawson, excompañero de Max Verstappen, y actual integrante de Racing Bulls, el segundo equipo de la firma",
 		link:"https://www.lanacion.com.ar/deportes/automovilismo/isack-hadjar-no-correra-en-el-gran-premio-de-los-paises-bajos-de-la-formula-1-nid19082026/"
