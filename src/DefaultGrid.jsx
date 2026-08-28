@@ -14,7 +14,7 @@ export default function DefaultGrid({children, tipo="", cara, seccion, url, inve
 	
 	); } else if (tipo === "inicio") { return(
 	
-		<div className={"flex flex-col gap-4 lg:p-4 lg:pt-0 w-full snap-center "+invertir}>
+		<div className={"flex flex-col gap-4 lg:p-4 lg:pt-0 w-full snap-center pb-4 "+invertir}>
 			{cara}
 			<div className="flex flex-col gap-4 h-full ideal-w-noticia3 md:w-2/3 w-full">
 				{children}

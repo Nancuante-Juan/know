@@ -94,14 +94,15 @@ button {
 /***************/
 .muestra-noticia { transition-property: background; }
 .hide-not-hover{
+	min-height: 0;
+	height: fit-content;
 	max-height: 0;
 	opacity: 0;
 	transition: 500ms;
-	overflow: hidden;
 	text-overflow: ellipsis;
-	line-clamp: 3;
+	overflow: hidden;
 }
-.muestra-noticia:hover > * > .hide-not-hover { max-height: 72px; opacity: 1; }
+.muestra-noticia:hover > * > .hide-not-hover { max-height: 4.5rem; min-height: 1.4rem; opacity: 1; }
 .muestra-noticia:hover  > * > .muestra-noticia-titulo { background-color: var(--amarillo); color: #000000; }
 .muestra-noticia-grande > * > .muestra-noticia-titulo { background-color: var(--amarillo); color: #000000; }
 
