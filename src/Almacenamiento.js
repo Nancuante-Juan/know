@@ -4,7 +4,7 @@ import f_ruido_png from "./assets/ruido.png";
 /* ESTE ARCHIVO SOLO CONTIENTE MÉTODOS PARA ALMACENAR DATOS, NO COMPONENTES */
 /****************************************************************************/
 const CAT_KEY = "Categorias";
-const MED_KEY = "Medios";
+const MED_KEY = "Medios"; 
 
 export function obt_MEDIOS(){
 	const def = ["Tiempo Sur", "Olé", "Crónica", "TyC Sports", "La Nación", "CNN", "NuevoDia", "Levelup", "TN" ];
