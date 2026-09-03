@@ -5,7 +5,7 @@ const CAT_KEY = "Categorias";
 const MED_KEY = "Medios";
 
 export function obt_MEDIOS(){
-	const def = ["Tiempo Sur", "Olé", "Crónica", "TyC Sports", "La Nacion", "CNN", "NuevoDia", "Levelup", "TN" ];
+	const def = ["Tiempo Sur", "Olé", "Crónica", "TyC Sports", "La Nación", "CNN", "NuevoDia", "Levelup", "TN" ];
 	const dat = obtener_datos(MED_KEY, def.toString()).split(",");
 	return dat;
 }
