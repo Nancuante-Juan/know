@@ -1,6 +1,8 @@
 import { useParams, useLocation } from "react-router";
 import { Link } from "react-router";
 import * as Almac from "./Almacenamiento";
+import disc_tune from "./assets/icons/discover_tune24.svg";
+import disc_tune_red from "./assets/icons/discover_tune_red24.svg";
 
 export default function BarraNavegación ({catego_manual}) { 
 	const params = useParams();
@@ -24,8 +26,8 @@ export default function BarraNavegación ({catego_manual}) {
 			</div>
 			<Link className="hidden md:flex min-w-8 gap-4 items-center" to={"/Config/Suscripciones"}>
 				{ ruta.split("/")[1] === "Config" ?
-					<img src={`/${"src/assets/icons/discover_tune_red24.svg"}`} className="h-8"/> :
-					<img src={`/${"src/assets/icons/discover_tune24.svg"}`} className="h-8"/>
+					<img src={disc_tune_red} className="h-8"/> :
+					<img src={disc_tune} className="h-8"/>
 				}
 			</Link>
 		</div>
