@@ -1,3 +1,5 @@
+import f_ruido_png from "./assets/ruido.png";
+
 /****************************************************************************/
 /* ESTE ARCHIVO SOLO CONTIENTE MÉTODOS PARA ALMACENAR DATOS, NO COMPONENTES */
 /****************************************************************************/
@@ -55,7 +57,7 @@ export function aplicar_LECTURA(){
 	raiz.setProperty("--lectura-color-fondo", conf.colorFondo);
 	raiz.setProperty("--lectura-ancho-pagina", conf.anchoPag * 0.01);
 	raiz.setProperty("--lectura-ocultar-imagenes", conf.verImagenes ? "flex" : "none");
-	raiz.setProperty("--lectura-ruido", conf.fondoTextura ? "url(/src/assets/ruido.png)" : "none");
+	raiz.setProperty("--lectura-ruido", conf.fondoTextura ? "url(" + f_ruido_png + ")" : "none");
 
 }
 const REAC_KEY = "Reacciones";
