@@ -12,6 +12,10 @@ import MenuPrincipalMobile from "./MenuPrincipalMobile";
 import SelectorMobile from "./SelectorMobile";
 const EMOJIS = ["👍", "❤️", "😮", "😡", "😢", "😮‍💨", "🗣️", "🔥"];
 
+//imagenes
+import stylish_ico from "./assets/icons/styles24.svg";
+import menu_icon from "./assets/icons/menu24.svg"
+
 export default function Noticia () {
 	const params = useParams();
 	const id = params.noti;
@@ -109,14 +113,14 @@ export default function Noticia () {
 				
 				{lectura.anchoPag !== 100 ? <div className="sticky h-fit top-0 w-full hidden md:flex justify-end noticia n-barra-lateral n-bl-derecha p-2">
 					<button className="p-2 bg-black" onClick={e => setPanel_mostrar(true)}>
-						<img className="h-8" src={`/${"src/assets/icons/styles24.svg"}`}/>
+						<img className="h-8" src={stylish_ico}/>
 					</button>
 				</div> : <></>}
 
 				{lectura.anchoPag == 100 ?
 					<div className="hidden md:flex fixed p-4 gap-2 bottom-0 right-0 z-10">
 						<button className="p-2 bg-black" onClick={e => setPanel_mostrar(true)}>
-							<img src={`/${"src/assets/icons/styles24.svg"}`} alt="Menú" className="min-h-8 min-w-8" />
+							<img src={stylish_ico} className="min-h-8 min-w-8" />
 						</button>
 					</div>
 				: <></>}
@@ -149,10 +153,10 @@ export default function Noticia () {
 					- [Inicio]
 				</button>*/}
 				<button className="p-2 bg-black" onClick={e => setPanel_mostrar(true)}>
-					<img src={`/${"src/assets/icons/styles_white24.svg"}`} alt="Menú" className="min-h-8 min-w-8" />
+					<img src={stylish_ico} alt="Menú" className="min-h-8 min-w-8" />
 				</button>
 				<button className="block md:hidden p-2 bg-black" onClick={e => setMenu_mostrar(true)}>
-					<img src={`/${"src/assets/icons/menu24.svg"}`} alt="Menú" className="min-h-8 min-w-8" />
+					<img src={menu_icon} alt="Menú" className="min-h-8 min-w-8" />
 				</button>
 			</BarraPrincipalMobile>
 			<MenuPrincipalMobile mostrar={menu_mostrar} close_event={ocultar} />
