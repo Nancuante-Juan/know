@@ -1,6 +1,9 @@
 import { useState } from "react";
 import Slider from "./Slider";
 import * as Almac from "./Almacenamiento";
+import reset_txt_ico from "./assets/icons/reset24.svg";
+import invert_ico from "./assets/icons/swap24.svg";
+import reset_color_ico from "./assets/icons/reset_colors24.svg";
 
 const PALETAS = [
 	{ nombre: "Paleta clara",   colorTexto: "#4f4c58", colorFondo: "#ffffff" },
@@ -61,7 +64,7 @@ export default function ConfigLectura({completo = false, update} ) {
 			<div className="flex justify-between items-center">
 				<h1>Texto</h1>
 				<button onClick={restablecerTexto} className="bg-amarillo px-4 py-2 w-fit flex flex-row gap-2"> 
-					<img src={`/${"src/assets/icons/reset24.svg"}`}/>
+					<img src={reset_txt_ico}/>
 					Restablecer
 				</button>
 			</div>
@@ -103,11 +106,11 @@ export default function ConfigLectura({completo = false, update} ) {
 				<h1>Colores</h1>
 				<div className="flex gap-2">
 					<button onClick={invertirColores} className="text-[0rem] md:text-lg md:gap-2 bg-black text-white px-4 py-2 w-fit flex flex-row">
-						<img src={`/${"src/assets/icons/swap24.svg"}`}/>
+						<img src={invert_ico}/>
 						Invertir
 					</button>
 					<button onClick={restablecerColores} className="text-[0rem] md:text-lg md:gap-2 bg-amarillo px-4 py-2 w-fit flex flex-row">
-						<img src={`/${"src/assets/icons/reset_colors24.svg"}`}/>
+						<img src={reset_color_ico}/>
 						Restablecer
 					</button>
 				</div>
