@@ -91,7 +91,7 @@ export default function Noticia () {
 	return (
 		<div className="bg-black">
 			<BarraNavegación />
-			<div className="flex flex-col w-[svh] h-[64svh] md:h-[74svh] bg-cover text-white justify-end bg-center trans select-text overflow-hidden" style={{backgroundImage: "url("+`/${NOTI_INFO.imagen}`+")"}}>
+			<div className="flex flex-col w-[svh] h-[64svh] md:h-[74svh] bg-cover text-white justify-end bg-center trans select-text overflow-hidden" style={{backgroundImage: "url("+ NOTI_INFO.imagen +")"}}>
 				<div className="flex w-full h-auto muestra-noticia-fondo p-4 z-5 gap-4 items-end">
 					<div className="font-black text-6xl Fonts-RobotoC muestra-noticia-titulo w-fit bg-amarillo">{NOTI_INFO.titulo}</div>
 					<div className="hidden md:block">{NOTI_INFO.descripcion}</div>
