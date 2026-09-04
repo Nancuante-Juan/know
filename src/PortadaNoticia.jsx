@@ -2,7 +2,6 @@ import { Link } from "react-router";
 import * as Almac from "./Almacenamiento";
 
 export default function PortadaNoticia ({ titulo, imagen, medio, categorias, descripcion, tipo="", url, dentro }) {
-	imagen = `/${imagen}`
 	categorias = categorias.toString().replaceAll(",", " ⋅ ")
 	const estiloFondo = {backgroundImage: "url("+imagen+")"};
 	

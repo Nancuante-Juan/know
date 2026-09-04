@@ -1,11 +1,46 @@
 /********************************************/
 /* ESTE ARCHIVO SOLO CONTIENTE LAS NOTICIAS */
 /********************************************/
+import img_0 from "./assets/fotos/tiempo_sur/foto_2.jpg";
+import img_1 from "./assets/fotos/tiempo_sur/foto_1_main1.jpg";
+import img_2 from "./assets/fotos/olé/foto_1.jpg";
+import img_3 from "./assets/fotos/cronica/foto_1.webp";
+import img_4 from "./assets/fotos/tyc_sports/foto_1.webp";
+import img_5 from "./assets/fotos/la_nacion/foto_1.avif";
+import img_6 from "./assets/fotos/cnn/foto_1.webp";
+import img_7 from "./assets/fotos/cnn/foto_2.avif";
+import img_8 from "./assets/fotos/tiempo_sur/foto_3.jpg";
+import img_9 from "./assets/fotos/nuevo_dia/foto_1.webp";
+import img_10 from "./assets/fotos/levelup/foto_1.avif";
+import img_11 from "./assets/fotos/nuevo_dia/foto_2.webp";
+import img_12 from "./assets/fotos/tn/foto_1.avif";
+import img_13 from "./assets/fotos/tn/foto_2.avif";
+import img_14 from "./assets/fotos/tn/foto_3.avif";
+import img_15 from "./assets/fotos/cnn/foto_3.jpg";
+import img_16 from "./assets/fotos/la_nacion/foto_2.avif";
+import img_17 from "./assets/fotos/la_nacion/foto_3.avif";
+import img_18 from "./assets/fotos/la_nacion/foto_4.avif";
+import img_19 from "./assets/fotos/la_nacion/foto_5.avif";
+import img_20 from "./assets/fotos/la_nacion/foto_6.jpg";
+import img_21 from "./assets/fotos/la_nacion/foto_7.avif";
+import img_22 from "./assets/fotos/la_nacion/foto_8.avif";
+import img_23 from "./assets/fotos/tiempo_sur/foto_4.jpg";
+import img_24 from "./assets/fotos/tiempo_sur/foto_5.jpg";
+import img_25 from "./assets/fotos/tiempo_sur/foto_6.jpg";
+import img_26 from "./assets/fotos/tiempo_sur/foto_7.jpg";
+import img_27 from "./assets/fotos/cronica/foto_2.jpg";
+import img_28 from "./assets/fotos/cronica/foto_3.jpg";
+import img_29 from "./assets/fotos/cronica/foto_4.jpg";
+import img_30 from "./assets/fotos/cronica/foto_5.jpg";
+import img_31 from "./assets/fotos/cronica/foto_6.jpg";
+import img_32 from "./assets/fotos/cronica/foto_7.jpg";
+
+
 export const noticias = [
 	{
 		id: 0,
 		titulo: "El precio del oro alcanza nuevos máximos",
-		imagen: "src/assets/fotos/tiempo_sur/foto_2.jpg",
+		imagen: img_0,
 		medio: "Tiempo Sur",
 		categorias: ["Economia"],
 		descripcion: "El oro se mantiene en un constante ascenso,generando interés en los inversores.",
@@ -14,7 +49,7 @@ export const noticias = [
 	{
 		id: 1,
 		titulo: "Santa Cruz se prepara para un fin de semana con lluvias y temperaturas bajo cero",
-		imagen: "src/assets/fotos/tiempo_sur/foto_1_main1.jpg",
+		imagen: img_1,
 		medio: "Tiempo Sur",
 		categorias: ["Clima"],
 		descripcion: "El Departamento de Meteorología y Climatología de la Administración General de Vialidad Provincial (AGVP),anticipa un...",
@@ -23,7 +58,7 @@ export const noticias = [
 	{
 		id: 2,
 		titulo: "Platense empató 1-1 ante Coquimbo Unido",
-		imagen: "src/assets/fotos/olé/foto_1.jpg",
+		imagen: img_2,
 		medio: "Olé",
 		categorias: ["Deporte"],
 		descripcion: "Luego del remate que falló Mainero y de estar en ventaja todo el partido,al Calamar se lo igualó Vadalá...",
@@ -32,7 +67,7 @@ export const noticias = [
 	{
 		id: 3,
 		titulo: "Embargan el departamento donde Cristina Kirchner cumple prisión domiciliaria",
-		imagen: "src/assets/fotos/cronica/foto_1.webp",
+		imagen: img_3,
 		medio: "Crónica",
 		categorias: ["Política"],
 		descripcion: "El TOF 2 dictó la medida cautelar sobre la propiedad de San José 1111...",
@@ -41,7 +76,7 @@ export const noticias = [
 	{
 		id: 4,
 		titulo: "Los 10 juegos que REGALA PlayStation durante agosto",
-		imagen: "src/assets/fotos/tyc_sports/foto_1.webp",
+		imagen: img_4,
 		medio: "TyC Sports",
 		categorias: ["Gaming"],
 		descripcion: "Helldivers 2,Kingdom Come: Deliverance 2,Vampire Survivors y Hell is Us encabezan una tanda que también...",
@@ -50,7 +85,7 @@ export const noticias = [
 	{
 		id: 5,
 		titulo: "El Gobierno dice que comprará al menos otros US$10.000 millones",
-		imagen: "src/assets/fotos/la_nacion/foto_1.avif",
+		imagen: img_5,
 		medio: "La Nación",
 		categorias: ["Política", "Economia"],
 		descripcion: "El viceministro de Economía,José Luis Daza,aseguró que el país llegará a los próximos comicios con mejores condiciones financieras...",
@@ -59,7 +94,7 @@ export const noticias = [
 	{
 		id: 6,
 		titulo: "El eclipse solar de este miércoles,en imágenes",
-		imagen: "src/assets/fotos/cnn/foto_1.webp",
+		imagen: img_6,
 		medio: "CNN",
 		categorias: ["Ciencia", "Tecnologia"],
 		descripcion: "Un eclipse solar total creó un espectáculo celestial para millones de personas este miércoles...",
@@ -68,7 +103,7 @@ export const noticias = [
 	{
 		id: 7,
 		titulo: "Venden Los Angeles Lakers por US$ 12.500 millones al ex CEO de Disney Bob Iger y a Josh Kushner,hermano de Jared",
-		imagen: "src/assets/fotos/cnn/foto_2.avif",
+		imagen: img_7,
 		medio: "CNN",
 		categorias: ["Deporte"],
 		descripcion: "El ex CEO de Disney Bob Iger y el capitalista de riesgo Josh Kushner están comprando uno de los activos más...",
@@ -77,7 +112,7 @@ export const noticias = [
 	{ 
 		id: 8,
 		titulo:"Milei volverá al Congreso para presentar el Presupuesto 2027",
-		imagen:"src/assets/fotos/tiempo_sur/foto_3.jpg",
+		imagen: img_8,
 		medio:"Tiempo Sur",
 		categorias:["Política"],
 		descripcion:"El Presidente expondrá el 15 de septiembre ante la Cámara de Diputados los lineamientos de la denominada “ley de leyes”. El Gobierno buscará asegurar su aprobación antes del inicio del año electoral, en una discusión que volverá a poner en el centro la relación con las provincias y el debate sobre las PASO.",
@@ -86,7 +121,7 @@ export const noticias = [
 	{ 
 		id: 9,
 		titulo:"Unión Santacruceña cayó en semifinales ante La Gloria de San Juan, pero cerró una destacada participación en el Nacional Zona Ascenso",
-		imagen:"src/assets/fotos/nuevo_dia/foto_1.webp",
+		imagen: img_9,
 		medio:"NuevoDia",
 		categorias:["Deporte"],
 		descripcion:"Unión Santacruceña de Río Gallegos finalizó su participación en el Torneo Nacional Masculino Zona Ascenso, disputado en San Juan, tras caer por 4 a 1 ante La Gloria en una de las semifinales. El conjunto santacruceño no pudo alcanzar la final ni conseguir el ascenso al Torneo Nacional A, aunque completó una destacada campaña con el plantel de menor promedio de edad del certamen y la totalidad de sus jugadores formados en la institución.",
@@ -95,7 +130,7 @@ export const noticias = [
 	{ 
 		id: 10,
 		titulo:"Juegazo AAA de una popular franquicia de acción tiene 95% de descuento y está casi gratis en Steam: últimas 48 horas para comprarlo por menos de $3 USD",
-		imagen:"src/assets/fotos/levelup/foto_1.avif",
+		imagen: img_10,
 		medio:"Levelup",
 		categorias:["Gaming"],
 		descripcion:"El shooter cuesta $2.50 USD y acaba de recibir una importante actualización de contenido, y ahora es el mejor momento para adquirirlo",
@@ -104,7 +139,7 @@ export const noticias = [
 	{ 
 		id: 11,
 		titulo:"Conocé como se presentará el clima este lunes en Río Gallegos",
-		imagen:"src/assets/fotos/nuevo_dia/foto_2.webp",
+		imagen: img_11,
 		medio:"NuevoDia",
 		categorias:["Clima"],
 		descripcion:"El Servicio Meteorológico Nacional anticipa para este lunes 17 de agosto en Río Gallegos una jornada mayormente nublada, sin probabilidad de precipitaciones. La temperatura mínima prevista es de 1 grado y la máxima alcanzaría los 7 grados, con viento del sector noroeste y ráfagas que podrían llegar a los 50 kilómetros por hora durante la tarde y la noche.",
@@ -113,7 +148,7 @@ export const noticias = [
 	{ 
 		id: 12,
 		titulo:"RIGI: se aprobó un nuevo proyecto en Vaca Muerta y la inversión comprometida superará los US$6000 millones",
-		imagen:"src/assets/fotos/tn/foto_1.avif",
+		imagen: img_12,
 		medio:"TN",
 		categorias:["Economia"],
 		descripcion:"El Comité Evaluador del Gobierno autorizó a la empresa Tecpetrol el ingreso al régimen de incentivos para avanzar con un proyecto en Neuquén. Generará 3100 empleos directos y prevé producir 70.000 barriles de petróleo.",
@@ -122,7 +157,7 @@ export const noticias = [
 	{ 
 		id: 13,
 		titulo:"Se conoció cuál es la postura del Inter sobre el futuro de Lautaro Martínez mientras lo busca el Barcelona",
-		imagen:"src/assets/fotos/tn/foto_2.avif",
+		imagen: img_13,
 		medio:"TN",
 		categorias:["Deporte"],
 		descripcion:"El delantero argentino está en la mira del Blaugrana, aseguran medios españoles. El conjunto catalán recientemente perdió a Robert Lewandowski, que se marchó a la MLS, y busca un reemplazante con urgencia.",
@@ -131,7 +166,7 @@ export const noticias = [
 	{ 
 		id: 14,
 		titulo:"El Gobierno estimó que la inflación de agosto será menor a 2% y que la desaceleración de precios se profundizará",
-		imagen:"src/assets/fotos/tn/foto_3.avif",
+		imagen: img_14,
 		medio:"TN",
 		categorias:["Economia"],
 		descripcion:"El titular del Banco Central defendió las medidas que impulsa el Ejecutivo para reactivar la economía. “Pareciera que vamos a tener una tasa de inflación más baja que la de julio, que tuvo factores transitorios, pero también probablemente inferior a la de junio”, dijo.",
@@ -140,7 +175,7 @@ export const noticias = [
 	{ 
 		id: 15,
 		titulo:"Milei acumula tropezones y los planes para la campaña por su reelección se complican",
-		imagen:"src/assets/fotos/cnn/foto_3.jpg",
+		imagen: img_15,
 		medio:"CNN",
 		categorias:["Política"],
 		descripcion:"Todo sucedió en poco más de un mes. En ese lapso, el Gobierno argentino atravesó una serie de turbulencias que, hasta el momento, no se han superado. Algunas incluso fueron el resultado de problemas autoinfligidos, por el estilo frontal y controversial que el presidente Javier Milei le ha impuesto a su mandato. ",
@@ -149,7 +184,7 @@ export const noticias = [
 	{ 
 		id: 16,
 		titulo:"Se suma una nueva pista en la Ciudad para rendir el examen de conducción de motos",
-		imagen:"src/assets/fotos/la_nacion/foto_2.avif",
+		imagen: img_16,
 		medio:"La Nación",
 		categorias:["Vehiculos"],
 		descripcion:"La apertura de este nuevo espacio en el barrio de Palermo busca ampliar la cantidad de turnos disponibles para quienes solicitan el otorgamiento o la ampliación de la licencia de conducir de la categoría motos (A), en un contexto de aumento de la demanda",
@@ -158,7 +193,7 @@ export const noticias = [
 	{ 
 		id: 17,
 		titulo:"Cuánto cuesta la Volkswagen Amarok en agosto 2026",
-		imagen:"src/assets/fotos/la_nacion/foto_3.avif",
+		imagen: img_17,
 		medio:"La Nación",
 		categorias:["Vehiculos"],
 		descripcion:"La pickup de la automotriz alemana fue el único modelo que mantuvo sus precios sin cambios para este mes: cuánto cuesta cada versión",
@@ -167,7 +202,7 @@ export const noticias = [
 	{ 
 		id: 18,
 		titulo:"Especialistas explican cómo hay que manejar una moto en días fríos para evitar accidentes",
-		imagen:"src/assets/fotos/la_nacion/foto_4.avif",
+		imagen: img_18,
 		medio:"La Nación",
 		categorias:["Vehiculos"],
 		descripcion:"Con las bajas temperaturas, aumentan los riesgos para los motociclistas: cómo preparar la moto y adaptarla para una conducción más segura",
@@ -176,7 +211,7 @@ export const noticias = [
 	{ 
 		id: 19,
 		titulo:"El Gobierno aprobó el RIGI para la mayor inversión de la historia de la petrolera de Techint: US$6400 millones",
-		imagen:"src/assets/fotos/la_nacion/foto_5.avif",
+		imagen: img_19,
 		medio:"La Nación",
 		categorias:["Economia"],
 		descripcion:"Tecpetrol desarrollará Los Toldos II Este en Vaca Muerta y prevé alcanzar una producción de 70.000 barriles diarios de petróleo en 2027; más de US$2000 millones se desembolsarán hasta fines del próximo año",
@@ -185,7 +220,7 @@ export const noticias = [
 	{ 
 		id: 20,
 		titulo:"“Súper Niño”: anticipan lluvias de hasta casi el doble de lo normal y los meses más críticos",
-		imagen:"src/assets/fotos/la_nacion/foto_6.jpg",
+		imagen: img_20,
 		medio:"La Nación",
 		categorias:["Economia", "Clima"],
 		descripcion:"La Bolsa de Comercio de Rosario calculó las precipitaciones para los últimos tres meses del año en la región agrícola núcleo; podría registrarse un 30% más de lo habitual en octubre, un 70% más en noviembre y un 90% más en diciembre",
@@ -194,7 +229,7 @@ export const noticias = [
 	{ 
 		id: 21,
 		titulo:"Todo lo que está haciendo el Gobierno para contener al dólar en $1500",
-		imagen:"src/assets/fotos/la_nacion/foto_7.avif",
+		imagen: img_21,
 		medio:"La Nación",
 		categorias:["Economia"],
 		descripcion:"Entre instrumentos que dan cobertura cambiaria, menos compra de reservas y las tasas de interés, el Tesoro y el BCRA despliegan una estrategia para evitar una suba del tipo de cambio",
@@ -203,7 +238,7 @@ export const noticias = [
 	{ 
 		id: 22,
 		titulo:"Isack Hadjar no correrá en el Gran Premio de los Países Bajos de la Fórmula 1 ",
-		imagen:"src/assets/fotos/la_nacion/foto_8.avif",
+		imagen: img_22,
 		medio:"La Nación",
 		categorias:["Deporte"],
 		descripcion:"El piloto francés, de Red Bull, sufrió una lesión y será reemplazado por Liam Lawson, excompañero de Max Verstappen, y actual integrante de Racing Bulls, el segundo equipo de la firma",
@@ -212,7 +247,7 @@ export const noticias = [
 	{ 
 		id: 23,
 		titulo:"Allanan ocho casas por el robo de cobre y secuestran armas de fuego",
-		imagen:"src/assets/fotos/tiempo_sur/foto_4.jpg",
+		imagen: img_23,
 		medio:"Tiempo Sur",
 		categorias:["Policial"],
 		descripcion:"En simultáneo, se llevaron adelante ocho allanamientos en el marco de una investigación por el robo de cobre en zonas de yacimientos. Los procedimientos culminaron con la detención de un hombre y el secuestro de vehículos, armas, municiones, cables, cobre y otros elementos de interés para la causa.  ",
@@ -221,7 +256,7 @@ export const noticias = [
 	{ 
 		id: 24,
 		titulo:"Construiran nuevos caniles destinados al Grupo de Operaciones Especiales",
-		imagen:"src/assets/fotos/tiempo_sur/foto_5.jpg",
+		imagen: img_24,
 		medio:"Tiempo Sur",
 		categorias:["Policial"],
 		descripcion:"Tras la reciente incorporación de nuevos perros a la Policía de Santa Cruz, el gobernador Claudio Vidal asumió el compromiso de construir espacios adecuados para las unidades caninas del GOE Zona Sur y Caleta Olivia. Santa Cruz Puede aportará los materiales necesarios para concretar la iniciativa. ",
@@ -230,7 +265,7 @@ export const noticias = [
 	{ 
 		id: 25,
 		titulo:"scándalo por un hombre que festejó su cumpleaños con una torta  con una esvástica",
-		imagen:"src/assets/fotos/tiempo_sur/foto_6.jpg",
+		imagen: img_25,
 		medio:"Tiempo Sur",
 		categorias:["Sociedad"],
 		descripcion:"Además, se viralizó una imagen de un niño haciendo el saludo nazi. ",
@@ -239,7 +274,7 @@ export const noticias = [
 	{ 
 		id: 26,
 		titulo:"Un inflable se soltó durante los festejos por el Día del Niño en la provincia de Córdoba",
-		imagen:"src/assets/fotos/tiempo_sur/foto_7.jpg",
+		imagen: img_26,
 		medio:"Tiempo Sur",
 		categorias:["Sociedad"],
 		descripcion:"El hecho quedó registrado por uno de los asistentes. ",
@@ -248,7 +283,7 @@ export const noticias = [
 	{ 
 		id: 27,
 		titulo:"Wisin anunció la creación de la Universidad del Perreo",
-		imagen:"src/assets/fotos/cronica/foto_2.jpg",
+		imagen: img_27,
 		medio:"Crónica",
 		categorias:["Sociedad", "Farandula"],
 		descripcion:"El reconocido cantante puertorriqueño lanzó un proyecto educativo ubicado en Puerto Rico para preservar el legado y la historia del reggaetón.",
@@ -257,7 +292,7 @@ export const noticias = [
 	{ 
 		id: 28,
 		titulo:"Los hechos policiales más impactantes que conmueven hoy a Mendoza",
-		imagen:"src/assets/fotos/cronica/foto_3.jpg",
+		imagen: img_28,
 		medio:"Crónica",
 		categorias:["Policial"],
 		descripcion:"Rescatan con vida dos niños y dos adultos en derrumbe. Manejaba borracho en camioneta robada con patente trucha, un nuevo sismo y más",
@@ -266,7 +301,7 @@ export const noticias = [
 	{ 
 		id: 29,
 		titulo:"River visita a Independiente Santa Fe en una prueba de riesgo por la Copa Sudamericana",
-		imagen:"src/assets/fotos/cronica/foto_4.jpg",
+		imagen: img_29,
 		medio:"Crónica",
 		categorias:["Deporte"],
 		descripcion:"Con Thiago Almada en el banco de suplentes, River se mide frente a Independiente Santa Fe en el partido de ida de los octavos de final de la Copa Sudamericana 2026.",
@@ -275,7 +310,7 @@ export const noticias = [
 	{ 
 		id: 30,
 		titulo:"Fátima Flórez, contundente sobre la pelea entre Lali Espósito y Marcelo Polino:Es un tema",
-		imagen:"src/assets/fotos/cronica/foto_5.jpg",
+		imagen: img_30,
 		medio:"Crónica",
 		categorias:["Farandula"],
 		descripcion:"La humorista se refirió al enfrentamiento entre la cantante y el periodista y dejó en claro cuál es su postura frente al conflicto. ¡Enterate qué dijo, en la nota! ",
@@ -284,7 +319,7 @@ export const noticias = [
 	{ 
 		id: 31,
 		titulo:"Jubilados y trabajadores de la salud marcharon al Congreso con el respaldo de la CGT",
-		imagen:"src/assets/fotos/cronica/foto_6.jpg",
+		imagen: img_31,
 		medio:"Crónica",
 		categorias:["Política"],
 		descripcion:"En una nueva jornada de protestas, manifestantes y fuerzas federales se vieron cara a cara en el Congreso.",
@@ -293,7 +328,7 @@ export const noticias = [
 	{ 
 		id: 32,
 		titulo:"Aumenta la jubilación mínima: ¿Cómo queda en septiembre con el aumento y el bono?",
-		imagen:"src/assets/fotos/cronica/foto_7.jpg",
+		imagen: img_32,
 		medio:"Crónica",
 		categorias:["Economia"],
 		descripcion:"ANSES confirmó que los jubilados tendrán una actualización en los haberes y, en el caso de las jubilaciones mínimas, el ingreso se verá reforzado por el bono de $70.000.",

@@ -1,10 +1,11 @@
 import { Link, useLocation } from "react-router";
+import back_ico from "./assets/icons/back_gris24.svg"
 
 export default function BarraLateral() {
 	return (
 		<div className="lg:flex flex-col min-w-48 text-gris Fonts-RobotoC font-black text-2xl hidden py-8">
 			<Link to="/" className="flex gap-2 items-center text-2xl mb-8 px-2 py-3 hover:bg-[#99999933]">
-				<img src={`/${"src/assets/icons/back_gris24.svg"}`} color="white" />
+				<img src={back_ico} color="white" />
 				Volver
 			</Link>
 			<div className="flex flex-col ">
