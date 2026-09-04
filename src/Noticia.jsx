@@ -6,7 +6,6 @@ import * as Filter from "./RecibirNoticias";
 import * as Almac from "./Almacenamiento";
 import BarraNavegación from "./BarraNavegacion";
 import PersonalizarLectura from "./PersonalizarLecturaPopup";
-import DivisorSeccion from "./DivisorSeccion";
 import AutoGrid from "./AutoGrid";
 import BarraPrincipalMobile from "./BarraPrincipalMobile";
 import MenuPrincipalMobile from "./MenuPrincipalMobile";
@@ -97,23 +96,7 @@ export default function Noticia () {
 			</div>
 			
 			<div className="flex flex-row bg-repeat min-h-[30vh] trans" style={{backgroundColor: "var(--lectura-color-fondo)", backgroundImage: "var(--lectura-ruido)"}}>
-				{lectura.anchoPag !== 100 ? <div className="sticky h-full top-0 max-h-screen hidden md:flex w-full noticia n-barra-lateral n-bl-izquierda">
-
-
-
-					{/* ACA VA EL INDICE DE LA NOTICIA */}
-
-
-
-					{lectura.anchoPag < 70 ? /* si el ancho de la noticia es demasiado pequeño o la ventana lo es el botono se muestra a la izquierda */
-					<button className="p-4 hidden md:flex xl:hidden" onClick={e => setPanel_mostrar(true)}>
-						<img className="h-8" src={`/${"src/assets/icons/styles24.svg"}`}/>
-					</button> : 
-					<button className="p-4 hidden md:flex" onClick={e => setPanel_mostrar(true)}>
-						<img className="h-8" src={`/${"src/assets/icons/styles24.svg"}`}/>
-					</button>
-					}
-					
+				{lectura.anchoPag !== 100 ? <div className="sticky h-full top-0 max-h-screen hidden md:flex w-full noticia n-barra-lateral n-bl-izquierda p-4">
 				</div> : <></>}
 				
 				<div className="p-4 select-text w-full NOTICIA_CONTENT noticia n-medio">
@@ -124,19 +107,16 @@ export default function Noticia () {
 					{text}
 				</div>
 				
-				{lectura.anchoPag < 70 ? <div className="sticky h-fit top-0 w-full hidden xl:flex justify-end noticia n-barra-lateral n-bl-derecha">
-					<button className="p-4" onClick={e => setPanel_mostrar(true)}>
+				{lectura.anchoPag !== 100 ? <div className="sticky h-fit top-0 w-full hidden md:flex justify-end noticia n-barra-lateral n-bl-derecha p-2">
+					<button className="p-2 bg-black" onClick={e => setPanel_mostrar(true)}>
 						<img className="h-8" src={`/${"src/assets/icons/styles24.svg"}`}/>
 					</button>
 				</div> : <></>}
 
 				{lectura.anchoPag == 100 ?
-					<div className="hidden md:flex fixed p-4 gap-2 bottom-0 w-120 max-w-screen z-10">
-						<button className="p-2 w-full bg-black text-white text-2xl Fonts-RobotoC font-black min-h-12" onClick={e => setSelector_mostrar(true)}>
-							- [Inicio]
-						</button>
+					<div className="hidden md:flex fixed p-4 gap-2 bottom-0 right-0 z-10">
 						<button className="p-2 bg-black" onClick={e => setPanel_mostrar(true)}>
-							<img src={`/${"src/assets/icons/styles_white24.svg"}`} alt="Menú" className="min-h-8 min-w-8" />
+							<img src={`/${"src/assets/icons/styles24.svg"}`} alt="Menú" className="min-h-8 min-w-8" />
 						</button>
 					</div>
 				: <></>}
