@@ -1,3 +1,5 @@
+import img_0 from "./assets/noticias/imagen/tiemposur/clima.jpg";
+
 export function Devolver() { return (
 	<div className="NOTICIA_CONTENT">
         De acuerdo con el Informe Meteorológico N° 050/2026, elaborado por el Departamento de Meteorología y Climatología de la Dirección Telecomunicaciones y Servicios Internos, durante lo que resta de este miércoles 12 de agosto no se esperan precipitaciones en el territorio provincial.
@@ -24,7 +26,7 @@ export function Devolver() { return (
 
         <br />Las heladas continuarán presentes en amplios sectores de la provincia, aunque con una disminución progresiva de su intensidad y duración. A partir del martes 18 de agosto se espera una mejora significativa de las condiciones térmicas.
 
-        <img src={`/${"src/assets/noticias/imagen/tiemposur/clima.jpg"}`} alt="" />
+        <img src={img_0}/>
 
         <h1>Recomendaciones</h1>
 
