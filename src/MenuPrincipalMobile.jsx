@@ -1,6 +1,10 @@
 import { useLocation } from "react-router";
 import { Link } from "react-router";
 import * as Almac from "./Almacenamiento";
+import close_ico from "./assets/icons/close_white24.svg";
+import disc_tune_ico from "./assets/icons/discover_tune24.svg";
+import disc_tune_red_ico from "./assets/icons/discover_tune_red24.svg";
+
 
 export default function MenuPrincipalMobile({mostrar=false, close_event}) {
 	var moscss = mostrar ? "flex md:hidden " : "hidden ";
@@ -26,12 +30,12 @@ export default function MenuPrincipalMobile({mostrar=false, close_event}) {
 			<div className="flex p-4 justify-between">
 				<Link className="p-2 bg-black" to="/Config/Suscripciones">
 					{ ruta.split("/")[1] === "Config" ?
-						<img src={`/${"src/assets/icons/discover_tune_red24.svg"}`} className="h-12 text-(--rojo)" alt="Ajustes" /> :
-						<img src={`/${"src/assets/icons/discover_tune24.svg"}`} className="h-12" alt="Ajustes"/>
+						<img src={disc_tune_red_ico} className="h-12 text-(--rojo)" alt="Ajustes" /> :
+						<img src={disc_tune_ico} className="h-12" alt="Ajustes"/>
 					}
 				</Link>
 				<button className="p-2 bg-black" onClick={close_event}>
-					<img src={`/${"src/assets/icons/close_white24.svg"}`} alt="Cerrar" className="h-12" />
+					<img src={close_ico} alt="Cerrar" className="h-12" />
 				</button>
 
 			</div>

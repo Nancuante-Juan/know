@@ -1,4 +1,5 @@
 import ConfigLectura from "./ConfigLectura";
+import close_ico from "./assets/icons/close24.svg";
 
 export default function PersonalizarLecturaPopup({mostrar = false, ocultar, update}) {
 	if (mostrar){mostrar = "fixed"}
@@ -10,7 +11,7 @@ export default function PersonalizarLecturaPopup({mostrar = false, ocultar, upda
 				<div className="flex justify-between items-center h-fit w-full sticky bg-(--lectura-color-fondo) z-50 top-0 p-8">
 					<p className="text-4xl Fonts-RobotoC font-black">PERSONALIZACIÓN</p>
 					<button onClick={ocultar}>
-						<img className="h-8" src={`/${"src/assets/icons/close24.svg"}`}/>
+						<img className="h-8" src={close_ico}/>
 					</button>
 				</div>
 				<div className="p-8 pt-0">

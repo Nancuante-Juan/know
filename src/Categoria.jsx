@@ -7,6 +7,7 @@ import DefaultGrid from "./DefaultGrid";
 import AutoPortada from "./AutoPortada";
 import BarraPrincipalMobile from "./BarraPrincipalMobile";
 import MenuPrincipalMobile from "./MenuPrincipalMobile";
+import menu_ico from "./assets/icons/menu24.svg";
 
 export default function Categoria(){
 	const params = useParams();
@@ -55,7 +56,7 @@ export default function Categoria(){
 			<BarraPrincipalMobile>
 				<div className="flex flex-col w-full Fonts-RobotoC text-white h-full text-4xl py-4 font-black">{categoria_dominante}</div>
 				<button className="p-2 bg-black" onClick={e => setMenu_mostrar(true)}>
-					<img src={`/${"src/assets/icons/menu24.svg"}`} alt="Menú" className="min-h-12 min-w-12" />
+					<img src={menu_ico} alt="Menú" className="min-h-12 min-w-12" />
 				</button>
 			</BarraPrincipalMobile>
 			<MenuPrincipalMobile mostrar={menu_mostrar} close_event={ocultar} />

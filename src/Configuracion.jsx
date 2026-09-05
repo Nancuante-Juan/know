@@ -8,6 +8,7 @@ import ConfigMedios from "./ConfigMedios";
 import BarraPrincipalMobile from "./BarraPrincipalMobile";
 import MenuPrincipalMobile from "./MenuPrincipalMobile";
 import SelectorMobile from "./SelectorMobile";
+import menu_ico from "./assets/icons/menu24.svg";
 
 export default function Configuracion() {
 	const ruta = decodeURI(useLocation().pathname);
@@ -48,7 +49,7 @@ export default function Configuracion() {
 					- {titulo}
 				</button>
 				<button className="block md:hidden p-2 bg-black" onClick={e => setMenu_mostrar(true)}>
-					<img src={`/${"src/assets/icons/menu24.svg"}`} alt="Menú" className="min-h-8 min-w-8" />
+					<img src={menu_ico} className="min-h-8 min-w-8" />
 				</button>
 			</BarraPrincipalMobile>
 			<MenuPrincipalMobile mostrar={menu_mostrar} close_event={ocultar} />

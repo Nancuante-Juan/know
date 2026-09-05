@@ -14,7 +14,7 @@ const EMOJIS = ["👍", "❤️", "😮", "😡", "😢", "😮‍💨", "🗣�
 
 //imagenes
 import stylish_ico from "./assets/icons/styles24.svg";
-import menu_icon from "./assets/icons/menu24.svg"
+import menu_ico from "./assets/icons/menu24.svg"
 
 export default function Noticia () {
 	const params = useParams();
@@ -149,14 +149,11 @@ export default function Noticia () {
 			<PersonalizarLectura mostrar={panel_mostrar} ocultar={ocultar_panel} update={update_lectura}/>
 						
 			<BarraPrincipalMobile>
-				{/*<button className="p-2 w-full bg-black text-white text-2xl Fonts-RobotoC font-black min-h-12" onClick={e => setSelector_mostrar(true)}>
-					- [Inicio]
-				</button>*/}
 				<button className="p-2 bg-black" onClick={e => setPanel_mostrar(true)}>
 					<img src={stylish_ico} alt="Menú" className="min-h-8 min-w-8" />
 				</button>
 				<button className="block md:hidden p-2 bg-black" onClick={e => setMenu_mostrar(true)}>
-					<img src={menu_icon} alt="Menú" className="min-h-8 min-w-8" />
+					<img src={menu_ico} alt="Menú" className="min-h-8 min-w-8" />
 				</button>
 			</BarraPrincipalMobile>
 			<MenuPrincipalMobile mostrar={menu_mostrar} close_event={ocultar} />
